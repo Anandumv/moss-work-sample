@@ -1,0 +1,544 @@
+{
+  "index_action": "created",
+  "create_or_update_ms": 4711.03,
+  "load_voice_agent_context_ms": 9929.31,
+  "load_eval_grounding_v1_ms": 2030.21,
+  "warm_local_query_50x_ms": {
+    "count": 50,
+    "min": 2.25,
+    "p50": 2.97,
+    "p95": 6.11,
+    "max": 8.51,
+    "mean": 3.37
+  },
+  "session_add_12_docs_ms": 4698.11,
+  "session_query_10x_ms": {
+    "count": 10,
+    "min": 4.13,
+    "p50": 5.11,
+    "p95": 8.06,
+    "max": 8.34,
+    "mean": 5.55
+  },
+  "eval_by_alpha": {
+    "1.0": {
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "mrr": 1.0,
+      "latency_ms": {
+        "count": 10,
+        "min": 4.25,
+        "p50": 4.67,
+        "p95": 7.41,
+        "max": 7.67,
+        "mean": 5.31
+      },
+      "per_query": [
+        {
+          "id": "q1",
+          "expected_doc": "pol-01",
+          "top_ids": [
+            "pol-01",
+            "pol-08",
+            "pol-09"
+          ],
+          "top_scores": [
+            1.0,
+            0.5563,
+            0.506
+          ],
+          "rank": 1,
+          "latency_ms": 5.55
+        },
+        {
+          "id": "q2",
+          "expected_doc": "pol-02",
+          "top_ids": [
+            "pol-02",
+            "pol-04",
+            "pol-03"
+          ],
+          "top_scores": [
+            0.9775,
+            0.3188,
+            0.2404
+          ],
+          "rank": 1,
+          "latency_ms": 4.82
+        },
+        {
+          "id": "q3",
+          "expected_doc": "pol-03",
+          "top_ids": [
+            "pol-03",
+            "pol-02",
+            "pol-07"
+          ],
+          "top_scores": [
+            0.8573,
+            0.119,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 4.25
+        },
+        {
+          "id": "q4",
+          "expected_doc": "pol-04",
+          "top_ids": [
+            "pol-04",
+            "pol-02",
+            "pol-09"
+          ],
+          "top_scores": [
+            0.6776,
+            0.2494,
+            0.1407
+          ],
+          "rank": 1,
+          "latency_ms": 4.35
+        },
+        {
+          "id": "q5",
+          "expected_doc": "pol-05",
+          "top_ids": [
+            "pol-05",
+            "pol-06",
+            "pol-08"
+          ],
+          "top_scores": [
+            1.0,
+            0.126,
+            0.0179
+          ],
+          "rank": 1,
+          "latency_ms": 7.67
+        },
+        {
+          "id": "q6",
+          "expected_doc": "pol-06",
+          "top_ids": [
+            "pol-06",
+            "pol-12",
+            "pol-05"
+          ],
+          "top_scores": [
+            1.0,
+            0.1895,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 4.43
+        },
+        {
+          "id": "q7",
+          "expected_doc": "pol-08",
+          "top_ids": [
+            "pol-08",
+            "pol-09",
+            "pol-01"
+          ],
+          "top_scores": [
+            0.9198,
+            0.6398,
+            0.4655
+          ],
+          "rank": 1,
+          "latency_ms": 7.09
+        },
+        {
+          "id": "q8",
+          "expected_doc": "pol-09",
+          "top_ids": [
+            "pol-09",
+            "pol-01",
+            "pol-08"
+          ],
+          "top_scores": [
+            0.5949,
+            0.3728,
+            0.1265
+          ],
+          "rank": 1,
+          "latency_ms": 4.52
+        },
+        {
+          "id": "q9",
+          "expected_doc": "pol-10",
+          "top_ids": [
+            "pol-10",
+            "pol-02",
+            "pol-01"
+          ],
+          "top_scores": [
+            1.0,
+            0.2432,
+            0.1408
+          ],
+          "rank": 1,
+          "latency_ms": 6.13
+        },
+        {
+          "id": "q10",
+          "expected_doc": "pol-11",
+          "top_ids": [
+            "pol-11",
+            "pol-09",
+            "pol-08"
+          ],
+          "top_scores": [
+            0.8614,
+            0.2353,
+            0.0875
+          ],
+          "rank": 1,
+          "latency_ms": 4.3
+        }
+      ]
+    },
+    "0.6": {
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "mrr": 1.0,
+      "latency_ms": {
+        "count": 10,
+        "min": 4.0,
+        "p50": 5.51,
+        "p95": 7.02,
+        "max": 7.6,
+        "mean": 5.45
+      },
+      "per_query": [
+        {
+          "id": "q1",
+          "expected_doc": "pol-01",
+          "top_ids": [
+            "pol-01",
+            "pol-08",
+            "pol-09"
+          ],
+          "top_scores": [
+            1.0,
+            0.5563,
+            0.506
+          ],
+          "rank": 1,
+          "latency_ms": 7.6
+        },
+        {
+          "id": "q2",
+          "expected_doc": "pol-02",
+          "top_ids": [
+            "pol-02",
+            "pol-03",
+            "pol-10"
+          ],
+          "top_scores": [
+            0.9775,
+            0.2404,
+            0.072
+          ],
+          "rank": 1,
+          "latency_ms": 5.39
+        },
+        {
+          "id": "q3",
+          "expected_doc": "pol-03",
+          "top_ids": [
+            "pol-03",
+            "pol-02",
+            "pol-07"
+          ],
+          "top_scores": [
+            0.8573,
+            0.119,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 5.63
+        },
+        {
+          "id": "q4",
+          "expected_doc": "pol-04",
+          "top_ids": [
+            "pol-04",
+            "pol-02",
+            "pol-09"
+          ],
+          "top_scores": [
+            0.6776,
+            0.2494,
+            0.1407
+          ],
+          "rank": 1,
+          "latency_ms": 4.61
+        },
+        {
+          "id": "q5",
+          "expected_doc": "pol-05",
+          "top_ids": [
+            "pol-05",
+            "pol-06",
+            "pol-12"
+          ],
+          "top_scores": [
+            1.0,
+            0.126,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 6.24
+        },
+        {
+          "id": "q6",
+          "expected_doc": "pol-06",
+          "top_ids": [
+            "pol-06",
+            "pol-12",
+            "pol-05"
+          ],
+          "top_scores": [
+            1.0,
+            0.1895,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 4.0
+        },
+        {
+          "id": "q7",
+          "expected_doc": "pol-08",
+          "top_ids": [
+            "pol-08",
+            "pol-09",
+            "pol-06"
+          ],
+          "top_scores": [
+            0.9198,
+            0.6398,
+            0.283
+          ],
+          "rank": 1,
+          "latency_ms": 6.31
+        },
+        {
+          "id": "q8",
+          "expected_doc": "pol-09",
+          "top_ids": [
+            "pol-09",
+            "pol-01",
+            "pol-08"
+          ],
+          "top_scores": [
+            0.5949,
+            0.3728,
+            0.1265
+          ],
+          "rank": 1,
+          "latency_ms": 4.81
+        },
+        {
+          "id": "q9",
+          "expected_doc": "pol-10",
+          "top_ids": [
+            "pol-10",
+            "pol-02",
+            "pol-01"
+          ],
+          "top_scores": [
+            1.0,
+            0.2432,
+            0.1408
+          ],
+          "rank": 1,
+          "latency_ms": 5.69
+        },
+        {
+          "id": "q10",
+          "expected_doc": "pol-11",
+          "top_ids": [
+            "pol-11",
+            "pol-12",
+            "pol-09"
+          ],
+          "top_scores": [
+            0.8614,
+            0.0,
+            0.2353
+          ],
+          "rank": 1,
+          "latency_ms": 4.2
+        }
+      ]
+    },
+    "0.0": {
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "mrr": 1.0,
+      "latency_ms": {
+        "count": 10,
+        "min": 0.29,
+        "p50": 0.31,
+        "p95": 0.36,
+        "max": 0.39,
+        "mean": 0.31
+      },
+      "per_query": [
+        {
+          "id": "q1",
+          "expected_doc": "pol-01",
+          "top_ids": [
+            "pol-01",
+            "pol-08",
+            "pol-09"
+          ],
+          "top_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.39
+        },
+        {
+          "id": "q2",
+          "expected_doc": "pol-02",
+          "top_ids": [
+            "pol-02",
+            "pol-09",
+            "pol-10"
+          ],
+          "top_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.31
+        },
+        {
+          "id": "q3",
+          "expected_doc": "pol-03",
+          "top_ids": [
+            "pol-03"
+          ],
+          "top_scores": [
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.3
+        },
+        {
+          "id": "q4",
+          "expected_doc": "pol-04",
+          "top_ids": [
+            "pol-04",
+            "pol-02",
+            "pol-09"
+          ],
+          "top_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.3
+        },
+        {
+          "id": "q5",
+          "expected_doc": "pol-05",
+          "top_ids": [
+            "pol-05",
+            "pol-12",
+            "pol-06"
+          ],
+          "top_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.31
+        },
+        {
+          "id": "q6",
+          "expected_doc": "pol-06",
+          "top_ids": [
+            "pol-06",
+            "pol-12",
+            "pol-02"
+          ],
+          "top_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.29
+        },
+        {
+          "id": "q7",
+          "expected_doc": "pol-08",
+          "top_ids": [
+            "pol-08",
+            "pol-06",
+            "pol-05"
+          ],
+          "top_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.32
+        },
+        {
+          "id": "q8",
+          "expected_doc": "pol-09",
+          "top_ids": [
+            "pol-09",
+            "pol-01",
+            "pol-08"
+          ],
+          "top_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.29
+        },
+        {
+          "id": "q9",
+          "expected_doc": "pol-10",
+          "top_ids": [
+            "pol-10",
+            "pol-02",
+            "pol-01"
+          ],
+          "top_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.31
+        },
+        {
+          "id": "q10",
+          "expected_doc": "pol-11",
+          "top_ids": [
+            "pol-11",
+            "pol-12"
+          ],
+          "top_scores": [
+            0.0,
+            0.0
+          ],
+          "rank": 1,
+          "latency_ms": 0.29
+        }
+      ]
+    }
+  }
+}
