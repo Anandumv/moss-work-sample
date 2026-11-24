@@ -1,0 +1,1362 @@
+{
+  "fastlane_ungrounded_15x": {
+    "ttft_ms": {
+      "count": 15,
+      "min": 434.51,
+      "p50": 450.38,
+      "p95": 1092.38,
+      "max": 1617.7,
+      "mean": 580.35
+    },
+    "total_ms": {
+      "count": 15,
+      "min": 496.32,
+      "p50": 517.55,
+      "p95": 1158.26,
+      "max": 1679.36,
+      "mean": 661.4
+    },
+    "runs": [
+      {
+        "status": 200,
+        "ttft_ms": 1617.7,
+        "total_ms": 1679.36,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "da156e84641448dcaffa2a28f4f595dd",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 135,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 10,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, and I confirm request #0.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 867.25,
+        "total_ms": 929.67,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "7e5d843b2c9f4156bdf74dcc0d6ea891",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 133,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 8,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, request #1 confirmed.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 451.32,
+        "total_ms": 498.56,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "c8b7f8bad9e6496cbb48e3548327e669",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 135,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 10,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello! I have confirmed request #2.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 852.55,
+        "total_ms": 934.93,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "008be71585ed4f28922a7ddb360dac74",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 135,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 10,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, I cannot confirm request #3.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 439.17,
+        "total_ms": 504.16,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "1368daf45f854350a4693267132ac92b",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 134,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 9,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, I confirm request #4.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 449.91,
+        "total_ms": 496.48,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "cb9657075bc3482e98404a56bda85bd8",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 135,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 10,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello! I have confirmed request #5.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 453.02,
+        "total_ms": 517.55,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "f7752676f1604125bafed57c1551ee5b",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 134,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 9,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, request #6 is confirmed.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 452.4,
+        "total_ms": 533.03,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "66509d8c0aab445f821767025510de1b",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 135,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 10,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, I cannot confirm request #7.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 450.38,
+        "total_ms": 515.57,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "2066c043094b44c9a099f1e49ad01ee3",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 135,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 10,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, and I confirm request #8.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 448.52,
+        "total_ms": 513.59,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "bb2675a4a5894dfc998ec1581bafbecf",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 133,
+          "input_tokens": 125,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 8,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello! Request #9 confirmed.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 434.51,
+        "total_ms": 499.64,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "eb57a799d4964252a2df5bc8076b2129",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 135,
+          "input_tokens": 126,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 9,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, request #10 confirmed.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 449.19,
+        "total_ms": 496.32,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "1dcb0d6e85fe4a7d8ae31648923c3cfb",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 136,
+          "input_tokens": 126,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 10,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello! I confirm request #11.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 447.61,
+        "total_ms": 616.7,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "dae3f54f5f194194b2cfcde8c3224113",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 147,
+          "input_tokens": 126,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 21,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, I am ready to assist you, but I cannot confirm a specific request without more context.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 454.01,
+        "total_ms": 559.05,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "97efe26e0a0243729b57fc44ea9d5575",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 137,
+          "input_tokens": 126,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 11,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello! I have confirmed request #13.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 437.68,
+        "total_ms": 626.37,
+        "retrieve_ms": 0.0,
+        "box": "g2a0e48",
+        "request_id": "9f5ba935de4d46baa6966e15de1aace3",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 151,
+          "input_tokens": 126,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 25,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Hello, I cannot confirm request #14 as I do not have access to external system data or specific request logs.",
+        "error": null
+      }
+    ]
+  },
+  "fastlane_grounded_15x": {
+    "first_call_retrieve_ms": 2278.6,
+    "first_call_ttft_ms": 2771.55,
+    "all_retrieve_ms": {
+      "count": 15,
+      "min": 9.4,
+      "p50": 10.3,
+      "p95": 700.59,
+      "max": 2278.6,
+      "mean": 162.63
+    },
+    "warm_retrieve_ms": {
+      "count": 14,
+      "min": 9.4,
+      "p50": 10.3,
+      "p95": 17.6,
+      "max": 24.3,
+      "mean": 11.49
+    },
+    "all_ttft_ms": {
+      "count": 15,
+      "min": 483.33,
+      "p50": 499.4,
+      "p95": 1189.65,
+      "max": 2771.55,
+      "mean": 648.71
+    },
+    "warm_ttft_ms": {
+      "count": 14,
+      "min": 483.33,
+      "p50": 498.17,
+      "p95": 508.01,
+      "max": 511.7,
+      "mean": 497.07
+    },
+    "total_ms": {
+      "count": 15,
+      "min": 563.78,
+      "p50": 616.93,
+      "p95": 1381.41,
+      "max": 2921.96,
+      "mean": 779.19
+    },
+    "runs": [
+      {
+        "status": 200,
+        "ttft_ms": 2771.55,
+        "total_ms": 2921.96,
+        "retrieve_ms": 2278.6,
+        "box": "gin001",
+        "request_id": "e147abb53d75421baa0c277a79b5e8e5",
+        "ratelimit_remaining_req": "10",
+        "usage": {
+          "total_tokens": 564,
+          "input_tokens": 536,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 28,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "KoruMart Express delivers groceries in 18 minutes across Auckland CBD, and orders over NZ$35 skip the express fee.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 500.95,
+        "total_ms": 616.93,
+        "retrieve_ms": 11.1,
+        "box": "gin001",
+        "request_id": "f679d73d457449abb10a2d01d8d8f082",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 549,
+          "input_tokens": 530,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 19,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Cold-chain dairy items trigger an automatic instant refund if the temperature exceeds 8 degrees Celsius.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 494.56,
+        "total_ms": 592.13,
+        "retrieve_ms": 9.7,
+        "box": "gin001",
+        "request_id": "ce0bd18b87cd41a986424bd54b62e9e0",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 548,
+          "input_tokens": 531,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 17,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Perishable produce claims must be submitted within 12 hours of delivery.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 485.57,
+        "total_ms": 619.0,
+        "retrieve_ms": 10.3,
+        "box": "gin001",
+        "request_id": "86b10c4685a54aeeb00f2c537b090172",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 549,
+          "input_tokens": 525,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 24,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "The exact warehouse bin code for SKU MNG-4402 is NZ-AKL-04B.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 500.25,
+        "total_ms": 721.18,
+        "retrieve_ms": 10.3,
+        "box": "gin001",
+        "request_id": "06458514e5034d529d90eb03c3dfcff2",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 563,
+          "input_tokens": 535,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 28,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Gold rider payout bonus tier activates after 120 completed drops per week with an on-time rate >= 96.5%.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 495.51,
+        "total_ms": 594.54,
+        "retrieve_ms": 9.5,
+        "box": "gin001",
+        "request_id": "a405787ea9b2499c97c8097e3518d33c",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 551,
+          "input_tokens": 532,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 19,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "The webhook partner API rate limit is 240 requests per minute per tenant key.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 483.33,
+        "total_ms": 563.78,
+        "retrieve_ms": 9.4,
+        "box": "gin001",
+        "request_id": "38c8f51a1bc14fd09b6b147fd886631f",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 527,
+          "input_tokens": 511,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 16,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "KoruMart gift cards expire 36 months from the issue date.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 511.7,
+        "total_ms": 575.73,
+        "retrieve_ms": 24.3,
+        "box": "gin001",
+        "request_id": "1672507dfb6342d89f0d484ca77c74ce",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 534,
+          "input_tokens": 523,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 11,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "KoruPass costs NZ$79 annually.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 503.34,
+        "total_ms": 670.59,
+        "retrieve_ms": 9.9,
+        "box": "gin001",
+        "request_id": "eaf13d6c26db485e9bf22219be1c5e63",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 552,
+          "input_tokens": 523,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 29,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "KoruMart absorbs up to NZ$5.00 of the price difference when a substitution item is more expensive than the ordered SKU.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 486.98,
+        "total_ms": 602.34,
+        "retrieve_ms": 10.2,
+        "box": "gin001",
+        "request_id": "8315209523594613977f9404ce850b91",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 550,
+          "input_tokens": 529,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 21,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "The escalation code that routes directly to the Auckland cold-chain duty manager is ESC-917.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 505.62,
+        "total_ms": 689.28,
+        "retrieve_ms": 14.0,
+        "box": "gin001",
+        "request_id": "4a23c4515f124dfa8fe571edaaa788d8",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 565,
+          "input_tokens": 536,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 29,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "KoruMart Express delivers in 18 minutes across Auckland CBD, and orders over NZ$35 do not incur an express fee.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 499.4,
+        "total_ms": 612.34,
+        "retrieve_ms": 11.1,
+        "box": "gin001",
+        "request_id": "c82d562d02904cbc8160b697d50d7423",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 549,
+          "input_tokens": 530,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 19,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Cold-chain dairy items trigger an automatic instant refund if temperature excursions exceed 8°C.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 506.03,
+        "total_ms": 603.82,
+        "retrieve_ms": 10.3,
+        "box": "gin001",
+        "request_id": "32268b9e40254122b5c487984c3e634c",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 548,
+          "input_tokens": 531,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 17,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "Perishable produce claims must be submitted within 12 hours of delivery.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 496.95,
+        "total_ms": 630.51,
+        "retrieve_ms": 10.3,
+        "box": "gin001",
+        "request_id": "03e87d59de2b450b98a60b140e8d4149",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 549,
+          "input_tokens": 525,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 24,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "The exact warehouse bin code for SKU MNG-4402 is NZ-AKL-04B.",
+        "error": null
+      },
+      {
+        "status": 200,
+        "ttft_ms": 488.86,
+        "total_ms": 673.78,
+        "retrieve_ms": 10.4,
+        "box": "gin001",
+        "request_id": "7ff596b926c443179c3258eebd87cafc",
+        "ratelimit_remaining_req": "9",
+        "usage": {
+          "total_tokens": 565,
+          "input_tokens": 535,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 30,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "text": "The Gold rider payout bonus activates after 120 completed drops per week with an on-time rate of at least 96.5%.",
+        "error": null
+      }
+    ]
+  },
+  "reply_cache_5x": [
+    {
+      "iter": 0,
+      "status": 200,
+      "total_ms": 642.95,
+      "retrieve_ms": "12.0",
+      "usage": {
+        "total_tokens": 550,
+        "input_tokens": 525,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "cache_hit_inferred": false
+    },
+    {
+      "iter": 1,
+      "status": 200,
+      "total_ms": 393.11,
+      "retrieve_ms": "0.0",
+      "usage": {
+        "total_tokens": 16,
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "cache_hit_inferred": true
+    },
+    {
+      "iter": 2,
+      "status": 200,
+      "total_ms": 396.88,
+      "retrieve_ms": "0.0",
+      "usage": {
+        "total_tokens": 16,
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "cache_hit_inferred": true
+    },
+    {
+      "iter": 3,
+      "status": 200,
+      "total_ms": 394.17,
+      "retrieve_ms": "0.0",
+      "usage": {
+        "total_tokens": 16,
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "cache_hit_inferred": true
+    },
+    {
+      "iter": 4,
+      "status": 200,
+      "total_ms": 405.08,
+      "retrieve_ms": "0.0",
+      "usage": {
+        "total_tokens": 16,
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "cache_hit_inferred": true
+    }
+  ],
+  "vendor_comparison": {
+    "openai/gpt-6-luna": {
+      "ttft_ms": {
+        "count": 3,
+        "min": 1357.43,
+        "p50": 1513.24,
+        "p95": 1745.73,
+        "max": 1771.56,
+        "mean": 1547.41
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.5,
+        "p50": 11.5,
+        "p95": 12.94,
+        "max": 13.1,
+        "mean": 11.37
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1483.6,
+        "p50": 1730.85,
+        "p95": 1844.62,
+        "max": 1857.26,
+        "mean": 1690.57
+      },
+      "runs": [
+        {
+          "status": 200,
+          "ttft_ms": 1513.24,
+          "total_ms": 1730.85,
+          "retrieve_ms": 13.1,
+          "box": "gin001",
+          "request_id": "cf96e6ea414844f1ab6f41d632a0bac0",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 332,
+            "input_tokens": 302,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 30,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "KoruMart Express takes 18 minutes in Auckland CBD, and the order minimum to avoid the express fee is NZ$35.",
+          "error": null
+        },
+        {
+          "status": 200,
+          "ttft_ms": 1771.56,
+          "total_ms": 1857.26,
+          "retrieve_ms": 11.5,
+          "box": "gin001",
+          "request_id": "837dfde3cd784d0b8d8f3e364b12633a",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 301,
+            "input_tokens": 292,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 9,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "Above 8°C.",
+          "error": null
+        },
+        {
+          "status": 200,
+          "ttft_ms": 1357.43,
+          "total_ms": 1483.6,
+          "retrieve_ms": 9.5,
+          "box": "gin001",
+          "request_id": "4044838bf7ca436f893b4227757cf9f6",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 313,
+            "input_tokens": 295,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 18,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "Perishable produce claims must be submitted within 12 hours of delivery.",
+          "error": null
+        }
+      ]
+    },
+    "anthropic/claude-haiku-5.5": {
+      "ttft_ms": {
+        "count": 3,
+        "min": 898.35,
+        "p50": 920.95,
+        "p95": 966.54,
+        "max": 971.61,
+        "mean": 930.3
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.5,
+        "p50": 11.2,
+        "p95": 13.09,
+        "max": 13.3,
+        "mean": 11.33
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 993.47,
+        "p50": 1056.75,
+        "p95": 1140.75,
+        "max": 1150.08,
+        "mean": 1066.77
+      },
+      "runs": [
+        {
+          "status": 200,
+          "ttft_ms": 971.61,
+          "total_ms": 1150.08,
+          "retrieve_ms": 13.3,
+          "box": "gin001",
+          "request_id": "8b85d1ff80144d39b037338d0b7f67a9",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 487,
+            "input_tokens": 439,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 48,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "KoruMart Express delivers in 18 minutes across Auckland CBD, and orders of NZ$35 or more avoid the express fee.",
+          "error": null
+        },
+        {
+          "status": 200,
+          "ttft_ms": 920.95,
+          "total_ms": 1056.75,
+          "retrieve_ms": 11.2,
+          "box": "gin001",
+          "request_id": "01dd79fdc37142f6ada3cb76dc51494e",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 484,
+            "input_tokens": 442,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 42,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "Cold-chain dairy and frozen items trigger an automatic instant refund when temperature excursions exceed 8°C.",
+          "error": null
+        },
+        {
+          "status": 200,
+          "ttft_ms": 898.35,
+          "total_ms": 993.47,
+          "retrieve_ms": 9.5,
+          "box": "gin001",
+          "request_id": "32a01247264a4d4c828484faf3a7a364",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 475,
+            "input_tokens": 443,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 32,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "Perishable produce claims must be submitted within 12 hours of delivery, with a single photo.",
+          "error": null
+        }
+      ]
+    },
+    "google/gemini-3.5-flash-lite": {
+      "ttft_ms": {
+        "count": 3,
+        "min": 1558.5,
+        "p50": 1569.84,
+        "p95": 1571.94,
+        "max": 1572.17,
+        "mean": 1566.84
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.7,
+        "p50": 11.0,
+        "p95": 12.89,
+        "max": 13.1,
+        "mean": 11.27
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1559.0,
+        "p50": 1572.69,
+        "p95": 1572.86,
+        "max": 1572.88,
+        "mean": 1568.19
+      },
+      "runs": [
+        {
+          "status": 200,
+          "ttft_ms": 1572.17,
+          "total_ms": 1572.69,
+          "retrieve_ms": 13.1,
+          "box": "gin001",
+          "request_id": "753f25445cf240889c22c23c708a1f80",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 348,
+            "input_tokens": 311,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 37,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "KoruMart Express delivers in 18 minutes, and the order minimum to skip the express fee is NZ$35 (or NZ$20 for KoruPass members).",
+          "error": null
+        },
+        {
+          "status": 200,
+          "ttft_ms": 1558.5,
+          "total_ms": 1559.0,
+          "retrieve_ms": 11.0,
+          "box": "gin001",
+          "request_id": "0d353e15ea7d4bea96bf5d5c8bda02a9",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 324,
+            "input_tokens": 305,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 19,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "Cold-chain dairy items trigger an automatic instant refund when temperature excursions exceed 8 degrees Celsius.",
+          "error": null
+        },
+        {
+          "status": 200,
+          "ttft_ms": 1569.84,
+          "total_ms": 1572.88,
+          "retrieve_ms": 9.7,
+          "box": "gin001",
+          "request_id": "568354f755194a4585c89ad84031a524",
+          "ratelimit_remaining_req": "49",
+          "usage": {
+            "total_tokens": 317,
+            "input_tokens": 302,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 15,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "text": "Perishable produce claims must be submitted within 12 hours of delivery.",
+          "error": null
+        }
+      ]
+    }
+  },
+  "grounding_ablation": {
+    "grounded": [
+      {
+        "id": "g1",
+        "passed": true,
+        "latency_ms": 1406.57,
+        "answer": "KoruMart Express delivers in **18 minutes** in Auckland CBD. To skip the express delivery fee, your order must be **over NZ$35**.",
+        "input_tokens": 556,
+        "output_tokens": 34
+      },
+      {
+        "id": "g2",
+        "passed": true,
+        "latency_ms": 1049.59,
+        "answer": "Cold-chain dairy and frozen items trigger an automatic instant refund if the temperature exceeds 8°C.",
+        "input_tokens": 550,
+        "output_tokens": 20
+      },
+      {
+        "id": "g3",
+        "passed": true,
+        "latency_ms": 1022.03,
+        "answer": "Perishable produce claims must be submitted within 12 hours of delivery.",
+        "input_tokens": 551,
+        "output_tokens": 17
+      },
+      {
+        "id": "g4",
+        "passed": true,
+        "latency_ms": 1063.11,
+        "answer": "The warehouse bin code for SKU MNG-4402 is NZ-AKL-04B.",
+        "input_tokens": 545,
+        "output_tokens": 23
+      },
+      {
+        "id": "g5",
+        "passed": true,
+        "latency_ms": 656.96,
+        "answer": "Gold rider payout bonus is activated after completing 120 drops per week with an on-time rate of at least 96.5%.",
+        "input_tokens": 555,
+        "output_tokens": 30
+      },
+      {
+        "id": "g6",
+        "passed": true,
+        "latency_ms": 605.13,
+        "answer": "The KoruMart API rate limit for webhook partners is 240 requests per minute per tenant key.",
+        "input_tokens": 552,
+        "output_tokens": 23
+      },
+      {
+        "id": "g7",
+        "passed": true,
+        "latency_ms": 993.22,
+        "answer": "KoruMart gift cards expire 36 months from the issue date.",
+        "input_tokens": 531,
+        "output_tokens": 16
+      },
+      {
+        "id": "g8",
+        "passed": true,
+        "latency_ms": 534.17,
+        "answer": "KoruPass costs NZ$79 per year.",
+        "input_tokens": 543,
+        "output_tokens": 12
+      },
+      {
+        "id": "g9",
+        "passed": true,
+        "latency_ms": 642.36,
+        "answer": "KoruMart absorbs up to NZ$5.00 of the price difference when a substitution item is more expensive than the ordered SKU.",
+        "input_tokens": 543,
+        "output_tokens": 29
+      },
+      {
+        "id": "g10",
+        "passed": true,
+        "latency_ms": 586.09,
+        "answer": "The escalation code that routes directly to the Auckland cold-chain duty manager is ESC-917.",
+        "input_tokens": 549,
+        "output_tokens": 21
+      },
+      {
+        "id": "g11_ml_pure",
+        "passed": true,
+        "latency_ms": 736.51,
+        "answer": "കേടായ പച്ചക്കറികൾക്ക് 6 മണിക്കൂറിനുള്ളിൽ റീഫണ്ട് ലഭിക്കും.",
+        "input_tokens": 672,
+        "output_tokens": 42
+      },
+      {
+        "id": "g12_trap_unanswerable",
+        "passed": true,
+        "latency_ms": 973.94,
+        "answer": "I do not have that information.",
+        "input_tokens": 541,
+        "output_tokens": 8
+      }
+    ],
+    "ungrounded": [
+      {
+        "id": "g1",
+        "passed": false,
+        "latency_ms": 639.03,
+        "answer": "I do not have that information. The provided policies do not specify the delivery time for KoruMart Express in Auckland CBD or the order minimum required to skip the express fee.",
+        "input_tokens": 170,
+        "output_tokens": 36
+      },
+      {
+        "id": "g2",
+        "passed": false,
+        "latency_ms": 471.71,
+        "answer": "I do not have that information.",
+        "input_tokens": 160,
+        "output_tokens": 8
+      },
+      {
+        "id": "g3",
+        "passed": false,
+        "latency_ms": 927.46,
+        "answer": "I do not have that information.",
+        "input_tokens": 159,
+        "output_tokens": 8
+      },
+      {
+        "id": "g4",
+        "passed": false,
+        "latency_ms": 702.92,
+        "answer": "I do not have that information. As KoruMart support, I can only provide answers based on verified KoruMart policies, which do not contain specific real-time warehouse bin codes for individual SKUs.",
+        "input_tokens": 162,
+        "output_tokens": 42
+      },
+      {
+        "id": "g5",
+        "passed": false,
+        "latency_ms": 658.33,
+        "answer": "I do not have that information. The provided instructions do not contain verified KoruMart policies regarding rider payout bonuses, drop counts, or on-time percentage requirements.",
+        "input_tokens": 159,
+        "output_tokens": 33
+      },
+      {
+        "id": "g6",
+        "passed": false,
+        "latency_ms": 471.96,
+        "answer": "I do not have that information.",
+        "input_tokens": 156,
+        "output_tokens": 8
+      },
+      {
+        "id": "g7",
+        "passed": false,
+        "latency_ms": 527.3,
+        "answer": "I do not have that information in the verified KoruMart policies provided.",
+        "input_tokens": 156,
+        "output_tokens": 16
+      },
+      {
+        "id": "g8",
+        "passed": false,
+        "latency_ms": 471.47,
+        "answer": "I do not have that information.",
+        "input_tokens": 157,
+        "output_tokens": 8
+      },
+      {
+        "id": "g9",
+        "passed": false,
+        "latency_ms": 662.45,
+        "answer": "I do not have that information. The verified KoruMart policies provided in your instructions do not specify the amount of price difference KoruMart absorbs on substitutions.",
+        "input_tokens": 159,
+        "output_tokens": 33
+      },
+      {
+        "id": "g10",
+        "passed": false,
+        "latency_ms": 474.43,
+        "answer": "I do not have that information.",
+        "input_tokens": 157,
+        "output_tokens": 8
+      },
+      {
+        "id": "g11_ml_pure",
+        "passed": false,
+        "latency_ms": 1058.49,
+        "answer": "കേടായ പച്ചക്കറികൾക്കായി റീഫണ്ട് ലഭിക്കുന്ന സമയ പരിധി എന്താണ് എന്ന് എനിക്ക് ഉറപ്പില്ല. എനിക്ക് ലഭിച്ച വിവരങ്ങൾ കൊണ്ട് ഈ പ്രശ്നത്തിന്റെ ഉത്തരം പറയാൻ സാധിക്കില്ല.",
+        "input_tokens": 194,
+        "output_tokens": 76
+      },
+      {
+        "id": "g12_trap_unanswerable",
+        "passed": true,
+        "latency_ms": 892.58,
+        "answer": "I do not have that information. As a support agent, I only have access to verified KoruMart policies and general customer service details, which do not include personal contact information for executives.\n\nFor general inquiries, please use the official customer support channels provided on the KoruMart website or app.",
+        "input_tokens": 157,
+        "output_tokens": 61
+      }
+    ],
+    "grounded_accuracy": 1.0,
+    "ungrounded_accuracy": 0.0833
+  },
+  "features": {
+    "function_tool_loop": [
+      {
+        "step": 0,
+        "calls": [
+          {
+            "name": "lookup_sku_stock",
+            "args": "{\"sku\": \"MNG-4402\"}"
+          }
+        ],
+        "text": ""
+      },
+      {
+        "step": 1,
+        "calls": [],
+        "text": "SKU **MNG-4402**: 42 cases in stock.\n\nI don't have storage-policy details (such as bin temperature) in my available data, so I can't confirm its temperature policy from here. If you have a storage-policy reference (e.g., a storage-class code or policy sheet for this SKU), share it and I'll map the policy accordingly."
+      }
+    ],
+    "structured_output": {
+      "raw_text": "{\n  \"sku\": \"MNG-4402\",\n  \"bin_code\": \"NZ-AKL-04B\",\n  \"storage_temp_c\": 13\n}",
+      "parsed": {
+        "sku": "MNG-4402",
+        "bin_code": "NZ-AKL-04B",
+        "storage_temp_c": 13
+      },
+      "valid": true
+    },
+    "moss_search_responses": {
+      "mcp_calls": [
+        {
+          "name": "moss_search",
+          "status": "completed",
+          "duration_ms": 7.8,
+          "args": "{\"query\": \"Auckland cold chain escalation code\"}"
+        },
+        {
+          "name": "moss_search",
+          "status": "completed",
+          "duration_ms": 8.6,
+          "args": "{\"query\": \"gift card validity period how long are gift cards valid\"}"
+        }
+      ],
+      "answer": "Here's what I found:\n\n**Auckland cold chain escalation code:** ESC-917 — it routes directly to the Auckland cold-chain duty manager between 06:00 and 23:00 NZDT.\n\n**Gift card validity:** Gift cards expire 36 months from the issue date. Note they cannot be redeemed for tobacco, lottery tickets, or delivery pass subscriptions."
+    },
+    "prefix_cache_probe": {
+      "call1_input_tokens": 1562,
+      "call1_cached_tokens": 0,
+      "call2_input_tokens": 1469,
+      "call2_cached_tokens": 800
+    }
+  },
+  "openai_sdk_compat": {
+    "responses_output": "KoruPass costs NZ$79 per year.",
+    "chat_completions_output": "KoruPass costs NZ$79 per year.",
+    "chat_moss_search_output": "Scheduled maintenance for the dark-store inventory sync runs every Tuesday from 02:15 to 02:45 UTC. During this window, the slot reservation API returns an HTTP 503 with a Retry-After of 1800 seconds.",
+    "chat_moss_tool_steps": null
+  },
+  "estimated_inference_cost_usd": 0.027496
+}
