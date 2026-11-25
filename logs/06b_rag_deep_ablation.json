@@ -1,0 +1,236 @@
+{
+  "score_calibration": {
+    "correct_top1_scores": {
+      "count": 46,
+      "min": 0.18,
+      "p50": 0.92,
+      "p95": 1.0,
+      "max": 1.0,
+      "mean": 0.77
+    },
+    "wrong_top1_scores": [
+      0.3109,
+      0.2561,
+      0.4778,
+      0.8781,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0282
+    ],
+    "trap_top1_details": [
+      {
+        "id": "u01",
+        "got": "gr-14",
+        "score": 0.2541
+      },
+      {
+        "id": "u02",
+        "got": "cmp-07",
+        "score": 0.2383
+      },
+      {
+        "id": "u03",
+        "got": "gr-06",
+        "score": 0.3377
+      },
+      {
+        "id": "u04",
+        "got": "api-06d",
+        "score": 0.1475
+      }
+    ],
+    "threshold_sweep": [
+      {
+        "min_score": 0.25,
+        "true_pos_kept": "44/46",
+        "wrong_doc_kept": "4/14",
+        "unanswerable_trap_triggered": "2/4"
+      },
+      {
+        "min_score": 0.35,
+        "true_pos_kept": "42/46",
+        "wrong_doc_kept": "2/14",
+        "unanswerable_trap_triggered": "0/4"
+      },
+      {
+        "min_score": 0.45,
+        "true_pos_kept": "38/46",
+        "wrong_doc_kept": "2/14",
+        "unanswerable_trap_triggered": "0/4"
+      },
+      {
+        "min_score": 0.55,
+        "true_pos_kept": "35/46",
+        "wrong_doc_kept": "1/14",
+        "unanswerable_trap_triggered": "0/4"
+      },
+      {
+        "min_score": 0.65,
+        "true_pos_kept": "29/46",
+        "wrong_doc_kept": "1/14",
+        "unanswerable_trap_triggered": "0/4"
+      }
+    ]
+  },
+  "rag_ablation": {
+    "gpt6_luna_indexes_450tok": {
+      "answerable": "15/20",
+      "abstention": "4/4",
+      "overall": 0.7917,
+      "ttft_ms": {
+        "count": 24,
+        "min": 989.62,
+        "p50": 1251.53,
+        "p95": 1711.04,
+        "max": 2602.03,
+        "mean": 1342.62
+      },
+      "est_cost_usd": 0.013144,
+      "multilingual_rewrites": [],
+      "failures": [
+        {
+          "id": "m01",
+          "answer": "കൊച്ചി വെയർഹൗസിന്റെ പ്രവർത്തനസമയവും കേടായ പച്ചക്കറികൾക്ക് റീഫണ്ട് ലഭിക്കുന്ന സമയപരിധിയും എനിക്ക് അറിയില്ല."
+        },
+        {
+          "id": "m02",
+          "answer": "ഓക്ലൻഡ് സിബിഡിയിലെ എക്സ്പ്രസ് ഡെലിവറി സമയം എനിക്ക് അറിയില്ല."
+        },
+        {
+          "id": "m03",
+          "answer": "അൽഫോൻസോ മാങ്ങകൾ സൂക്ഷിക്കേണ്ട താപനിലയെക്കുറിച്ച് എനിക്ക് വിവരമില്ല."
+        },
+        {
+          "id": "m04",
+          "answer": "मुझे इसकी जानकारी नहीं है।"
+        },
+        {
+          "id": "m05",
+          "answer": "गिफ्ट वाउचर की वैधता अवधि की जानकारी मेरे पास नहीं है।"
+        }
+      ]
+    },
+    "gpt6_luna_moss_search_450tok": {
+      "answerable": "18/20",
+      "abstention": "4/4",
+      "overall": 0.9167,
+      "ttft_ms": {
+        "count": 24,
+        "min": 1902.33,
+        "p50": 2226.39,
+        "p95": 3032.42,
+        "max": 3539.61,
+        "mean": 2342.01
+      },
+      "est_cost_usd": 0.01479,
+      "multilingual_rewrites": [
+        {
+          "id": "m01",
+          "args": [
+            "{\"query\":\"Kochi warehouse operating hours and refund time window for damaged vegetables\"}"
+          ]
+        },
+        {
+          "id": "m02",
+          "args": [
+            "{\"query\":\"Auckland CBD express delivery arrival time minutes\"}"
+          ]
+        },
+        {
+          "id": "m03",
+          "args": [
+            "{\"query\":\"അൽഫോൻസോ മാങ്ങകൾ സംഭരിക്കേണ്ട താപനില എത്ര? storage temperature Alphonso mangoes\"}"
+          ]
+        },
+        {
+          "id": "m04",
+          "args": [
+            "{\"query\":\"ग्राहक को महंगा विकल्प देने पर कंपनी अधिकतम कितना अतिरिक्त मूल्य वहन करती है?\"}",
+            "{\"query\":\"company covers maximum additional cost when offering customer a more expensive alternative substitute item price difference\"}"
+          ]
+        },
+        {
+          "id": "m05",
+          "args": [
+            "{\"query\":\"गिफ्ट वाउचर की वैधता अवधि कितने महीने है?\"}"
+          ]
+        }
+      ],
+      "failures": [
+        {
+          "id": "p02",
+          "answer": "No—glass-bottle kombucha crates must not be stacked more than three tiers high on electric cargo bikes."
+        },
+        {
+          "id": "m05",
+          "answer": "मेरे पास गिफ्ट वाउचर की वैधता अवधि की जानकारी नहीं है।"
+        }
+      ]
+    },
+    "haiku55_moss_search_450tok": {
+      "answerable": "18/20",
+      "abstention": "4/4",
+      "overall": 0.9167,
+      "ttft_ms": {
+        "count": 24,
+        "min": 829.1,
+        "p50": 1676.74,
+        "p95": 1835.97,
+        "max": 1923.4,
+        "mean": 1587.64
+      },
+      "est_cost_usd": 0.018653,
+      "multilingual_rewrites": [
+        {
+          "id": "m01",
+          "args": [
+            "{\"query\": \"Kochi warehouse operating hours\"}",
+            "{\"query\": \"damaged vegetables refund time limit hours\"}"
+          ]
+        },
+        {
+          "id": "m02",
+          "args": [
+            "{\"query\": \"Auckland CBD express delivery time in minutes\"}"
+          ]
+        },
+        {
+          "id": "m03",
+          "args": [
+            "{\"query\": \"Alphonso mango storage temperature\"}"
+          ]
+        },
+        {
+          "id": "m04",
+          "args": [
+            "{\"query\": \"ग्राहक को महंगा विकल्प देने पर कंपनी अधिकतम अतिरिक्त मूल्य वहन करती है\"}"
+          ]
+        },
+        {
+          "id": "m05",
+          "args": [
+            "{\"query\": \"गिफ्ट वाउचर की वैधता कितने महीने\"}"
+          ]
+        }
+      ],
+      "failures": [
+        {
+          "id": "m04",
+          "answer": "मुझे इस प्रश्न का उत्तर ज्ञान आधार में नहीं मिला। दिए गए संदर्भ में ग्राहक को महंगा विकल्प देने पर कंपनी द्वारा वहन किए जाने वाले अधिकतम अतिरिक्त मूल्य के बारे में कोई जानकारी नहीं है।"
+        },
+        {
+          "id": "m05",
+          "answer": "मुझे इस प्रश्न का उत्तर ज्ञान-आधार में नहीं मिला। खोज में गिफ्ट वाउचर की वैधता से जुड़ी कोई जानकारी नहीं मिली, इसलिए मेरे पास इस बारे में जानकारी नहीं है कि गिफ्ट वाउचर कितने महीनों तक मान्य रहते हैं।"
+        }
+      ]
+    },
+    "total_cost_usd": 0.046587
+  }
+}

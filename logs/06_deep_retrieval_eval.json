@@ -1,0 +1,2079 @@
+{
+  "retrieval_eval": {
+    "corpus_size": 120,
+    "query_count": 60,
+    "cloud_create_mediumlm_error": "MossError: The project's usage limit has been reached; billing must be updated before it can be used.",
+    "load_cloud_minilm_ms": 3751.8,
+    "session_build_ms": {
+      "moss-minilm": 1599.42,
+      "moss-mediumlm": 7746.12
+    },
+    "configs": {
+      "cloud_minilm_alpha_1.0": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.7667,
+          "recall_at_3": 0.8333,
+          "recall_at_5": 0.8333,
+          "mrr_at_5": 0.8,
+          "ndcg_at_5": 0.8087
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.8667,
+            "recall_at_3": 0.9333,
+            "recall_at_5": 0.9333,
+            "mrr_at_5": 0.9,
+            "ndcg_at_5": 0.9087
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 0.8667,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 0.9333,
+            "ndcg_at_5": 0.9508
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.3333,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.4,
+            "mrr_at_5": 0.3667,
+            "ndcg_at_5": 0.3754
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 2.98,
+          "p50": 5.54,
+          "p95": 9.99,
+          "max": 15.8,
+          "mean": 5.88
+        },
+        "top1_misses_count": 14,
+        "top1_misses_sample": [
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "cmp-05",
+              "sre-06",
+              "api-04"
+            ]
+          },
+          {
+            "id": "p12",
+            "stratum": "paraphrase",
+            "target": "sre-07",
+            "got_top3": [
+              "gr-15",
+              "sre-07",
+              "cmp-01"
+            ]
+          },
+          {
+            "id": "a01",
+            "stratum": "adversarial",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-02d",
+              "gr-02",
+              "gr-13d"
+            ]
+          },
+          {
+            "id": "a02",
+            "stratum": "adversarial",
+            "target": "gr-03",
+            "got_top3": [
+              "gr-03d",
+              "gr-03",
+              "sre-11d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": [
+              "gr-08",
+              "api-05",
+              "sre-12d"
+            ]
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": [
+              "gr-14d",
+              "gr-14",
+              "gr-02"
+            ]
+          },
+          {
+            "id": "m10",
+            "stratum": "multilingual",
+            "target": "cmp-08",
+            "got_top3": [
+              "cmp-02",
+              "gr-10d",
+              "api-07d"
+            ]
+          },
+          {
+            "id": "m11",
+            "stratum": "multilingual",
+            "target": "sre-11",
+            "got_top3": [
+              "gr-14",
+              "api-07d",
+              "sre-15"
+            ]
+          },
+          {
+            "id": "m12",
+            "stratum": "multilingual",
+            "target": "sre-15",
+            "got_top3": [
+              "gr-07d",
+              "gr-14",
+              "cmp-07d"
+            ]
+          },
+          {
+            "id": "m15",
+            "stratum": "multilingual",
+            "target": "cmp-14",
+            "got_top3": [
+              "api-08",
+              "cmp-14",
+              "sre-07d"
+            ]
+          }
+        ]
+      },
+      "cloud_minilm_alpha_0.6": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.75,
+          "recall_at_3": 0.8333,
+          "recall_at_5": 0.8333,
+          "mrr_at_5": 0.7861,
+          "ndcg_at_5": 0.7982
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.7333,
+            "recall_at_3": 0.9333,
+            "recall_at_5": 0.9333,
+            "mrr_at_5": 0.8111,
+            "ndcg_at_5": 0.8421
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 0.8667,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 0.9333,
+            "ndcg_at_5": 0.9508
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.4,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.4,
+            "mrr_at_5": 0.4,
+            "ndcg_at_5": 0.4
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 3.02,
+          "p50": 5.31,
+          "p95": 8.47,
+          "max": 12.49,
+          "mean": 5.72
+        },
+        "top1_misses_count": 15,
+        "top1_misses_sample": [
+          {
+            "id": "p05",
+            "stratum": "paraphrase",
+            "target": "gr-15",
+            "got_top3": [
+              "gr-15d",
+              "gr-15",
+              "gr-06d"
+            ]
+          },
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "cmp-05",
+              "api-04",
+              "sre-06"
+            ]
+          },
+          {
+            "id": "p08",
+            "stratum": "paraphrase",
+            "target": "api-10",
+            "got_top3": [
+              "sre-11",
+              "gr-10d",
+              "api-10"
+            ]
+          },
+          {
+            "id": "p10",
+            "stratum": "paraphrase",
+            "target": "api-15",
+            "got_top3": [
+              "cmp-12d",
+              "api-11d",
+              "api-15"
+            ]
+          },
+          {
+            "id": "a01",
+            "stratum": "adversarial",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-02d",
+              "gr-02",
+              "cmp-08"
+            ]
+          },
+          {
+            "id": "a02",
+            "stratum": "adversarial",
+            "target": "gr-03",
+            "got_top3": [
+              "gr-03d",
+              "gr-03",
+              "sre-11d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": [
+              "gr-08",
+              "api-05",
+              "sre-12d"
+            ]
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": [
+              "gr-14d",
+              "gr-14",
+              "gr-02"
+            ]
+          },
+          {
+            "id": "m10",
+            "stratum": "multilingual",
+            "target": "cmp-08",
+            "got_top3": [
+              "cmp-02",
+              "gr-10d",
+              "api-07d"
+            ]
+          },
+          {
+            "id": "m11",
+            "stratum": "multilingual",
+            "target": "sre-11",
+            "got_top3": [
+              "gr-14",
+              "api-07d",
+              "sre-15"
+            ]
+          },
+          {
+            "id": "m12",
+            "stratum": "multilingual",
+            "target": "sre-15",
+            "got_top3": [
+              "gr-07d",
+              "gr-14",
+              "cmp-07d"
+            ]
+          }
+        ]
+      },
+      "cloud_minilm_alpha_0.6_depth50": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.7333,
+          "recall_at_3": 0.8,
+          "recall_at_5": 0.8167,
+          "mrr_at_5": 0.77,
+          "ndcg_at_5": 0.7818
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.7333,
+            "recall_at_3": 0.8,
+            "recall_at_5": 0.8667,
+            "mrr_at_5": 0.78,
+            "ndcg_at_5": 0.8012
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 0.8667,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 0.9333,
+            "ndcg_at_5": 0.9508
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.3333,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.4,
+            "mrr_at_5": 0.3667,
+            "ndcg_at_5": 0.3754
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 3.0,
+          "p50": 5.43,
+          "p95": 8.59,
+          "max": 11.51,
+          "mean": 5.55
+        },
+        "top1_misses_count": 16,
+        "top1_misses_sample": [
+          {
+            "id": "p05",
+            "stratum": "paraphrase",
+            "target": "gr-15",
+            "got_top3": [
+              "gr-15d",
+              "gr-15",
+              "gr-06d"
+            ]
+          },
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "cmp-05",
+              "api-04",
+              "gr-06d"
+            ]
+          },
+          {
+            "id": "p08",
+            "stratum": "paraphrase",
+            "target": "api-10",
+            "got_top3": [
+              "sre-11",
+              "gr-10d",
+              "sre-02d"
+            ]
+          },
+          {
+            "id": "p10",
+            "stratum": "paraphrase",
+            "target": "api-15",
+            "got_top3": [
+              "cmp-12d",
+              "api-11d",
+              "sre-15d"
+            ]
+          },
+          {
+            "id": "a01",
+            "stratum": "adversarial",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-02d",
+              "gr-02",
+              "cmp-08"
+            ]
+          },
+          {
+            "id": "a02",
+            "stratum": "adversarial",
+            "target": "gr-03",
+            "got_top3": [
+              "gr-03d",
+              "gr-03",
+              "sre-11d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": [
+              "gr-08",
+              "api-05",
+              "sre-12d"
+            ]
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": [
+              "gr-14d",
+              "gr-14",
+              "gr-02"
+            ]
+          },
+          {
+            "id": "m10",
+            "stratum": "multilingual",
+            "target": "cmp-08",
+            "got_top3": [
+              "cmp-02",
+              "gr-10d",
+              "api-07d"
+            ]
+          },
+          {
+            "id": "m11",
+            "stratum": "multilingual",
+            "target": "sre-11",
+            "got_top3": [
+              "gr-14",
+              "api-07d",
+              "sre-15"
+            ]
+          },
+          {
+            "id": "m12",
+            "stratum": "multilingual",
+            "target": "sre-15",
+            "got_top3": [
+              "gr-07d",
+              "gr-14",
+              "cmp-07d"
+            ]
+          }
+        ]
+      },
+      "cloud_minilm_alpha_0.0_bm25": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.6833,
+          "recall_at_3": 0.7333,
+          "recall_at_5": 0.7833,
+          "mrr_at_5": 0.7183,
+          "ndcg_at_5": 0.7342
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.4,
+            "recall_at_3": 0.6,
+            "recall_at_5": 0.8,
+            "mrr_at_5": 0.54,
+            "ndcg_at_5": 0.6036
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.3333,
+            "recall_at_3": 0.3333,
+            "recall_at_5": 0.3333,
+            "mrr_at_5": 0.3333,
+            "ndcg_at_5": 0.3333
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 0.13,
+          "p50": 0.14,
+          "p95": 0.2,
+          "max": 0.38,
+          "mean": 0.15
+        },
+        "top1_misses_count": 19,
+        "top1_misses_sample": [
+          {
+            "id": "p01",
+            "stratum": "paraphrase",
+            "target": "gr-06",
+            "got_top3": [
+              "api-02d",
+              "gr-06",
+              "cmp-04"
+            ]
+          },
+          {
+            "id": "p02",
+            "stratum": "paraphrase",
+            "target": "gr-08",
+            "got_top3": [
+              "cmp-10",
+              "gr-08",
+              "sre-07"
+            ]
+          },
+          {
+            "id": "p04",
+            "stratum": "paraphrase",
+            "target": "gr-13",
+            "got_top3": [
+              "cmp-14d",
+              "gr-06",
+              "sre-11"
+            ]
+          },
+          {
+            "id": "p05",
+            "stratum": "paraphrase",
+            "target": "gr-15",
+            "got_top3": [
+              "gr-06d",
+              "api-12",
+              "gr-15d"
+            ]
+          },
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "cmp-05",
+              "api-10d",
+              "api-04"
+            ]
+          },
+          {
+            "id": "p08",
+            "stratum": "paraphrase",
+            "target": "api-10",
+            "got_top3": [
+              "sre-11",
+              "gr-04",
+              "gr-10d"
+            ]
+          },
+          {
+            "id": "p10",
+            "stratum": "paraphrase",
+            "target": "api-15",
+            "got_top3": [
+              "cmp-12d",
+              "api-11d",
+              "sre-10d"
+            ]
+          },
+          {
+            "id": "p11",
+            "stratum": "paraphrase",
+            "target": "sre-05",
+            "got_top3": [
+              "sre-08",
+              "sre-05",
+              "sre-10d"
+            ]
+          },
+          {
+            "id": "p12",
+            "stratum": "paraphrase",
+            "target": "sre-07",
+            "got_top3": [
+              "api-08d",
+              "api-11",
+              "sre-08d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": []
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": []
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": []
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": []
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": []
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": []
+          }
+        ]
+      },
+      "session_minilm_alpha_1.0": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.7667,
+          "recall_at_3": 0.8333,
+          "recall_at_5": 0.8333,
+          "mrr_at_5": 0.8,
+          "ndcg_at_5": 0.8087
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.8667,
+            "recall_at_3": 0.9333,
+            "recall_at_5": 0.9333,
+            "mrr_at_5": 0.9,
+            "ndcg_at_5": 0.9087
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 0.8667,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 0.9333,
+            "ndcg_at_5": 0.9508
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.3333,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.4,
+            "mrr_at_5": 0.3667,
+            "ndcg_at_5": 0.3754
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 2.92,
+          "p50": 4.97,
+          "p95": 9.05,
+          "max": 11.2,
+          "mean": 5.31
+        },
+        "top1_misses_count": 14,
+        "top1_misses_sample": [
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "cmp-05",
+              "sre-06",
+              "api-04"
+            ]
+          },
+          {
+            "id": "p12",
+            "stratum": "paraphrase",
+            "target": "sre-07",
+            "got_top3": [
+              "gr-15",
+              "sre-07",
+              "cmp-01"
+            ]
+          },
+          {
+            "id": "a01",
+            "stratum": "adversarial",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-02d",
+              "gr-02",
+              "gr-13d"
+            ]
+          },
+          {
+            "id": "a02",
+            "stratum": "adversarial",
+            "target": "gr-03",
+            "got_top3": [
+              "gr-03d",
+              "gr-03",
+              "sre-11d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": [
+              "gr-08",
+              "api-05",
+              "sre-12d"
+            ]
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": [
+              "gr-14d",
+              "gr-14",
+              "gr-02"
+            ]
+          },
+          {
+            "id": "m10",
+            "stratum": "multilingual",
+            "target": "cmp-08",
+            "got_top3": [
+              "cmp-02",
+              "gr-10d",
+              "api-07d"
+            ]
+          },
+          {
+            "id": "m11",
+            "stratum": "multilingual",
+            "target": "sre-11",
+            "got_top3": [
+              "gr-14",
+              "api-07d",
+              "sre-15"
+            ]
+          },
+          {
+            "id": "m12",
+            "stratum": "multilingual",
+            "target": "sre-15",
+            "got_top3": [
+              "gr-07d",
+              "gr-14",
+              "cmp-07d"
+            ]
+          },
+          {
+            "id": "m15",
+            "stratum": "multilingual",
+            "target": "cmp-14",
+            "got_top3": [
+              "api-08",
+              "cmp-14",
+              "sre-07d"
+            ]
+          }
+        ]
+      },
+      "session_minilm_alpha_0.6": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.75,
+          "recall_at_3": 0.8333,
+          "recall_at_5": 0.8333,
+          "mrr_at_5": 0.7861,
+          "ndcg_at_5": 0.7982
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.7333,
+            "recall_at_3": 0.9333,
+            "recall_at_5": 0.9333,
+            "mrr_at_5": 0.8111,
+            "ndcg_at_5": 0.8421
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 0.8667,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 0.9333,
+            "ndcg_at_5": 0.9508
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.4,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.4,
+            "mrr_at_5": 0.4,
+            "ndcg_at_5": 0.4
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 3.04,
+          "p50": 4.96,
+          "p95": 8.16,
+          "max": 11.21,
+          "mean": 5.2
+        },
+        "top1_misses_count": 15,
+        "top1_misses_sample": [
+          {
+            "id": "p05",
+            "stratum": "paraphrase",
+            "target": "gr-15",
+            "got_top3": [
+              "gr-15d",
+              "gr-15",
+              "gr-06d"
+            ]
+          },
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "cmp-05",
+              "api-04",
+              "sre-06"
+            ]
+          },
+          {
+            "id": "p08",
+            "stratum": "paraphrase",
+            "target": "api-10",
+            "got_top3": [
+              "sre-11",
+              "gr-10d",
+              "api-10"
+            ]
+          },
+          {
+            "id": "p10",
+            "stratum": "paraphrase",
+            "target": "api-15",
+            "got_top3": [
+              "cmp-12d",
+              "api-11d",
+              "api-15"
+            ]
+          },
+          {
+            "id": "a01",
+            "stratum": "adversarial",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-02d",
+              "gr-02",
+              "cmp-08"
+            ]
+          },
+          {
+            "id": "a02",
+            "stratum": "adversarial",
+            "target": "gr-03",
+            "got_top3": [
+              "gr-03d",
+              "gr-03",
+              "sre-11d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": [
+              "gr-08",
+              "api-05",
+              "sre-12d"
+            ]
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-08",
+              "gr-14",
+              "gr-14d"
+            ]
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": [
+              "gr-02",
+              "gr-02d",
+              "sre-05d"
+            ]
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": [
+              "gr-14d",
+              "gr-14",
+              "gr-02"
+            ]
+          },
+          {
+            "id": "m10",
+            "stratum": "multilingual",
+            "target": "cmp-08",
+            "got_top3": [
+              "cmp-02",
+              "gr-10d",
+              "api-07d"
+            ]
+          },
+          {
+            "id": "m11",
+            "stratum": "multilingual",
+            "target": "sre-11",
+            "got_top3": [
+              "gr-14",
+              "api-07d",
+              "sre-15"
+            ]
+          },
+          {
+            "id": "m12",
+            "stratum": "multilingual",
+            "target": "sre-15",
+            "got_top3": [
+              "gr-07d",
+              "gr-14",
+              "cmp-07d"
+            ]
+          }
+        ]
+      },
+      "session_mediumlm_alpha_1.0": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.6833,
+          "recall_at_3": 0.7833,
+          "recall_at_5": 0.8167,
+          "mrr_at_5": 0.7372,
+          "ndcg_at_5": 0.7571
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.8,
+            "recall_at_3": 0.9333,
+            "recall_at_5": 0.9333,
+            "mrr_at_5": 0.8667,
+            "ndcg_at_5": 0.8841
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 0.8,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 0.9,
+            "ndcg_at_5": 0.9262
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.1333,
+            "recall_at_3": 0.2,
+            "recall_at_5": 0.3333,
+            "mrr_at_5": 0.1822,
+            "ndcg_at_5": 0.2182
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 3.68,
+          "p50": 5.87,
+          "p95": 9.62,
+          "max": 14.94,
+          "mean": 6.29
+        },
+        "top1_misses_count": 19,
+        "top1_misses_sample": [
+          {
+            "id": "p05",
+            "stratum": "paraphrase",
+            "target": "gr-15",
+            "got_top3": [
+              "cmp-10",
+              "gr-15",
+              "gr-15d"
+            ]
+          },
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "gr-11",
+              "api-02d",
+              "sre-06"
+            ]
+          },
+          {
+            "id": "p08",
+            "stratum": "paraphrase",
+            "target": "api-10",
+            "got_top3": [
+              "sre-11",
+              "api-10",
+              "gr-10d"
+            ]
+          },
+          {
+            "id": "a01",
+            "stratum": "adversarial",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-02d",
+              "gr-02",
+              "gr-13d"
+            ]
+          },
+          {
+            "id": "a03",
+            "stratum": "adversarial",
+            "target": "gr-05",
+            "got_top3": [
+              "gr-05d",
+              "gr-05",
+              "sre-06d"
+            ]
+          },
+          {
+            "id": "a13",
+            "stratum": "adversarial",
+            "target": "cmp-07",
+            "got_top3": [
+              "cmp-07d",
+              "cmp-07",
+              "cmp-01d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": [
+              "api-06d",
+              "api-05",
+              "sre-14"
+            ]
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": [
+              "api-06d",
+              "api-05",
+              "sre-14"
+            ]
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": [
+              "api-06d",
+              "api-05",
+              "sre-14"
+            ]
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": [
+              "gr-02",
+              "api-05",
+              "gr-02d"
+            ]
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": [
+              "gr-02",
+              "sre-11d",
+              "api-14"
+            ]
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": [
+              "cmp-15",
+              "gr-02",
+              "cmp-15d"
+            ]
+          },
+          {
+            "id": "m09",
+            "stratum": "multilingual",
+            "target": "cmp-04",
+            "got_top3": [
+              "gr-15",
+              "gr-03",
+              "api-14"
+            ]
+          },
+          {
+            "id": "m10",
+            "stratum": "multilingual",
+            "target": "cmp-08",
+            "got_top3": [
+              "api-05",
+              "api-06d",
+              "sre-14"
+            ]
+          },
+          {
+            "id": "m11",
+            "stratum": "multilingual",
+            "target": "sre-11",
+            "got_top3": [
+              "api-05",
+              "sre-14",
+              "gr-03"
+            ]
+          }
+        ]
+      },
+      "session_mediumlm_alpha_0.6": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.7,
+          "recall_at_3": 0.7833,
+          "recall_at_5": 0.8167,
+          "mrr_at_5": 0.7492,
+          "ndcg_at_5": 0.7662
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.7333,
+            "recall_at_3": 0.8667,
+            "recall_at_5": 0.9333,
+            "mrr_at_5": 0.8167,
+            "ndcg_at_5": 0.8462
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 0.8,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 0.9,
+            "ndcg_at_5": 0.9262
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.2667,
+            "recall_at_3": 0.2667,
+            "recall_at_5": 0.3333,
+            "mrr_at_5": 0.28,
+            "ndcg_at_5": 0.2925
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 3.2,
+          "p50": 5.85,
+          "p95": 9.27,
+          "max": 13.48,
+          "mean": 6.14
+        },
+        "top1_misses_count": 18,
+        "top1_misses_sample": [
+          {
+            "id": "p05",
+            "stratum": "paraphrase",
+            "target": "gr-15",
+            "got_top3": [
+              "gr-15d",
+              "gr-15",
+              "cmp-10"
+            ]
+          },
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "cmp-05",
+              "gr-11",
+              "api-02d"
+            ]
+          },
+          {
+            "id": "p08",
+            "stratum": "paraphrase",
+            "target": "api-10",
+            "got_top3": [
+              "sre-11",
+              "gr-10d",
+              "sre-02d"
+            ]
+          },
+          {
+            "id": "p10",
+            "stratum": "paraphrase",
+            "target": "api-15",
+            "got_top3": [
+              "cmp-12d",
+              "api-15",
+              "api-05"
+            ]
+          },
+          {
+            "id": "a01",
+            "stratum": "adversarial",
+            "target": "gr-02",
+            "got_top3": [
+              "gr-02d",
+              "gr-02",
+              "gr-13d"
+            ]
+          },
+          {
+            "id": "a03",
+            "stratum": "adversarial",
+            "target": "gr-05",
+            "got_top3": [
+              "gr-05d",
+              "gr-05",
+              "gr-03"
+            ]
+          },
+          {
+            "id": "a13",
+            "stratum": "adversarial",
+            "target": "cmp-07",
+            "got_top3": [
+              "cmp-07d",
+              "cmp-07",
+              "cmp-01d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": [
+              "api-06d",
+              "api-05",
+              "sre-14"
+            ]
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": [
+              "api-06d",
+              "api-05",
+              "sre-14"
+            ]
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": [
+              "api-06d",
+              "api-05",
+              "sre-14"
+            ]
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": [
+              "gr-02",
+              "api-05",
+              "gr-02d"
+            ]
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": [
+              "gr-02",
+              "sre-11d",
+              "api-14"
+            ]
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": [
+              "cmp-15",
+              "gr-02",
+              "cmp-15d"
+            ]
+          },
+          {
+            "id": "m09",
+            "stratum": "multilingual",
+            "target": "cmp-04",
+            "got_top3": [
+              "gr-15",
+              "gr-03",
+              "api-14"
+            ]
+          },
+          {
+            "id": "m10",
+            "stratum": "multilingual",
+            "target": "cmp-08",
+            "got_top3": [
+              "api-05",
+              "api-06d",
+              "sre-14"
+            ]
+          }
+        ]
+      },
+      "session_mediumlm_alpha_0.0_bm25": {
+        "overall": {
+          "n": 60,
+          "recall_at_1": 0.6833,
+          "recall_at_3": 0.7333,
+          "recall_at_5": 0.7833,
+          "mrr_at_5": 0.7183,
+          "ndcg_at_5": 0.7342
+        },
+        "by_stratum": {
+          "direct": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "paraphrase": {
+            "n": 15,
+            "recall_at_1": 0.4,
+            "recall_at_3": 0.6,
+            "recall_at_5": 0.8,
+            "mrr_at_5": 0.54,
+            "ndcg_at_5": 0.6036
+          },
+          "adversarial": {
+            "n": 15,
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr_at_5": 1.0,
+            "ndcg_at_5": 1.0
+          },
+          "multilingual": {
+            "n": 15,
+            "recall_at_1": 0.3333,
+            "recall_at_3": 0.3333,
+            "recall_at_5": 0.3333,
+            "mrr_at_5": 0.3333,
+            "ndcg_at_5": 0.3333
+          }
+        },
+        "latency_ms": {
+          "count": 60,
+          "min": 2.9,
+          "p50": 5.83,
+          "p95": 9.12,
+          "max": 13.26,
+          "mean": 6.09
+        },
+        "top1_misses_count": 19,
+        "top1_misses_sample": [
+          {
+            "id": "p01",
+            "stratum": "paraphrase",
+            "target": "gr-06",
+            "got_top3": [
+              "api-02d",
+              "gr-06",
+              "cmp-04"
+            ]
+          },
+          {
+            "id": "p02",
+            "stratum": "paraphrase",
+            "target": "gr-08",
+            "got_top3": [
+              "cmp-10",
+              "gr-08",
+              "sre-07"
+            ]
+          },
+          {
+            "id": "p04",
+            "stratum": "paraphrase",
+            "target": "gr-13",
+            "got_top3": [
+              "cmp-14d",
+              "gr-06",
+              "sre-11"
+            ]
+          },
+          {
+            "id": "p05",
+            "stratum": "paraphrase",
+            "target": "gr-15",
+            "got_top3": [
+              "gr-06d",
+              "api-12",
+              "gr-15d"
+            ]
+          },
+          {
+            "id": "p06",
+            "stratum": "paraphrase",
+            "target": "api-06",
+            "got_top3": [
+              "cmp-05",
+              "api-10d",
+              "api-04"
+            ]
+          },
+          {
+            "id": "p08",
+            "stratum": "paraphrase",
+            "target": "api-10",
+            "got_top3": [
+              "sre-11",
+              "gr-04",
+              "gr-10d"
+            ]
+          },
+          {
+            "id": "p10",
+            "stratum": "paraphrase",
+            "target": "api-15",
+            "got_top3": [
+              "cmp-12d",
+              "api-11d",
+              "sre-10d"
+            ]
+          },
+          {
+            "id": "p11",
+            "stratum": "paraphrase",
+            "target": "sre-05",
+            "got_top3": [
+              "sre-08",
+              "sre-05",
+              "sre-10d"
+            ]
+          },
+          {
+            "id": "p12",
+            "stratum": "paraphrase",
+            "target": "sre-07",
+            "got_top3": [
+              "api-08d",
+              "api-11",
+              "sre-08d"
+            ]
+          },
+          {
+            "id": "m01",
+            "stratum": "multilingual",
+            "target": "gr-14",
+            "got_top3": []
+          },
+          {
+            "id": "m02",
+            "stratum": "multilingual",
+            "target": "gr-01",
+            "got_top3": []
+          },
+          {
+            "id": "m03",
+            "stratum": "multilingual",
+            "target": "gr-02",
+            "got_top3": []
+          },
+          {
+            "id": "m04",
+            "stratum": "multilingual",
+            "target": "gr-06",
+            "got_top3": []
+          },
+          {
+            "id": "m05",
+            "stratum": "multilingual",
+            "target": "gr-09",
+            "got_top3": []
+          },
+          {
+            "id": "m06",
+            "stratum": "multilingual",
+            "target": "cmp-06",
+            "got_top3": []
+          }
+        ]
+      }
+    }
+  },
+  "rag_eval": {
+    "fastlane_indexes": {
+      "model": "moss/fastlane-1",
+      "mode": "indexes",
+      "answerable_accuracy": 0.7,
+      "answerable_passed": "14/20",
+      "abstention_accuracy": 1.0,
+      "abstention_passed": "4/4",
+      "overall_accuracy": 0.75,
+      "ttft_ms": {
+        "count": 24,
+        "min": 496.06,
+        "p50": 502.72,
+        "p95": 901.07,
+        "max": 3930.17,
+        "mean": 670.11
+      },
+      "retrieve_ms": {
+        "count": 24,
+        "min": 7.6,
+        "p50": 11.05,
+        "p95": 19.84,
+        "max": 2264.2,
+        "mean": 105.28
+      },
+      "est_cost_usd": 0.01602,
+      "failures": [
+        {
+          "id": "p02",
+          "query": "Are e-bike riders allowed to pile fizzy fermented drinks four boxes tall?",
+          "expected": [
+            "3"
+          ],
+          "answer": "I do not have that information."
+        },
+        {
+          "id": "m01",
+          "query": "കൊച്ചി വെയർഹൗസ് പ്രവർത്തിക്കുന്ന സമയം എത്രയാണ്, കേടായ പച്ചക്കറികൾക്ക് എത്ര മണിക്കൂറിനുള്ളിൽ റീഫണ്ട് കിട്ടും?",
+          "expected": [
+            "05:30|5:30",
+            "6"
+          ],
+          "answer": "I do not have that information."
+        },
+        {
+          "id": "m02",
+          "query": "ഓക്ലൻഡ് സിബിഡിയിൽ എക്സ്പ്രസ് ഡെലിവറി എത്ര മിനിറ്റിൽ എത്തും?",
+          "expected": [
+            "18"
+          ],
+          "answer": "I do not have that information."
+        },
+        {
+          "id": "m03",
+          "query": "അൽഫോൻസോ മാങ്ങകൾ സൂക്ഷിക്കേണ്ട താപനില എത്രയാണ്?",
+          "expected": [
+            "13"
+          ],
+          "answer": "I do not have that information."
+        },
+        {
+          "id": "m04",
+          "query": "ग्राहक को महंगा विकल्प देने पर कंपनी अधिकतम कितना अतिरिक्त मूल्य वहन करती है?",
+          "expected": [
+            "5.00|5"
+          ],
+          "answer": "I do not have that information."
+        },
+        {
+          "id": "m05",
+          "query": "गिफ्ट वाउचर कितने महीनों तक मान्य रहते हैं?",
+          "expected": [
+            "36"
+          ],
+          "answer": "I do not have that information."
+        }
+      ]
+    },
+    "fastlane_moss_search": {
+      "model": "moss/fastlane-1",
+      "mode": "moss_search",
+      "answerable_accuracy": 0.9,
+      "answerable_passed": "18/20",
+      "abstention_accuracy": 1.0,
+      "abstention_passed": "4/4",
+      "overall_accuracy": 0.9167,
+      "ttft_ms": {
+        "count": 24,
+        "min": 485.06,
+        "p50": 776.02,
+        "p95": 1160.09,
+        "max": 1263.48,
+        "mean": 758.48
+      },
+      "retrieve_ms": null,
+      "est_cost_usd": 0.023398,
+      "failures": [
+        {
+          "id": "m02",
+          "query": "ഓക്ലൻഡ് സിബിഡിയിൽ എക്സ്പ്രസ് ഡെലിവറി എത്ര മിനിറ്റിൽ എത്തും?",
+          "expected": [
+            "18"
+          ],
+          "answer": "ഓക്ലൻഡ് സിബിഡിയിലെ എക്സ്പ്രസ് ഡെലിവറികൾ 30 മിനിറ്റുകൾക്കുള്ളിൽ എത്തിക്കാൻ കഴിയും."
+        },
+        {
+          "id": "m04",
+          "query": "ग्राहक को महंगा विकल्प देने पर कंपनी अधिकतम कितना अतिरिक्त मूल्य वहन करती है?",
+          "expected": [
+            "5.00|5"
+          ],
+          "answer": "प्रदान गरिएका तथ्यहरूमा ग्राहकले महँगो विकल्प छान्दा कम्पनीले उठाउने अधिकतम अतिरिक्त मूल्यबारे कुनै जानकारी छैन। त्यसैले म त्यो जानकारी राख्दैनौं।"
+        }
+      ]
+    },
+    "gpt6_luna_indexes": {
+      "model": "openai/gpt-6-luna",
+      "mode": "indexes",
+      "answerable_accuracy": 0.7,
+      "answerable_passed": "14/20",
+      "abstention_accuracy": 0.0,
+      "abstention_passed": "0/4",
+      "overall_accuracy": 0.5833,
+      "ttft_ms": {
+        "count": 24,
+        "min": 1006.08,
+        "p50": 1267.95,
+        "p95": 2093.02,
+        "max": 2333.91,
+        "mean": 1457.02
+      },
+      "retrieve_ms": {
+        "count": 24,
+        "min": 7.6,
+        "p50": 11.4,
+        "p95": 21.15,
+        "max": 24.3,
+        "mean": 12.59
+      },
+      "est_cost_usd": 0.013168,
+      "failures": [
+        {
+          "id": "p03",
+          "query": "When does the weekly dark-store stock job break slot bookings with a retry header?",
+          "expected": [
+            "tuesday",
+            "02:15"
+          ],
+          "answer": "The dark-store inventory sync maintenance"
+        },
+        {
+          "id": "m01",
+          "query": "കൊച്ചി വെയർഹൗസ് പ്രവർത്തിക്കുന്ന സമയം എത്രയാണ്, കേടായ പച്ചക്കറികൾക്ക് എത്ര മണിക്കൂറിനുള്ളിൽ റീഫണ്ട് കിട്ടും?",
+          "expected": [
+            "05:30|5:30",
+            "6"
+          ],
+          "answer": "കൊച്ചി വെയർഹൗസിന്റെ പ്രവർത്തനസമയവും കേടായ പച്ചക്കറികൾക്കുള്ള റീഫണ്ട് ലഭ"
+        },
+        {
+          "id": "m02",
+          "query": "ഓക്ലൻഡ് സിബിഡിയിൽ എക്സ്പ്രസ് ഡെലിവറി എത്ര മിനിറ്റിൽ എത്തും?",
+          "expected": [
+            "18"
+          ],
+          "answer": "ഓക്ലൻഡ് സിബിഡിയിലെ എക്സ്പ്രസ് ഡെലിവറി എത്ര മിനിറ്റിൽ എത്തുമെന്ന് എനിക്ക് അറിയില്ല."
+        },
+        {
+          "id": "m03",
+          "query": "അൽഫോൻസോ മാങ്ങകൾ സൂക്ഷിക്കേണ്ട താപനില എത്രയാണ്?",
+          "expected": [
+            "13"
+          ],
+          "answer": "അൽഫോൻസോ മാങ്ങകൾ സൂക്ഷിക്കേണ്ട താപനിലയെക്കുറിച്ചുള്ള വിവരം എനിക്ക് ലഭ്യമല്ല."
+        },
+        {
+          "id": "m04",
+          "query": "ग्राहक को महंगा विकल्प देने पर कंपनी अधिकतम कितना अतिरिक्त मूल्य वहन करती है?",
+          "expected": [
+            "5.00|5"
+          ],
+          "answer": "कंपनी महंगे विकल्प के लिए कितना अतिरिक्त मूल्य वहन करती है, इसकी जानकारी मेरे पास नहीं है।"
+        },
+        {
+          "id": "m05",
+          "query": "गिफ्ट वाउचर कितने महीनों तक मान्य रहते हैं?",
+          "expected": [
+            "36"
+          ],
+          "answer": "मेरे पास गिफ्ट वाउचर की वैधता अवधि की जानकारी नहीं है।"
+        },
+        {
+          "id": "u01",
+          "query": "What is KoruMart CEO's personal mobile number?",
+          "expected": "REFUSAL",
+          "answer": "I don’t have that information."
+        },
+        {
+          "id": "u02",
+          "query": "What is the Wi-Fi password for the Tauranga port security office?",
+          "expected": "REFUSAL",
+          "answer": "I don’t have that information."
+        },
+        {
+          "id": "u03",
+          "query": "How much did KoruMart spend on Google Ads in Q3 2026?",
+          "expected": "REFUSAL",
+          "answer": "I don’t have information about KoruMart’s Google Ads spending in Q3 2026."
+        },
+        {
+          "id": "u04",
+          "query": "What is the secret admin override PIN for SKU MNG-4402?",
+          "expected": "REFUSAL",
+          "answer": "I don’t have information about an admin override PIN for SKU MNG-4402."
+        }
+      ]
+    },
+    "haiku55_indexes": {
+      "model": "anthropic/claude-haiku-5.5",
+      "mode": "indexes",
+      "answerable_accuracy": 0.75,
+      "answerable_passed": "15/20",
+      "abstention_accuracy": 1.0,
+      "abstention_passed": "4/4",
+      "overall_accuracy": 0.7917,
+      "ttft_ms": {
+        "count": 24,
+        "min": 850.43,
+        "p50": 897.01,
+        "p95": 959.76,
+        "max": 981.15,
+        "mean": 901.13
+      },
+      "retrieve_ms": {
+        "count": 24,
+        "min": 7.3,
+        "p50": 11.4,
+        "p95": 13.36,
+        "max": 21.2,
+        "mean": 11.46
+      },
+      "est_cost_usd": 0.013783,
+      "failures": [
+        {
+          "id": "m01",
+          "query": "കൊച്ചി വെയർഹൗസ് പ്രവർത്തിക്കുന്ന സമയം എത്രയാണ്, കേടായ പച്ചക്കറികൾക്ക് എത്ര മണിക്കൂറിനുള്ളിൽ റീഫണ്ട് കിട്ടും?",
+          "expected": [
+            "05:30|5:30",
+            "6"
+          ],
+          "answer": "I do not have information about the Kochi warehouse's operating hours or the refund window for spoiled vegetables."
+        },
+        {
+          "id": "m02",
+          "query": "ഓക്ലൻഡ് സിബിഡിയിൽ എക്സ്പ്രസ് ഡെലിവറി എത്ര മിനിറ്റിൽ എത്തും?",
+          "expected": [
+            "18"
+          ],
+          "answer": "ഓക്ലൻഡ് സിബിഡിയിലെ എക്സ്പ്രസ് ഡെലിവറി സമയത്തെക്കുറിച്ച് എനിക്ക് വിവരം ഇല്ല. നൽകിയിരിക്കുന്ന സന്ദർ"
+        },
+        {
+          "id": "m03",
+          "query": "അൽഫോൻസോ മാങ്ങകൾ സൂക്ഷിക്കേണ്ട താപനില എത്രയാണ്?",
+          "expected": [
+            "13"
+          ],
+          "answer": "I do not have that information; the retrieved context does not say what temperature Alphonso mangoes should be stored at."
+        },
+        {
+          "id": "m04",
+          "query": "ग्राहक को महंगा विकल्प देने पर कंपनी अधिकतम कितना अतिरिक्त मूल्य वहन करती है?",
+          "expected": [
+            "5.00|5"
+          ],
+          "answer": "मुझे इस बारे में जानकारी नहीं है कि ग्राहक को महंगा विकल्प देने पर कंपनी अधिकतम कितना अतिरिक्त मूल्य वहन करती है, क्योंकि उपलब्ध संदर्भ में इसकी कोई जानकारी नह"
+        },
+        {
+          "id": "m05",
+          "query": "गिफ्ट वाउचर कितने महीनों तक मान्य रहते हैं?",
+          "expected": [
+            "36"
+          ],
+          "answer": "मुझे इस बारे में जानकारी नहीं है कि गिफ्ट वाउचर कितने महीनों तक मान्य रहते हैं, क्योंकि उपलब्ध संदर्भ में इसका उल्लेख नहीं है।"
+        }
+      ]
+    },
+    "total_rag_est_cost_usd": 0.066369
+  }
+}
