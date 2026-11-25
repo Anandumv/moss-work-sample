@@ -1,0 +1,619 @@
+{
+  "bad_auth_create": {
+    "status": 401,
+    "elapsed_ms": 1275.42,
+    "body": {
+      "error": {
+        "message": "The project credentials were rejected",
+        "type": "authentication_error",
+        "code": "authentication_error",
+        "request_id": "77edc2b496e94d4789c89b51d54857b1"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "no_auth_get": {
+    "status": 401,
+    "elapsed_ms": 434.97,
+    "body": {
+      "error": {
+        "message": "Missing bearer token",
+        "type": "authentication_error",
+        "code": "authentication_error",
+        "request_id": "90be7872ceff41deb2dfb6728235b9e4"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "empty_goal": {
+    "status": 400,
+    "elapsed_ms": 829.4,
+    "body": {
+      "error": {
+        "message": "goal must be text of 1 to 20000 characters",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "112174b218434cd3babf3829b51660a1"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "whitespace_goal": {
+    "status": 400,
+    "elapsed_ms": 886.54,
+    "body": {
+      "error": {
+        "message": "goal must be text of 1 to 20000 characters",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "c1dece4481f345828a48e39e4e16bb72"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "over_20k_goal": {
+    "status": 400,
+    "elapsed_ms": 449.71,
+    "body": {
+      "error": {
+        "message": "goal must be text of 1 to 20000 characters",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "b626f63b11634b50a2a249e85787a325"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "missing_env": {
+    "status": 400,
+    "elapsed_ms": 412.98,
+    "body": {
+      "error": {
+        "message": "environment must be {\"type\": \"browser\"}; v0 runs browser tasks only",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "47bb96d6059846a2b2105a8c96dcac8d"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "bad_env_type": {
+    "status": 400,
+    "elapsed_ms": 412.85,
+    "body": {
+      "error": {
+        "message": "environment must be {\"type\": \"browser\"}; v0 runs browser tasks only",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "666608c54d184370a8d7831c21da0bf6"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "start_url_javascript": {
+    "status": 400,
+    "elapsed_ms": 412.31,
+    "body": {
+      "error": {
+        "message": "environment.start_url must be an http or https URL, or a host such as example.com",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "5e4fcc3801b042bb9e5c077935dd2a44"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "start_url_file": {
+    "status": 400,
+    "elapsed_ms": 412.67,
+    "body": {
+      "error": {
+        "message": "environment.start_url must be an http or https URL, or a host such as example.com",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "03051e3e40ed4a4e808877e9315bfa2e"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "start_url_ftp": {
+    "status": 400,
+    "elapsed_ms": 411.58,
+    "body": {
+      "error": {
+        "message": "environment.start_url must be an http or https URL, or a host such as example.com",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "2d83be45d71d4c97af43889beccf002e"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "start_url_not_url": {
+    "status": 400,
+    "elapsed_ms": 413.97,
+    "body": {
+      "error": {
+        "message": "environment.start_url must be an http or https URL, or a host such as example.com",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "c4e7d4370aef4048823e927d7d951815"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "start_url_loopback_ssrf": {
+    "status": 202,
+    "elapsed_ms": 544.73,
+    "body": {
+      "id": "task_9bcb75a276c0419e87ab9275b16f2614",
+      "object": "task",
+      "status": "queued",
+      "title": null,
+      "goal": "Read page",
+      "environment": {
+        "type": "browser",
+        "start_url": "http://127.0.0.1:8080/"
+      },
+      "output_schema": null,
+      "limits": {
+        "max_cost_usd": 0.01,
+        "max_runtime_seconds": 60
+      },
+      "model": "moss-balanced",
+      "effort": "medium",
+      "metadata": null,
+      "byok": false,
+      "result": null,
+      "verification": null,
+      "usage": null,
+      "error": null,
+      "trace_available": false,
+      "live_url": null,
+      "cancel_requested": false,
+      "created_at": "2026-11-25T02:27:33.850854+00:00",
+      "started_at": null,
+      "finished_at": null,
+      "files_expire_at": null,
+      "zero_data_retention": false,
+      "content_expires_at": null,
+      "content_deleted_at": null,
+      "webhook": null
+    },
+    "auto_cancelled": {
+      "cancel_status": 200,
+      "cancel_body": {
+        "id": "task_9bcb75a276c0419e87ab9275b16f2614",
+        "object": "task",
+        "status": "running",
+        "title": "Read Page",
+        "goal": "Read page",
+        "environment": {
+          "type": "browser",
+          "start_url": "http://127.0.0.1:8080/"
+        },
+        "output_schema": null,
+        "limits": {
+          "max_cost_usd": 0.01,
+          "max_runtime_seconds": 60
+        },
+        "model": "moss-balanced",
+        "effort": "medium",
+        "metadata": null,
+        "byok": false,
+        "result": null,
+        "verification": null,
+        "usage": null,
+        "error": null,
+        "trace_available": false,
+        "video_available": false,
+        "video_state": "pending",
+        "live_url": null,
+        "cancel_requested": true,
+        "created_at": "2026-11-25T02:27:33.850854+00:00",
+        "started_at": "2026-11-25T02:27:33.865453+00:00",
+        "finished_at": null,
+        "files_expire_at": null,
+        "zero_data_retention": false,
+        "content_expires_at": null,
+        "content_deleted_at": null,
+        "webhook": null
+      }
+    }
+  },
+  "start_url_metadata_ssrf": {
+    "status": 202,
+    "elapsed_ms": 420.76,
+    "body": {
+      "id": "task_00194997d95f444a91e62ae9e779d4f9",
+      "object": "task",
+      "status": "queued",
+      "title": null,
+      "goal": "Read page",
+      "environment": {
+        "type": "browser",
+        "start_url": "http://169.254.169.254/latest/meta-data/"
+      },
+      "output_schema": null,
+      "limits": {
+        "max_cost_usd": 0.01,
+        "max_runtime_seconds": 60
+      },
+      "model": "moss-balanced",
+      "effort": "medium",
+      "metadata": null,
+      "byok": false,
+      "result": null,
+      "verification": null,
+      "usage": null,
+      "error": null,
+      "trace_available": false,
+      "live_url": null,
+      "cancel_requested": false,
+      "created_at": "2026-11-25T02:27:34.719502+00:00",
+      "started_at": null,
+      "finished_at": null,
+      "files_expire_at": null,
+      "zero_data_retention": false,
+      "content_expires_at": null,
+      "content_deleted_at": null,
+      "webhook": null
+    },
+    "auto_cancelled": {
+      "cancel_status": 200,
+      "cancel_body": {
+        "id": "task_00194997d95f444a91e62ae9e779d4f9",
+        "object": "task",
+        "status": "running",
+        "title": "Read Page",
+        "goal": "Read page",
+        "environment": {
+          "type": "browser",
+          "start_url": "http://169.254.169.254/latest/meta-data/"
+        },
+        "output_schema": null,
+        "limits": {
+          "max_cost_usd": 0.01,
+          "max_runtime_seconds": 60
+        },
+        "model": "moss-balanced",
+        "effort": "medium",
+        "metadata": null,
+        "byok": false,
+        "result": null,
+        "verification": null,
+        "usage": {
+          "cost": {
+            "model_usd": 0.0,
+            "total_usd": 0.0,
+            "browser_usd": null,
+            "traffic_usd": null
+          },
+          "steps": 0,
+          "cost_usd": 0.0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "browser_minutes": 0.01,
+          "browser_seconds": 0,
+          "browser_traffic_mb": null,
+          "cached_input_tokens": 0
+        },
+        "error": null,
+        "trace_available": false,
+        "video_available": false,
+        "video_state": "pending",
+        "live_url": null,
+        "cancel_requested": true,
+        "created_at": "2026-11-25T02:27:34.719502+00:00",
+        "started_at": "2026-11-25T02:27:34.729744+00:00",
+        "finished_at": null,
+        "files_expire_at": null,
+        "zero_data_retention": false,
+        "content_expires_at": null,
+        "content_deleted_at": null,
+        "webhook": null
+      }
+    }
+  },
+  "start_url_localhost": {
+    "status": 202,
+    "elapsed_ms": 517.29,
+    "body": {
+      "id": "task_f0cc79e707c746c6988dcc8cf5ef268f",
+      "object": "task",
+      "status": "queued",
+      "title": null,
+      "goal": "Read page",
+      "environment": {
+        "type": "browser",
+        "start_url": "http://localhost:3000/"
+      },
+      "output_schema": null,
+      "limits": {
+        "max_cost_usd": 0.01,
+        "max_runtime_seconds": 60
+      },
+      "model": "moss-balanced",
+      "effort": "medium",
+      "metadata": null,
+      "byok": false,
+      "result": null,
+      "verification": null,
+      "usage": null,
+      "error": null,
+      "trace_available": false,
+      "video_available": false,
+      "video_state": null,
+      "live_url": null,
+      "cancel_requested": false,
+      "created_at": "2026-11-25T02:27:35.674428+00:00",
+      "started_at": null,
+      "finished_at": null,
+      "files_expire_at": null,
+      "zero_data_retention": false,
+      "content_expires_at": null,
+      "content_deleted_at": null,
+      "webhook": null
+    },
+    "auto_cancelled": {
+      "cancel_status": 200,
+      "cancel_body": {
+        "id": "task_f0cc79e707c746c6988dcc8cf5ef268f",
+        "object": "task",
+        "status": "running",
+        "title": "Read Page",
+        "goal": "Read page",
+        "environment": {
+          "type": "browser",
+          "start_url": "http://localhost:3000/"
+        },
+        "output_schema": null,
+        "limits": {
+          "max_cost_usd": 0.01,
+          "max_runtime_seconds": 60
+        },
+        "model": "moss-balanced",
+        "effort": "medium",
+        "metadata": null,
+        "byok": false,
+        "result": null,
+        "verification": null,
+        "usage": {
+          "cost": {
+            "model_usd": 0.0,
+            "total_usd": 0.0,
+            "browser_usd": null,
+            "traffic_usd": null
+          },
+          "steps": 0,
+          "cost_usd": 0.0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "browser_minutes": 0.01,
+          "browser_seconds": 0,
+          "browser_traffic_mb": null,
+          "cached_input_tokens": 0
+        },
+        "error": null,
+        "trace_available": false,
+        "video_available": false,
+        "video_state": "pending",
+        "live_url": null,
+        "cancel_requested": true,
+        "created_at": "2026-11-25T02:27:35.674428+00:00",
+        "started_at": "2026-11-25T02:27:35.687064+00:00",
+        "finished_at": null,
+        "files_expire_at": null,
+        "zero_data_retention": false,
+        "content_expires_at": null,
+        "content_deleted_at": null,
+        "webhook": null
+      }
+    }
+  },
+  "bad_model": {
+    "status": 400,
+    "elapsed_ms": 411.03,
+    "body": {
+      "error": {
+        "message": "model must be a Moss tier or a Moss catalog model that tasks serve: moss-advanced, moss-balanced, moss-balanced-handoff, moss-fast, moss-fast-beta, anthropic/claude-fable-5.1, anthropic/claude-haiku-5.5, anthropic/claude-opus-5.5, anthropic/claude-sonnet-5.5, deepseek/deepseek-v4.1-flash, deepseek/deepseek-v4.1-flash-1017, google/gemini-3.5-flash-lite, google/gemini-3.8-flash, google/gemini-4-argon, minimax/minimax-m3.1-flash, moonshotai/kimi-k3, openai/gpt-6-astra, openai/gpt-6-luna, openai/gpt-6.1-sol, openai/gpt-6.1-terra, qwen/qwen3.8-flash, z-ai/glm-5.3, z-ai/glm-5.3-flash",
+        "type": "invalid_request_error",
+        "code": "model_not_found",
+        "request_id": "eda9d436224a430c9ecaaf0d7e2950ad"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "bad_effort": {
+    "status": 400,
+    "elapsed_ms": 414.09,
+    "body": {
+      "error": {
+        "message": "effort must be low, medium or high",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "2d09c80edc704edfa538414bad0afce4"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "runtime_too_low": {
+    "status": 400,
+    "elapsed_ms": 434.84,
+    "body": {
+      "error": {
+        "message": "limits.max_runtime_seconds must be a number from 60 to 7200",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "f02ed21389dd4b328190eaaacd8cb43a"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "runtime_too_high": {
+    "status": 400,
+    "elapsed_ms": 412.8,
+    "body": {
+      "error": {
+        "message": "limits.max_runtime_seconds must be a number from 60 to 7200",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "56a75ceb0f824ddeb8c3c94e8972641a"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "cost_too_low": {
+    "status": 400,
+    "elapsed_ms": 413.61,
+    "body": {
+      "error": {
+        "message": "limits.max_cost_usd must be a number from 0.01 to 50",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "788cd219da2c48e7b054a68a9d097392"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "cost_negative": {
+    "status": 400,
+    "elapsed_ms": 412.68,
+    "body": {
+      "error": {
+        "message": "limits.max_cost_usd must be a number from 0.01 to 50",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "3a1d5842732c46bb9ae957408e200211"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "cost_too_high": {
+    "status": 400,
+    "elapsed_ms": 434.91,
+    "body": {
+      "error": {
+        "message": "limits.max_cost_usd must be a number from 0.01 to 50",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "fdfb8a0fa16947a48603d0e228729df6"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "unknown_top_field": {
+    "status": 400,
+    "elapsed_ms": 413.26,
+    "body": {
+      "error": {
+        "message": "Unknown field unknown_xyz",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "1aee814174f344a4ba17ac2d3e442593"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "oversized_metadata": {
+    "status": 400,
+    "elapsed_ms": 421.86,
+    "body": {
+      "error": {
+        "message": "metadata must be an object under 4000 bytes",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "18ba6576429848bc9e834ba72fd1187a"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "schema_non_object_root": {
+    "status": 400,
+    "elapsed_ms": 412.32,
+    "body": {
+      "error": {
+        "message": "output_schema must describe one JSON object: its \"type\" must be \"object\". For a list, put it in a property, such as {\"type\": \"object\", \"properties\": {\"items\": {\"type\": \"array\"}}}",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "2694901ae7d0430b84eb989868ef9dfa"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "schema_malformed": {
+    "status": 400,
+    "elapsed_ms": 412.47,
+    "body": {
+      "error": {
+        "message": "output_schema.properties must be an object of JSON Schema objects",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "8cf395069f8a4402b6be5b459b7f4468"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "over_256kib_body": {
+    "status": 413,
+    "elapsed_ms": 1018.95,
+    "body": {
+      "error": {
+        "message": "The request body is larger than 262144 bytes",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "cbdc9ade51a04225b895e96740538412"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "nonexistent_task_id": {
+    "status": 404,
+    "elapsed_ms": 415.43,
+    "body": {
+      "error": {
+        "message": "No task with this id in this project",
+        "type": "not_found_error",
+        "code": "not_found_error",
+        "request_id": "581a249467dd4d328deb2d79eabf8039"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "malformed_task_id": {
+    "status": 404,
+    "elapsed_ms": 414.31,
+    "body": {
+      "error": {
+        "message": "No task with this id in this project",
+        "type": "not_found_error",
+        "code": "not_found_error",
+        "request_id": "7ed403f1afa847c48116128a65bb2453"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "cancel_nonexistent": {
+    "status": 404,
+    "elapsed_ms": 437.31,
+    "body": {
+      "error": {
+        "message": "No task with this id in this project",
+        "type": "not_found_error",
+        "code": "not_found_error",
+        "request_id": "94e8e57b26f24ecc804d4b0a7bac571d"
+      }
+    },
+    "auto_cancelled": null
+  },
+  "files_traversal_probe": {
+    "status": 404,
+    "elapsed_ms": 415.67,
+    "body": {
+      "detail": "Not Found"
+    },
+    "auto_cancelled": null
+  }
+}

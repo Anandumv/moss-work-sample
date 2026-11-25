@@ -1,0 +1,164 @@
+{
+  "task1_screenshot_saved": "/tmp/moss_task1_step2.png",
+  "video_probes": {
+    "/tasks/task_d1a69ea62c62402e83a66dadf0efba72/files/session-1.mp4": {
+      "status": 404,
+      "content_type": "application/json",
+      "len": 148,
+      "preview": "{\"error\":{\"message\":\"No such file for this task\",\"type\":\"not_found_error\",\"code\":\"not_found_error\",\"request_id\":\"36fdc4e7dee543ca978b65be554ac430\"}}"
+    },
+    "/tasks/task_d1a69ea62c62402e83a66dadf0efba72/files/video/session-1.mp4": {
+      "status": 404,
+      "content_type": "application/json",
+      "len": 148,
+      "preview": "{\"error\":{\"message\":\"No such file for this task\",\"type\":\"not_found_error\",\"code\":\"not_found_error\",\"request_id\":\"3b5fdebcf3e84061be000a1d7c425845\"}}"
+    },
+    "/tasks/task_d1a69ea62c62402e83a66dadf0efba72/video": {
+      "status": 404,
+      "content_type": "application/json",
+      "len": 22,
+      "preview": "{\"detail\":\"Not Found\"}"
+    }
+  },
+  "books_balanced_task": {
+    "id": "task_ef4c5a45c7964a048aae11c37a2ef911",
+    "object": "task",
+    "status": "completed",
+    "title": "Extract first book title and price",
+    "goal": "Extract the title and GBP price of the very first book shown on the page.",
+    "environment": {
+      "type": "browser",
+      "start_url": "https://books.toscrape.com/"
+    },
+    "output_schema": {
+      "type": "object",
+      "required": [
+        "title",
+        "price_gbp"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "price_gbp": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "limits": {
+      "max_cost_usd": 0.15,
+      "max_runtime_seconds": 90
+    },
+    "model": "moss-balanced",
+    "effort": "low",
+    "metadata": null,
+    "byok": false,
+    "result": {
+      "output": {
+        "title": "A Light in the Attic",
+        "price_gbp": 51.77
+      },
+      "output_text": "{\"title\":\"A Light in the Attic\",\"price_gbp\":51.77}"
+    },
+    "verification": {
+      "method": "output_schema",
+      "passed": true
+    },
+    "usage": {
+      "cost": {
+        "model_usd": 0.053635,
+        "total_usd": 0.053968,
+        "browser_usd": 0.0003333333333333333,
+        "traffic_usd": null
+      },
+      "steps": 3,
+      "cost_usd": 0.053635,
+      "model_calls": 4,
+      "input_tokens": 45118,
+      "output_tokens": 345,
+      "browser_minutes": 0.26,
+      "browser_seconds": 16,
+      "browser_traffic_mb": null,
+      "cached_input_tokens": 29217
+    },
+    "error": null,
+    "trace_available": true,
+    "video_available": false,
+    "video_state": "pending",
+    "live_url": null,
+    "cancel_requested": false,
+    "created_at": "2026-11-25T02:30:42.120177+00:00",
+    "started_at": "2026-11-25T02:30:42.132162+00:00",
+    "finished_at": "2026-11-25T02:30:58.582096+00:00",
+    "files_expire_at": "2026-12-02T02:30:58.582096+00:00",
+    "zero_data_retention": false,
+    "content_expires_at": null,
+    "content_deleted_at": null,
+    "webhook": null
+  },
+  "books_poll_timeline": [
+    [
+      1.1,
+      "running",
+      null
+    ],
+    [
+      2.6,
+      "running",
+      null
+    ],
+    [
+      4.0,
+      "running",
+      null
+    ],
+    [
+      5.5,
+      "running",
+      null
+    ],
+    [
+      7.0,
+      "running",
+      null
+    ],
+    [
+      8.4,
+      "running",
+      null
+    ],
+    [
+      9.9,
+      "running",
+      null
+    ],
+    [
+      11.4,
+      "running",
+      null
+    ],
+    [
+      13.0,
+      "running",
+      null
+    ],
+    [
+      14.5,
+      "running",
+      null
+    ],
+    [
+      16.0,
+      "running",
+      null
+    ],
+    [
+      17.4,
+      "completed",
+      null
+    ]
+  ],
+  "live_urls_seen": []
+}

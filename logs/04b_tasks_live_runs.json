@@ -1,0 +1,365 @@
+{
+  "idempotency": {
+    "first_status": 202,
+    "first_id": "task_d1a69ea62c62402e83a66dadf0efba72",
+    "replay_status": 202,
+    "replay_id": "task_d1a69ea62c62402e83a66dadf0efba72",
+    "replay_header": "true",
+    "same_id": true,
+    "collision_status": 422,
+    "collision_body": {
+      "error": {
+        "message": "This Idempotency-Key was sent with another body. Send a new key for a new task",
+        "type": "invalid_request_error",
+        "code": "idempotency_key_reused",
+        "request_id": "4d21bae22705420683f8add27529733d"
+      }
+    }
+  },
+  "task1_mid_run_probes": {
+    "files_early_status": 409,
+    "files_early_body": {
+      "error": {
+        "message": "The task's files are served once it has finished",
+        "type": "invalid_request_error",
+        "code": "task_not_finished",
+        "request_id": "62c671c7a0904ba989731c7c6738b71c"
+      }
+    },
+    "trace_early_status": 404,
+    "trace_early_body": {
+      "error": {
+        "message": "This task has no trace (yet)",
+        "type": "not_found_error",
+        "code": "not_found_error",
+        "request_id": "865940d626ff4883915ada7f5309eba0"
+      }
+    }
+  },
+  "task1_happy": {
+    "task": {
+      "id": "task_d1a69ea62c62402e83a66dadf0efba72",
+      "status": "completed",
+      "model": "moss-fast",
+      "effort": "low",
+      "live_url": null,
+      "trace_available": true,
+      "video_available": null,
+      "video_state": null,
+      "cancel_requested": false,
+      "result": {
+        "output": {
+          "heading": "",
+          "link_url": "https://iana.org/help/example-domains"
+        },
+        "output_text": "{\"heading\":\"\",\"link_url\":\"https://iana.org/help/example-domains\"}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.005096,
+          "total_usd": 0.005429,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 4,
+        "cost_usd": 0.005096,
+        "model_calls": 5,
+        "input_tokens": 31536,
+        "output_tokens": 912,
+        "browser_minutes": 0.29,
+        "browser_seconds": 17,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 22437
+      },
+      "error": null,
+      "metadata": {
+        "case": "happy_example",
+        "suite": "work_sample"
+      },
+      "created_at": "2026-11-25T02:28:27.272256+00:00",
+      "started_at": "2026-11-25T02:28:27.288618+00:00",
+      "finished_at": "2026-11-25T02:28:45.462051+00:00",
+      "files_expire_at": "2026-12-02T02:28:45.462051+00:00"
+    },
+    "files_count": 3,
+    "files_sample": [
+      {
+        "path": "screenshots/runner/00001-step-2.png",
+        "listed_bytes": 83263,
+        "actual_bytes": 83263,
+        "content_type": "image/png"
+      },
+      {
+        "path": "screenshots/runner/00002-step-4.png",
+        "listed_bytes": 83263,
+        "actual_bytes": 83263,
+        "content_type": "image/png"
+      },
+      {
+        "path": "screenshots/runner/00003-step-6.png",
+        "listed_bytes": 83263,
+        "actual_bytes": 83263,
+        "content_type": "image/png"
+      }
+    ],
+    "trace": {
+      "ok": true,
+      "type": "dict",
+      "len_or_keys": [
+        "final_result",
+        "steps",
+        "screenshots",
+        "timeline",
+        "video"
+      ]
+    },
+    "cancel_after_complete_status": "completed",
+    "cancel_after_complete_requested": false
+  },
+  "cancellation_and_concurrency": {
+    "immediate_cancel_ack": {
+      "status": "running",
+      "cancel_requested": true
+    },
+    "immediate_cancel_final": {
+      "id": "task_175229a8d4bf4234a8f5ba4da873b04b",
+      "status": "cancelled",
+      "model": "moss-fast",
+      "effort": "medium",
+      "live_url": null,
+      "trace_available": true,
+      "video_available": null,
+      "video_state": null,
+      "cancel_requested": false,
+      "result": null,
+      "verification": null,
+      "usage": {
+        "cost": {
+          "model_usd": 0.0,
+          "total_usd": 0.000333,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 0,
+        "cost_usd": 0.0,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "browser_minutes": 0.04,
+        "browser_seconds": 2,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 0
+      },
+      "error": null,
+      "metadata": null,
+      "created_at": "2026-11-25T02:28:50.710511+00:00",
+      "started_at": "2026-11-25T02:28:50.731779+00:00",
+      "finished_at": "2026-11-25T02:28:53.536565+00:00",
+      "files_expire_at": "2026-12-02T02:28:53.536565+00:00"
+    },
+    "delayed_4s_cancel_ack": {
+      "status": "running",
+      "cancel_requested": true
+    },
+    "delayed_4s_cancel_final": {
+      "id": "task_eebbbc87f92f4c22a58b831179bc2d3b",
+      "status": "cancelled",
+      "model": "moss-fast",
+      "effort": "medium",
+      "live_url": null,
+      "trace_available": true,
+      "video_available": false,
+      "video_state": "pending",
+      "cancel_requested": false,
+      "result": null,
+      "verification": null,
+      "usage": {
+        "cost": {
+          "model_usd": 0.006628,
+          "total_usd": 0.006961,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 0,
+        "cost_usd": 0.006628,
+        "model_calls": 2,
+        "input_tokens": 1110,
+        "output_tokens": 505,
+        "browser_minutes": 0.31,
+        "browser_seconds": 18,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 0
+      },
+      "error": null,
+      "metadata": null,
+      "created_at": "2026-11-25T02:28:51.616761+00:00",
+      "started_at": "2026-11-25T02:28:51.629059+00:00",
+      "finished_at": "2026-11-25T02:29:10.485790+00:00",
+      "files_expire_at": "2026-12-02T02:29:10.485790+00:00"
+    }
+  },
+  "forced_budget_cap_0_01": {
+    "id": "task_4abe006ee354445db1213d89e1cfc9ad",
+    "status": "failed",
+    "model": "moss-balanced",
+    "effort": "medium",
+    "live_url": null,
+    "trace_available": true,
+    "video_available": false,
+    "video_state": null,
+    "cancel_requested": false,
+    "result": null,
+    "verification": null,
+    "usage": {
+      "cost": {
+        "model_usd": 0.023846,
+        "total_usd": 0.024179,
+        "browser_usd": 0.0003333333333333333,
+        "traffic_usd": null
+      },
+      "steps": 1,
+      "cost_usd": 0.023846,
+      "model_calls": 2,
+      "input_tokens": 8146,
+      "output_tokens": 87,
+      "browser_minutes": 0.12,
+      "browser_seconds": 7,
+      "browser_traffic_mb": null,
+      "cached_input_tokens": 0
+    },
+    "error": {
+      "code": "budget_exceeded",
+      "message": "Spent $0.02"
+    },
+    "metadata": null,
+    "created_at": "2026-11-25T02:29:12.748687+00:00",
+    "started_at": "2026-11-25T02:29:12.767529+00:00",
+    "finished_at": "2026-11-25T02:29:20.482559+00:00",
+    "files_expire_at": "2026-12-02T02:29:20.482559+00:00"
+  },
+  "unreachable_and_malayalam": {
+    "id": "task_c39526b80b6647e79b513f773d992878",
+    "status": "completed",
+    "model": "moss-fast",
+    "effort": "low",
+    "live_url": null,
+    "trace_available": true,
+    "video_available": null,
+    "video_state": null,
+    "cancel_requested": false,
+    "result": {
+      "output": null,
+      "output_text": "The site could not be reached. Exact browser error: `ERR_SOCKS_CONNECTION_FAILED`. The page displayed: “This site can’t be reached. The webpage at https://nonexistent-domain-moss-eval-999.invalid/ might be temporarily down or it may have moved permanently to a new web address.”"
+    },
+    "verification": {
+      "method": "agent_reported",
+      "passed": null
+    },
+    "usage": {
+      "cost": {
+        "model_usd": 0.006446,
+        "total_usd": 0.006779,
+        "browser_usd": 0.0003333333333333333,
+        "traffic_usd": null
+      },
+      "steps": 2,
+      "cost_usd": 0.006446,
+      "model_calls": 3,
+      "input_tokens": 11537,
+      "output_tokens": 764,
+      "browser_minutes": 0.4,
+      "browser_seconds": 24,
+      "browser_traffic_mb": null,
+      "cached_input_tokens": 4021
+    },
+    "error": null,
+    "metadata": null,
+    "created_at": "2026-11-25T02:29:21.116023+00:00",
+    "started_at": "2026-11-25T02:29:21.131201+00:00",
+    "finished_at": "2026-11-25T02:29:45.429541+00:00",
+    "files_expire_at": "2026-12-02T02:29:45.429541+00:00"
+  },
+  "sync_schema_mismatch_probe": {
+    "elapsed_s": 21.36,
+    "task": {
+      "id": "task_b5e2c2239cd8472ab791a7b0e7e310ce",
+      "status": "completed",
+      "model": "moss-fast",
+      "effort": "low",
+      "live_url": null,
+      "trace_available": true,
+      "video_available": false,
+      "video_state": "pending",
+      "cancel_requested": false,
+      "result": {
+        "output": {
+          "btc_price_usd": null,
+          "treasury_yield_pct": null
+        },
+        "output_text": "{\"btc_price_usd\":null,\"treasury_yield_pct\":null}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": false,
+        "problems": [
+          "$.btc_price_usd: expected number",
+          "$.treasury_yield_pct: expected number"
+        ]
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.007862,
+          "total_usd": 0.008195,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 2,
+        "cost_usd": 0.007862,
+        "model_calls": 3,
+        "input_tokens": 18200,
+        "output_tokens": 738,
+        "browser_minutes": 0.31,
+        "browser_seconds": 18,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 9864
+      },
+      "error": null,
+      "metadata": null,
+      "created_at": "2026-11-25T02:29:47.561155+00:00",
+      "started_at": "2026-11-25T02:29:47.572116+00:00",
+      "finished_at": "2026-11-25T02:30:06.555496+00:00",
+      "files_expire_at": "2026-12-02T02:30:06.555496+00:00"
+    }
+  },
+  "observed_task_costs_usd": [
+    [
+      "task1_happy",
+      0.005429
+    ],
+    [
+      "forced_budget_cap_0_01",
+      0.024179
+    ],
+    [
+      "unreachable_and_malayalam",
+      0.006779
+    ],
+    [
+      "sync_schema_mismatch_probe",
+      0.008195
+    ],
+    [
+      "immediate_cancel_final",
+      0.000333
+    ],
+    [
+      "delayed_4s_cancel_final",
+      0.006961
+    ]
+  ],
+  "total_observed_task_cost_usd": 0.051876
+}
