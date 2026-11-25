@@ -1,0 +1,31 @@
+[closed] eval-bench-minilm (120 docs, top_k=5)         c=1     359.2 qps p50=2.729ms p99=4.722ms
+[closed] eval-bench-minilm (120 docs, top_k=5)         c=4     407.8 qps p50=9.581ms p99=16.837ms
+[closed] eval-bench-minilm (120 docs, top_k=5)         c=16    406.4 qps p50=39.243ms p99=69.082ms
+[open]   eval-bench-minilm (120 docs, top_k=5)             90 qps -> 89.5 p50=4.658 p95=7.273 p99=13.393ms
+[open]   eval-bench-minilm (120 docs, top_k=5)            180 qps -> 178.9 p50=3.929 p95=5.072 p99=5.832ms
+[open]   eval-bench-minilm (120 docs, top_k=5)            269 qps -> 267.3 p50=3.591 p95=6.581 p99=12.961ms
+[open]   eval-bench-minilm (120 docs, top_k=5)            323 qps -> 321.0 p50=3.618 p95=7.392 p99=16.572ms
+[open]   eval-bench-minilm (120 docs, top_k=5)            395 qps -> 392.4 p50=5.86 p95=25.071 p99=29.639ms
+[open]   eval-bench-minilm (120 docs, top_k=5)            539 qps -> 392.2 p50=1349.536 p95=2743.795 p99=2916.673ms
+[closed] scifact-minilm session (5,183 docs, top_k=10) c=1     137.1 qps p50=6.535ms p99=17.495ms
+[closed] scifact-minilm session (5,183 docs, top_k=10) c=4     116.0 qps p50=32.896ms p99=84.275ms
+[closed] scifact-minilm session (5,183 docs, top_k=10) c=16    110.0 qps p50=132.416ms p99=483.253ms
+[open]   scifact-minilm session (5,183 docs, top_k=10)     34 qps -> 33.9 p50=12.243 p95=22.144 p99=26.406ms
+[open]   scifact-minilm session (5,183 docs, top_k=10)     69 qps -> 68.6 p50=8.555 p95=15.931 p99=22.197ms
+[open]   scifact-minilm session (5,183 docs, top_k=10)    103 qps -> 102.4 p50=7.304 p95=12.46 p99=19.235ms
+[open]   scifact-minilm session (5,183 docs, top_k=10)    123 qps -> 122.3 p50=7.921 p95=19.87 p99=31.248ms
+[open]   scifact-minilm session (5,183 docs, top_k=10)    151 qps -> 150.0 p50=14.124 p95=42.718 p99=56.069ms
+[open]   scifact-minilm session (5,183 docs, top_k=10)    206 qps -> 151.8 p50=1591.815 p95=2677.094 p99=2798.083ms
+[closed] scifact-minilm session hybrid a=0.6           c=1     145.3 qps p50=6.134ms p99=17.211ms
+[closed] scifact-minilm session hybrid a=0.6           c=4     157.9 qps p50=24.698ms p99=50.78ms
+[closed] scifact-minilm session hybrid a=0.6           c=16    164.3 qps p50=93.886ms p99=264.923ms
+[open]   scifact-minilm session hybrid a=0.6               36 qps -> 35.9 p50=9.381 p95=13.503 p99=17.315ms
+[open]   scifact-minilm session hybrid a=0.6               73 qps -> 72.6 p50=7.516 p95=12.341 p99=17.66ms
+[open]   scifact-minilm session hybrid a=0.6              109 qps -> 108.3 p50=7.352 p95=15.009 p99=34.658ms
+[open]   scifact-minilm session hybrid a=0.6              131 qps -> 130.2 p50=7.171 p95=16.884 p99=22.492ms
+[open]   scifact-minilm session hybrid a=0.6              160 qps -> 158.9 p50=15.313 p95=50.637 p99=56.627ms
+[open]   scifact-minilm session hybrid a=0.6              218 qps -> 159.8 p50=1416.579 p95=2710.658 p99=2842.029ms
+[cold] cloud_index eval-bench-minilm [{'error': '_call)\n  File "/home/box/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/thread.py", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\nmoss_core.MossError: The project\'s usage limit has been reached; billing must be updated before it can be used.\n'}, {'error': '_call)\n  File "/home/box/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/thread.py", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\nmoss_core.MossError: The project\'s usage limit has been reached; billing must be updated before it can be used.\n'}, {'error': '_call)\n  File "/home/box/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/thread.py", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\nmoss_core.MossError: The project\'s usage limit has been reached; billing must be updated before it can be used.\n'}]
+[cold] session snapshot scifact-moss-minilm [{'import_ms': 33.3, 'client_ms': 0.8, 'load_ms': 4561.4, 'first_query_ms': 6.9, 'warm_p50_ms': 2.5}, {'import_ms': 33.8, 'client_ms': 0.8, 'load_ms': 4440.5, 'first_query_ms': 7.2, 'warm_p50_ms': 3.4}, {'import_ms': 32.1, 'client_ms': 0.9, 'load_ms': 4224.9, 'first_query_ms': 7.4, 'warm_p50_ms': 2.7}]
+[cold] session snapshot scifact-moss-mediumlm [{'error': 'd\n    return await loop.run_in_executor(None, func_call)\n  File "/home/box/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/thread.py", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\nmoss_core.MossError: The embedding model could not be loaded.\n'}, {'error': 'd\n    return await loop.run_in_executor(None, func_call)\n  File "/home/box/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/thread.py", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\nmoss_core.MossError: The embedding model could not be loaded.\n'}, {'error': 'd\n    return await loop.run_in_executor(None, func_call)\n  File "/home/box/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/thread.py", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\nmoss_core.MossError: The embedding model could not be loaded.\n'}]
+Saved: /workspace/moss-work-sample/logs/11b_local_load.json
