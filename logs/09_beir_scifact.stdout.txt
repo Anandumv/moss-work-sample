@@ -1,0 +1,31 @@
+SciFact: 5183 docs, 300 test queries, 339 qrels
+moss-minilm: built 5183 docs in 415.4s
+  moss-minilm            alpha=1.0  nDCG@10=0.6527 [0.6073,0.6964] R@100=0.9350 p50=13.31ms
+  moss-minilm            alpha=0.8  nDCG@10=0.6855 [0.6421,0.7279] R@100=0.9450 p50=10.91ms
+  moss-minilm            alpha=0.6  nDCG@10=0.7119 [0.6723,0.7519] R@100=0.9650 p50=12.05ms
+  moss-minilm            alpha=0.4  nDCG@10=0.7251 [0.6858,0.7639] R@100=0.9583 p50=15.31ms
+  moss-minilm            alpha=0.2  nDCG@10=0.7125 [0.6708,0.7535] R@100=0.9260 p50=13.81ms
+  moss-minilm            alpha=0.0  nDCG@10=0.6857 [0.6448,0.7270] R@100=0.9216 p50=8.62ms
+moss-mediumlm: built 5183 docs in 535.5s
+  moss-mediumlm          alpha=1.0  nDCG@10=0.6461 [0.5999,0.6943] R@100=0.8967 p50=7.79ms
+  moss-mediumlm          alpha=0.8  nDCG@10=0.6763 [0.6309,0.7227] R@100=0.9217 p50=7.06ms
+  moss-mediumlm          alpha=0.6  nDCG@10=0.6902 [0.6477,0.7354] R@100=0.9650 p50=7.26ms
+  moss-mediumlm          alpha=0.4  nDCG@10=0.7092 [0.6682,0.7514] R@100=0.9500 p50=7.67ms
+  moss-mediumlm          alpha=0.2  nDCG@10=0.7068 [0.6651,0.7484] R@100=0.9300 p50=7.11ms
+  moss-mediumlm          alpha=0.0  nDCG@10=0.6857 [0.6448,0.7270] R@100=0.9216 p50=6.76ms
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files: 100%|██████████| 5/5 [00:08<00:00,  1.63s/it]Fetching 5 files: 100%|██████████| 5/5 [00:08<00:00,  1.63s/it]
+  bge-small (custom)     alpha=1.0  nDCG@10=0.7215 [0.6782,0.7639] R@100=0.9550 p50=0.41ms
+  bge-small (custom)     alpha=0.8  nDCG@10=0.7342 [0.6929,0.7748] R@100=0.9617 p50=0.5ms
+  bge-small (custom)     alpha=0.6  nDCG@10=0.7391 [0.6991,0.7805] R@100=0.9717 p50=0.42ms
+  bge-small (custom)     alpha=0.4  nDCG@10=0.7425 [0.7037,0.7838] R@100=0.9617 p50=0.41ms
+  bge-small (custom)     alpha=0.2  nDCG@10=0.7198 [0.6793,0.7608] R@100=0.9300 p50=0.42ms
+  bge-small (custom)     alpha=0.0  nDCG@10=0.6857 [0.6448,0.7270] R@100=0.9216 p50=0.18ms
+best alphas: {'moss-minilm': 0.4, 'moss-mediumlm': 0.4, 'custom:bge-small-en-v1.5': 0.4}
+  mediumlm_vs_minilm_dense: delta=-0.0066 [-0.0370,+0.0222] p=0.668
+  minilm_best_hybrid_vs_dense: delta=+0.0724 [+0.0457,+0.0999] p=0.0
+  minilm_dense_vs_bm25: delta=-0.0330 [-0.0676,+0.0022] p=0.066
+  mediumlm_best_hybrid_vs_dense: delta=+0.0631 [+0.0387,+0.0896] p=0.0
+  bge_custom_dense_vs_minilm_dense: delta=+0.0687 [+0.0428,+0.0964] p=0.0
+  bge_custom_best_vs_minilm_best: delta=+0.0174 [+0.0025,+0.0332] p=0.026
+Saved: /workspace/moss-work-sample/logs/09_beir_scifact.json
