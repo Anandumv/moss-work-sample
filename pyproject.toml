@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moss-evals"
+version = "0.1.0"
+description = "Turn production retrieval failures into regression datasets and CI-gated evals on Moss"
+requires-python = ">=3.10"
+dependencies = ["moss==1.26.0", "httpx", "numpy", "python-dotenv"]
+
+[project.scripts]
+moss-evals = "moss_evals.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
