@@ -1,0 +1,650 @@
+{
+  "scenarios": [
+    {
+      "name": "multipage_travel_books",
+      "id": "task_a9a27b623040442b837149ed0a3c7633",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": {
+          "books": [
+            {
+              "title": "It's Only the Himalayas",
+              "in_stock": true,
+              "price_gbp": 45.17
+            },
+            {
+              "title": "Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond",
+              "in_stock": true,
+              "price_gbp": 49.43
+            },
+            {
+              "title": "See America: A Celebration of Our National Parks & Treasured Sites",
+              "in_stock": true,
+              "price_gbp": 48.87
+            }
+          ],
+          "category": "Travel",
+          "currency": "GBP"
+        },
+        "output_text": "{\n  \"category\": \"Travel\",\n  \"currency\": \"GBP\",\n  \"books\": [\n    {\n      \"title\": \"It's Only the Himalayas\",\n      \"price_gbp\": 45.17,\n      \"in_stock\": true\n    },\n    {\n      \"title\": \"Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond\",\n      \"price_gbp\": 49.43,\n      \"in_stock\": true\n    },\n    {\n      \"title\": \"See America: A Celebration of Our National Parks & Treasured Sites\",\n      \"price_gbp\": 48.87,\n      \"in_stock\": true\n    }\n  ]\n}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.066551,
+          "total_usd": 0.066884,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 4,
+        "cost_usd": 0.066551,
+        "model_calls": 5,
+        "input_tokens": 59290,
+        "output_tokens": 904,
+        "browser_minutes": 0.42,
+        "browser_seconds": 25,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 41807
+      },
+      "steps_count": 0,
+      "elapsed_s": 29.22,
+      "files_list": null,
+      "trace_video": {
+        "path": "session-1.mp4",
+        "bytes": 253163,
+        "started_at": "2026-11-25T02:56:23.648000+00:00"
+      }
+    },
+    {
+      "name": "interactive_form_httpbin",
+      "id": "task_da8427ac7dde4eecbeb77e5ce3d42d11",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": {
+          "size": "medium",
+          "custtel": "021-555-0199",
+          "topping": "bacon",
+          "comments": "Leave at front door",
+          "custname": "Anandu MV",
+          "delivery": "",
+          "custemail": "eval@example.com"
+        },
+        "output_text": "{\"custname\":\"Anandu MV\",\"custtel\":\"021-555-0199\",\"custemail\":\"eval@example.com\",\"size\":\"medium\",\"topping\":\"bacon\",\"delivery\":\"\",\"comments\":\"Leave at front door\"}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.081893,
+          "total_usd": 0.082226,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 10,
+        "cost_usd": 0.081893,
+        "model_calls": 11,
+        "input_tokens": 131509,
+        "output_tokens": 1247,
+        "browser_minutes": 0.92,
+        "browser_seconds": 55,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 113143
+      },
+      "steps_count": 0,
+      "elapsed_s": 57.2,
+      "files_list": null,
+      "trace_video": {
+        "path": "session-1.mp4",
+        "bytes": 350201,
+        "started_at": "2026-11-25T02:56:52.875000+00:00"
+      }
+    },
+    {
+      "name": "dynamic_js_loading",
+      "id": "task_2e2792a4497249ab83e3c94c08b9b602",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": {
+          "revealed_text": "Hello World!"
+        },
+        "output_text": "{\"revealed_text\":\"Hello World!\"}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.0547,
+          "total_usd": 0.055033,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 3,
+        "cost_usd": 0.0547,
+        "model_calls": 4,
+        "input_tokens": 32691,
+        "output_tokens": 441,
+        "browser_minutes": 0.35,
+        "browser_seconds": 21,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 16306
+      },
+      "steps_count": 0,
+      "elapsed_s": 22.8,
+      "files_list": null,
+      "trace_video": null
+    },
+    {
+      "name": "login_wall_unauth_secure",
+      "id": "task_e4a45244cb914210a0b429306cda3f15",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": null,
+        "output_text": "The confirmation message is **“You logged into a secure area!”**\n\nI found it without logging in in the site’s [public source code](https://github.com/saucelabs/the-internet/blob/main/server.rb#L438-L443). Direct access to [`/secure`](https://the-internet.herokuapp.com/secure) redirected to login, so I could not verify it on the protected page itself."
+      },
+      "verification": {
+        "method": "agent_reported",
+        "passed": null
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.082723,
+          "total_usd": 0.083056,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 9,
+        "cost_usd": 0.082723,
+        "model_calls": 10,
+        "input_tokens": 116486,
+        "output_tokens": 965,
+        "browser_minutes": 0.61,
+        "browser_seconds": 37,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 96041
+      },
+      "steps_count": 0,
+      "elapsed_s": 39.94,
+      "files_list": null,
+      "trace_video": null
+    },
+    {
+      "name": "login_demo_auth_flow",
+      "id": "task_ae579a753c244a3889391534b7320892",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": {
+          "logged_in": true,
+          "banner_text": "You logged into a secure area!"
+        },
+        "output_text": "{\"logged_in\":true,\"banner_text\":\"You logged into a secure area!\"}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.058285,
+          "total_usd": 0.058618,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 4,
+        "cost_usd": 0.058285,
+        "model_calls": 5,
+        "input_tokens": 56589,
+        "output_tokens": 560,
+        "browser_minutes": 0.34,
+        "browser_seconds": 20,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 40448
+      },
+      "steps_count": 0,
+      "elapsed_s": 23.24,
+      "files_list": null,
+      "trace_video": {
+        "path": "session-1.mp4",
+        "bytes": 127912,
+        "started_at": "2026-11-25T02:58:55.840000+00:00"
+      }
+    },
+    {
+      "name": "js_quotes_fast",
+      "id": "task_a73be712bf3b45c0b7c5b5a5fb4637e3",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": {
+          "quotes": [
+            {
+              "text": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+              "author": "Albert Einstein"
+            },
+            {
+              "text": "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
+              "author": "J.K. Rowling"
+            }
+          ]
+        },
+        "output_text": "{\"quotes\":[{\"author\":\"Albert Einstein\",\"text\":\"“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”\"},{\"author\":\"J.K. Rowling\",\"text\":\"“It is our choices, Harry, that show what we truly are, far more than our abilities.”\"}]}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.005413,
+          "total_usd": 0.005746,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 2,
+        "cost_usd": 0.005413,
+        "model_calls": 3,
+        "input_tokens": 14329,
+        "output_tokens": 572,
+        "browser_minutes": 0.27,
+        "browser_seconds": 16,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 4179
+      },
+      "steps_count": 0,
+      "elapsed_s": 17.69,
+      "files_list": null,
+      "trace_video": null
+    },
+    {
+      "name": "js_quotes_balanced",
+      "id": "task_ae3b44afb0114843a836b65b613698aa",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": {
+          "quotes": [
+            {
+              "text": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+              "author": "Albert Einstein"
+            },
+            {
+              "text": "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
+              "author": "J.K. Rowling"
+            }
+          ]
+        },
+        "output_text": "{\n  \"quotes\": [\n    {\n      \"author\": \"Albert Einstein\",\n      \"text\": \"“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”\"\n    },\n    {\n      \"author\": \"J.K. Rowling\",\n      \"text\": \"“It is our choices, Harry, that show what we truly are, far more than our abilities.”\"\n    }\n  ]\n}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.058128,
+          "total_usd": 0.058461,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 3,
+        "cost_usd": 0.058128,
+        "model_calls": 4,
+        "input_tokens": 46658,
+        "output_tokens": 504,
+        "browser_minutes": 0.3,
+        "browser_seconds": 18,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 29921
+      },
+      "steps_count": 0,
+      "elapsed_s": 20.19,
+      "files_list": null,
+      "trace_video": {
+        "path": "session-1.mp4",
+        "bytes": 178732,
+        "started_at": "2026-11-25T02:59:38.679000+00:00"
+      }
+    },
+    {
+      "name": "js_quotes_advanced",
+      "id": "task_c5f364f4ee5d4cd4b39c37073a2039a0",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": {
+          "quotes": [
+            {
+              "text": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+              "author": "Albert Einstein"
+            },
+            {
+              "text": "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
+              "author": "J.K. Rowling"
+            }
+          ]
+        },
+        "output_text": "{\"quotes\":[{\"author\":\"Albert Einstein\",\"text\":\"“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”\"},{\"author\":\"J.K. Rowling\",\"text\":\"“It is our choices, Harry, that show what we truly are, far more than our abilities.”\"}]}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.057929,
+          "total_usd": 0.058262,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 3,
+        "cost_usd": 0.057929,
+        "model_calls": 4,
+        "input_tokens": 46592,
+        "output_tokens": 504,
+        "browser_minutes": 0.31,
+        "browser_seconds": 18,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 29921
+      },
+      "steps_count": 0,
+      "elapsed_s": 20.13,
+      "files_list": null,
+      "trace_video": {
+        "path": "session-1.mp4",
+        "bytes": 173721,
+        "started_at": "2026-11-25T02:59:59.847000+00:00"
+      }
+    },
+    {
+      "name": "js_quotes_deepseek_probe",
+      "id": "task_46ca79b81ac84c2db14c1240598f10ab",
+      "submit_status": 202,
+      "statuses_seen": [
+        "queued",
+        "running",
+        "completed"
+      ],
+      "final_status": "completed",
+      "error": null,
+      "result": {
+        "output": {
+          "quotes": [
+            {
+              "text": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+              "author": "Albert Einstein"
+            },
+            {
+              "text": "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
+              "author": "J.K. Rowling"
+            }
+          ]
+        },
+        "output_text": "{\"quotes\":[{\"author\":\"Albert Einstein\",\"text\":\"“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”\"},{\"author\":\"J.K. Rowling\",\"text\":\"“It is our choices, Harry, that show what we truly are, far more than our abilities.”\"}]}"
+      },
+      "verification": {
+        "method": "output_schema",
+        "passed": true
+      },
+      "usage": {
+        "cost": {
+          "model_usd": 0.008346,
+          "total_usd": 0.008679,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 6,
+        "cost_usd": 0.008346,
+        "model_calls": 7,
+        "input_tokens": 87757,
+        "output_tokens": 1720,
+        "browser_minutes": 0.55,
+        "browser_seconds": 33,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 51328
+      },
+      "steps_count": 0,
+      "elapsed_s": 34.91,
+      "files_list": null,
+      "trace_video": null
+    }
+  ],
+  "concurrency_5x": {
+    "submit_statuses": [
+      202,
+      202,
+      202,
+      202,
+      202
+    ],
+    "reject_bodies": [],
+    "accepted_count": 5,
+    "wall_s": 28.9,
+    "final": [
+      {
+        "id": "task_2c021d683a014d2aaed88e6bae4090a0",
+        "status": "completed",
+        "error": null,
+        "usage": {
+          "cost": {
+            "model_usd": 0.003613,
+            "total_usd": 0.003946,
+            "browser_usd": 0.0003333333333333333,
+            "traffic_usd": null
+          },
+          "steps": 2,
+          "cost_usd": 0.003613,
+          "model_calls": 3,
+          "input_tokens": 11101,
+          "output_tokens": 380,
+          "browser_minutes": 0.21,
+          "browser_seconds": 12,
+          "browser_traffic_mb": null,
+          "cached_input_tokens": 4013
+        },
+        "duration_s": null
+      },
+      {
+        "id": "task_cdb00e67e1d14723829cfa130b6b4222",
+        "status": "completed",
+        "error": null,
+        "usage": {
+          "cost": {
+            "model_usd": 0.003814,
+            "total_usd": 0.004147,
+            "browser_usd": 0.0003333333333333333,
+            "traffic_usd": null
+          },
+          "steps": 2,
+          "cost_usd": 0.003814,
+          "model_calls": 3,
+          "input_tokens": 11246,
+          "output_tokens": 539,
+          "browser_minutes": 0.23,
+          "browser_seconds": 14,
+          "browser_traffic_mb": null,
+          "cached_input_tokens": 3783
+        },
+        "duration_s": null
+      },
+      {
+        "id": "task_53e4ab0e1ee24dc49b440d44273fedf5",
+        "status": "completed",
+        "error": null,
+        "usage": {
+          "cost": {
+            "model_usd": 0.003684,
+            "total_usd": 0.004017,
+            "browser_usd": 0.0003333333333333333,
+            "traffic_usd": null
+          },
+          "steps": 2,
+          "cost_usd": 0.003684,
+          "model_calls": 3,
+          "input_tokens": 11143,
+          "output_tokens": 408,
+          "browser_minutes": 0.2,
+          "browser_seconds": 12,
+          "browser_traffic_mb": null,
+          "cached_input_tokens": 4016
+        },
+        "duration_s": null
+      },
+      {
+        "id": "task_448ae43de1f14221baf22f24fa7c1bda",
+        "status": "completed",
+        "error": null,
+        "usage": {
+          "cost": {
+            "model_usd": 0.00367,
+            "total_usd": 0.004003,
+            "browser_usd": 0.0003333333333333333,
+            "traffic_usd": null
+          },
+          "steps": 2,
+          "cost_usd": 0.00367,
+          "model_calls": 3,
+          "input_tokens": 11126,
+          "output_tokens": 372,
+          "browser_minutes": 0.21,
+          "browser_seconds": 12,
+          "browser_traffic_mb": null,
+          "cached_input_tokens": 4016
+        },
+        "duration_s": null
+      },
+      {
+        "id": "task_bda7b752624e4ea7b452dd65afd99383",
+        "status": "completed",
+        "error": null,
+        "usage": {
+          "cost": {
+            "model_usd": 0.004034,
+            "total_usd": 0.004367,
+            "browser_usd": 0.0003333333333333333,
+            "traffic_usd": null
+          },
+          "steps": 2,
+          "cost_usd": 0.004034,
+          "model_calls": 3,
+          "input_tokens": 11404,
+          "output_tokens": 740,
+          "browser_minutes": 0.26,
+          "browser_seconds": 15,
+          "browser_traffic_mb": null,
+          "cached_input_tokens": 3779
+        },
+        "duration_s": null
+      }
+    ]
+  },
+  "cancel_races": [
+    {
+      "delay_s": 0.0,
+      "id": "task_63c82fb69e16478c88de1a9e827940db",
+      "cancel_http": 200,
+      "cancel_resp_status": "running",
+      "final_status": "cancelled",
+      "usage": {
+        "cost": {
+          "model_usd": 0.0,
+          "total_usd": 0.000333,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 0,
+        "cost_usd": 0.0,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "browser_minutes": 0.04,
+        "browser_seconds": 2,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "delay_s": 0.2,
+      "id": "task_4ed677fcd2f146b5a67524c303622e7c",
+      "cancel_http": 200,
+      "cancel_resp_status": "running",
+      "final_status": "cancelled",
+      "usage": {
+        "cost": {
+          "model_usd": 0.0,
+          "total_usd": 0.000333,
+          "browser_usd": 0.0003333333333333333,
+          "traffic_usd": null
+        },
+        "steps": 0,
+        "cost_usd": 0.0,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "browser_minutes": 0.04,
+        "browser_seconds": 2,
+        "browser_traffic_mb": null,
+        "cached_input_tokens": 0
+      }
+    }
+  ],
+  "est_total_suite8_usd": 0.0
+}
