@@ -1,0 +1,359 @@
+{
+  "warmup_retrieve_ms": [
+    "8.1",
+    "8.1",
+    "9.4"
+  ],
+  "open_loop_ramp": [
+    {
+      "target_rps": 0.5,
+      "duration_s": 40,
+      "sent": 20,
+      "wall_s": 38.6,
+      "status_counts": {
+        "200": 20
+      },
+      "error_codes": {},
+      "success_rate": 1.0,
+      "goodput_rps": 0.52,
+      "latency_ok_ms": {
+        "n": 20,
+        "p50": 557.6,
+        "p95": 997.8,
+        "p99": 1239.3,
+        "max": 1299.7
+      },
+      "retrieve_ms": {
+        "n": 20,
+        "p50": 9.4,
+        "p95": 12.0,
+        "p99": 12.1,
+        "max": 12.1
+      },
+      "retry_after_values": {},
+      "sample_429_headers": null,
+      "sample_200_headers": {
+        "x-ratelimit-limit-requests": "120",
+        "x-ratelimit-limit-tokens": "600000",
+        "x-ratelimit-remaining-requests": "9",
+        "x-ratelimit-remaining-tokens": "599179",
+        "x-ratelimit-reset-requests": "1s",
+        "x-ratelimit-reset-tokens": "1s"
+      },
+      "mean_attempts": 1.0,
+      "tokens": {
+        "in": 9072,
+        "out": 160
+      }
+    },
+    {
+      "target_rps": 1,
+      "duration_s": 40,
+      "sent": 40,
+      "wall_s": 39.6,
+      "status_counts": {
+        "200": 40
+      },
+      "error_codes": {},
+      "success_rate": 1.0,
+      "goodput_rps": 1.01,
+      "latency_ok_ms": {
+        "n": 40,
+        "p50": 567.1,
+        "p95": 617.4,
+        "p99": 1364.7,
+        "max": 1495.8
+      },
+      "retrieve_ms": {
+        "n": 40,
+        "p50": 9.0,
+        "p95": 10.0,
+        "p99": 10.2,
+        "max": 10.2
+      },
+      "retry_after_values": {},
+      "sample_429_headers": null,
+      "sample_200_headers": {
+        "x-ratelimit-limit-requests": "120",
+        "x-ratelimit-limit-tokens": "600000",
+        "x-ratelimit-remaining-requests": "9",
+        "x-ratelimit-remaining-tokens": "599188",
+        "x-ratelimit-reset-requests": "1s",
+        "x-ratelimit-reset-tokens": "1s"
+      },
+      "mean_attempts": 1.0,
+      "tokens": {
+        "in": 18156,
+        "out": 320
+      }
+    },
+    {
+      "target_rps": 2,
+      "duration_s": 40,
+      "sent": 80,
+      "wall_s": 40.0,
+      "status_counts": {
+        "200": 80
+      },
+      "error_codes": {},
+      "success_rate": 1.0,
+      "goodput_rps": 2.0,
+      "latency_ok_ms": {
+        "n": 80,
+        "p50": 539.3,
+        "p95": 1559.6,
+        "p99": 1924.0,
+        "max": 2010.2
+      },
+      "retrieve_ms": {
+        "n": 80,
+        "p50": 8.9,
+        "p95": 10.0,
+        "p99": 13.8,
+        "max": 17.4
+      },
+      "retry_after_values": {},
+      "sample_429_headers": null,
+      "sample_200_headers": {
+        "x-ratelimit-limit-requests": "120",
+        "x-ratelimit-limit-tokens": "600000",
+        "x-ratelimit-remaining-requests": "9",
+        "x-ratelimit-remaining-tokens": "599224",
+        "x-ratelimit-reset-requests": "1s",
+        "x-ratelimit-reset-tokens": "1s"
+      },
+      "mean_attempts": 1.0,
+      "tokens": {
+        "in": 36322,
+        "out": 640
+      }
+    },
+    {
+      "target_rps": 3,
+      "duration_s": 40,
+      "sent": 120,
+      "wall_s": 40.3,
+      "status_counts": {
+        "200": 64,
+        "429": 56
+      },
+      "error_codes": {
+        "rate_limit_exceeded": 56
+      },
+      "success_rate": 0.533,
+      "goodput_rps": 1.59,
+      "latency_ok_ms": {
+        "n": 64,
+        "p50": 565.2,
+        "p95": 1529.8,
+        "p99": 2017.8,
+        "max": 2083.5
+      },
+      "retrieve_ms": {
+        "n": 64,
+        "p50": 9.2,
+        "p95": 9.8,
+        "p99": 10.5,
+        "max": 10.6
+      },
+      "retry_after_values": {
+        "1": 56
+      },
+      "sample_429_headers": {
+        "retry-after": "1",
+        "x-ratelimit-limit-requests": "120",
+        "x-ratelimit-limit-tokens": "600000",
+        "x-ratelimit-remaining-requests": "0",
+        "x-ratelimit-remaining-tokens": "600000",
+        "x-ratelimit-reset-requests": "5s",
+        "x-ratelimit-reset-tokens": "0s"
+      },
+      "sample_200_headers": {
+        "x-ratelimit-limit-requests": "120",
+        "x-ratelimit-limit-tokens": "600000",
+        "x-ratelimit-remaining-requests": "8",
+        "x-ratelimit-remaining-tokens": "599177",
+        "x-ratelimit-reset-requests": "1s",
+        "x-ratelimit-reset-tokens": "1s"
+      },
+      "mean_attempts": 1.0,
+      "tokens": {
+        "in": 29121,
+        "out": 512
+      }
+    },
+    {
+      "target_rps": 4,
+      "duration_s": 40,
+      "sent": 160,
+      "wall_s": 40.2,
+      "status_counts": {
+        "200": 74,
+        "429": 86
+      },
+      "error_codes": {
+        "rate_limit_exceeded": 86
+      },
+      "success_rate": 0.463,
+      "goodput_rps": 1.84,
+      "latency_ok_ms": {
+        "n": 74,
+        "p50": 571.7,
+        "p95": 1792.4,
+        "p99": 2960.2,
+        "max": 4236.4
+      },
+      "retrieve_ms": {
+        "n": 74,
+        "p50": 9.2,
+        "p95": 10.4,
+        "p99": 13.5,
+        "max": 20.4
+      },
+      "retry_after_values": {
+        "1": 86
+      },
+      "sample_429_headers": {
+        "retry-after": "1",
+        "x-ratelimit-limit-requests": "120",
+        "x-ratelimit-limit-tokens": "600000",
+        "x-ratelimit-remaining-requests": "0",
+        "x-ratelimit-remaining-tokens": "599889",
+        "x-ratelimit-reset-requests": "5s",
+        "x-ratelimit-reset-tokens": "1s"
+      },
+      "sample_200_headers": {
+        "x-ratelimit-limit-requests": "120",
+        "x-ratelimit-limit-tokens": "600000",
+        "x-ratelimit-remaining-requests": "8",
+        "x-ratelimit-remaining-tokens": "598762",
+        "x-ratelimit-reset-requests": "1s",
+        "x-ratelimit-reset-tokens": "1s"
+      },
+      "mean_attempts": 1.0,
+      "tokens": {
+        "in": 34218,
+        "out": 592
+      }
+    }
+  ],
+  "retry_after_client_4rps": {
+    "target_rps": 4,
+    "duration_s": 40,
+    "sent": 160,
+    "wall_s": 44.6,
+    "status_counts": {
+      "200": 89,
+      "429": 71
+    },
+    "error_codes": {
+      "rate_limit_exceeded": 71
+    },
+    "success_rate": 0.556,
+    "goodput_rps": 2.0,
+    "latency_ok_ms": {
+      "n": 89,
+      "p50": 1959.9,
+      "p95": 4821.8,
+      "p99": 4831.4,
+      "max": 4841.4
+    },
+    "retrieve_ms": {
+      "n": 89,
+      "p50": 8.9,
+      "p95": 9.9,
+      "p99": 10.2,
+      "max": 10.9
+    },
+    "retry_after_values": {
+      "1": 71
+    },
+    "sample_429_headers": {
+      "retry-after": "1",
+      "x-ratelimit-limit-requests": "120",
+      "x-ratelimit-limit-tokens": "600000",
+      "x-ratelimit-remaining-requests": "0",
+      "x-ratelimit-remaining-tokens": "599195",
+      "x-ratelimit-reset-requests": "5s",
+      "x-ratelimit-reset-tokens": "1s"
+    },
+    "sample_200_headers": {
+      "x-ratelimit-limit-requests": "120",
+      "x-ratelimit-limit-tokens": "600000",
+      "x-ratelimit-remaining-requests": "5",
+      "x-ratelimit-remaining-tokens": "597756",
+      "x-ratelimit-reset-requests": "3s",
+      "x-ratelimit-reset-tokens": "1s"
+    },
+    "mean_attempts": 3.0,
+    "tokens": {
+      "in": 40503,
+      "out": 712
+    }
+  },
+  "burst_fastlane_20": {
+    "model": "moss/fastlane-1",
+    "n": 20,
+    "wall_ms": 2375.0,
+    "status_counts": {
+      "200": 12,
+      "429": 8
+    },
+    "latency_ok_ms": {
+      "n": 12,
+      "p50": 1695.7,
+      "p95": 2022.1,
+      "p99": 2301.8,
+      "max": 2371.8
+    },
+    "sample_429": {
+      "headers": {
+        "retry-after": "1",
+        "x-ratelimit-limit-requests": "120",
+        "x-ratelimit-limit-tokens": "600000",
+        "x-ratelimit-remaining-requests": "0",
+        "x-ratelimit-remaining-tokens": "594575",
+        "x-ratelimit-reset-requests": "5s",
+        "x-ratelimit-reset-tokens": "1s"
+      },
+      "code": "rate_limit_exceeded"
+    },
+    "tokens": {
+      "in": 5402,
+      "out": 96
+    }
+  },
+  "burst_haiku_60": {
+    "model": "anthropic/claude-haiku-5.5",
+    "n": 60,
+    "wall_ms": 2654.4,
+    "status_counts": {
+      "200": 55,
+      "429": 5
+    },
+    "latency_ok_ms": {
+      "n": 55,
+      "p50": 2067.6,
+      "p95": 2457.8,
+      "p99": 2622.7,
+      "max": 2636.2
+    },
+    "sample_429": {
+      "headers": {
+        "retry-after": "1",
+        "x-ratelimit-limit-requests": "300",
+        "x-ratelimit-limit-tokens": "1000000",
+        "x-ratelimit-remaining-requests": "0",
+        "x-ratelimit-remaining-tokens": "968973",
+        "x-ratelimit-reset-requests": "10s",
+        "x-ratelimit-reset-tokens": "2s"
+      },
+      "code": "rate_limit_exceeded"
+    },
+    "tokens": {
+      "in": 18997,
+      "out": 440
+    }
+  },
+  "est_cost_usd": 0.2697
+}

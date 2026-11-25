@@ -1,0 +1,9 @@
+[ramp] 0.5 rps: {'200': 20} goodput=0.52 p50=557.6 p95=997.8 p99=1239.3 retry-after={}
+[ramp] 1 rps: {'200': 40} goodput=1.01 p50=567.1 p95=617.4 p99=1364.7 retry-after={}
+[ramp] 2 rps: {'200': 80} goodput=2.0 p50=539.3 p95=1559.6 p99=1924.0 retry-after={}
+[ramp] 3 rps: {'200': 64, '429': 56} goodput=1.59 p50=565.2 p95=1529.8 p99=2017.8 retry-after={'1': 56}
+[ramp] 4 rps: {'200': 74, '429': 86} goodput=1.84 p50=571.7 p95=1792.4 p99=2960.2 retry-after={'1': 86}
+[retry] 4 rps with Retry-After honouring: {'200': 89, '429': 71} success=0.556 p50=1959.9 p99=4831.4 attempts=3.0
+[burst] fastlane 20: {'200': 12, '429': 8}
+[burst] haiku 60: {'200': 55, '429': 5}
+Saved: /workspace/moss-work-sample/logs/11a_gateway_load.json est cost 0.2697
