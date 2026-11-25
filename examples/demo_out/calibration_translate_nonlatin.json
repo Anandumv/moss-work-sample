@@ -1,0 +1,21 @@
+{
+  "n": 60,
+  "agreement": 0.9833,
+  "cohen_kappa": 0.8485,
+  "judge_true_det_false": [
+    {
+      "id": "reg-54ce0754d1",
+      "judge": true,
+      "deterministic": false,
+      "faithfulness": 1.0,
+      "answer": "Idempotency keys on POST /v2/payouts persist for 24 hours."
+    }
+  ],
+  "judge_false_det_true": [],
+  "confusion": {
+    "both_true": 56,
+    "judge_only": 1,
+    "det_only": 0,
+    "both_false": 3
+  }
+}

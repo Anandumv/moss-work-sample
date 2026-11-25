@@ -1,0 +1,13 @@
+{
+  "n": 60,
+  "agreement": 1.0,
+  "cohen_kappa": 1.0,
+  "judge_true_det_false": [],
+  "judge_false_det_true": [],
+  "confusion": {
+    "both_true": 49,
+    "judge_only": 0,
+    "det_only": 0,
+    "both_false": 11
+  }
+}

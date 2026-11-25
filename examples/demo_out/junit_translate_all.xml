@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="moss_evals" tests="6" failures="3">
+  <testcase classname="moss_evals.gates" name="hit@5"></testcase>
+  <testcase classname="moss_evals.gates" name="ndcg@5"></testcase>
+  <testcase classname="moss_evals.gates" name="mrr@5"></testcase>
+  <testcase classname="moss_evals.gates" name="faithfulness"><failure message="metric missing from run"/></testcase>
+  <testcase classname="moss_evals.regressions" name="reg-3580eae48b"><failure message="hit dropped from 1 to 0 vs baseline"/></testcase>
+  <testcase classname="moss_evals.regressions" name="reg-72cc780da3"><failure message="hit dropped from 1 to 0 vs baseline"/></testcase>
+</testsuite>

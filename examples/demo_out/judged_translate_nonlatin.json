@@ -1,0 +1,2454 @@
+{
+  "gen_model": "moss/fastlane-1",
+  "judge_model": "openai/gpt-6-luna",
+  "cases": {
+    "reg-01a6a0bf2c": {
+      "answer": "The provided passages are in English, and I do not have information in the language you asked. However, the passages state that Organic Alphonso mangoes are stored at 13 degrees Celsius.",
+      "claims": [
+        {
+          "claim": "The provided passages are in English.",
+          "supported": true
+        },
+        {
+          "claim": "The answerer does not have information in the language the user asked in.",
+          "supported": false
+        },
+        {
+          "claim": "Organic Alphonso mangoes are stored at 13 degrees Celsius.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passages state that Organic Alphonso mangoes are stored at 13°C, matching the reference.",
+      "faithfulness": 0.6666666666666666
+    },
+    "reg-5c2826570d": {
+      "answer": "Kochi warehouse KOC-02 operates from 05:30 to 23:00 IST and processes damaged vegetable refunds within 6 hours.",
+      "claims": [
+        {
+          "claim": "Kochi warehouse KOC-02 operates from 05:30 to 23:00 IST.",
+          "supported": true
+        },
+        {
+          "claim": "Damaged vegetable refunds are processed within 6 hours.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and conveys both reference facts.",
+      "faithfulness": 1.0
+    },
+    "reg-6774a687af": {
+      "answer": "合成ブラックボックスプローブは、オークランド、東京、オレゴンから60秒ごとに実行されます。",
+      "claims": [
+        {
+          "claim": "合成ブラックボックスプローブは60秒ごとに実行されます。",
+          "supported": true
+        },
+        {
+          "claim": "プローブはオークランドから実行されます。",
+          "supported": true
+        },
+        {
+          "claim": "プローブは東京から実行されます。",
+          "supported": true
+        },
+        {
+          "claim": "プローブはオレゴンから実行されます。",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "回答は、プローブの実行間隔と3地点をパッセージどおりに述べています。",
+      "faithfulness": 1.0
+    },
+    "reg-6dba077eb5": {
+      "answer": "Container images must be signed with Cosign keyless OIDC before ArgoCD allows sync to prod-nz.",
+      "claims": [
+        {
+          "claim": "Container images must be signed with Cosign keyless OIDC before ArgoCD allows sync to prod-nz.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage states that Cosign keyless OIDC signatures are required for ArgoCD to sync images to prod-nz.",
+      "faithfulness": 1.0
+    },
+    "reg-831eac9bc8": {
+      "answer": "Les rapports de test d'intrusion des fournisseurs sont valides pendant 12 mois.",
+      "claims": [
+        {
+          "claim": "Les rapports de test d'intrusion des fournisseurs sont valides pendant 12 mois.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Le passage [2] indique que ces rapports sont valides pendant 12 mois.",
+      "faithfulness": 1.0
+    },
+    "reg-8d1d3583db": {
+      "answer": "मेडिकल डिवाइस फर्मवेयर अपडेट के लिए ओटीआर रोलआउट से पहले क्वालिटी असुरेंस लीड (QA Lead) और रेगुलेटरी ऑफिसर (Regulatory Officer) दोनों की हस्ताक्षर आवश्यक हैं।",
+      "claims": [
+        {
+          "claim": "QA Lead और Regulatory Officer—दोनों की मंजूरी आवश्यक है।",
+          "supported": true
+        },
+        {
+          "claim": "मंजूरी OTR rollout से पहले आवश्यक है।",
+          "supported": false
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "उत्तर में संदर्भित दोनों अधिकारियों के नाम सही हैं; passage OTA rollout कहता है, OTR नहीं।",
+      "faithfulness": 0.5
+    },
+    "reg-9771c63b0f": {
+      "answer": "KoruMart gift vouchers remain valid for 36 months from activation.",
+      "claims": [
+        {
+          "claim": "KoruMart gift vouchers activation से 36 महीनों तक मान्य रहते हैं।",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "उत्तर passage में दी गई वैधता अवधि और reference के 36 महीनों से मेल खाता है।",
+      "faithfulness": 1.0
+    },
+    "reg-a2392b6204": {
+      "answer": "フォークリフトのバッテリー充電室の温度が45℃を超えると、施設換気インターロックが自動的にトリガーされます。",
+      "claims": [
+        {
+          "claim": "フォークリフトのバッテリー充電室の温度が45℃を超えると、施設換気インターロックが自動的に作動する。",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "パッセージ1に、45℃を超えると施設換気インターロックが自動作動すると記載されています。",
+      "faithfulness": 1.0
+    },
+    "reg-b40e8c2aa2": {
+      "answer": "I do not have that information.",
+      "claims": [],
+      "abstained": true,
+      "correct": false,
+      "rationale": "उत्तर ने जानकारी न होने की बात कहकर जवाब देने से इनकार किया, जबकि संदर्भ के अनुसार उत्तर 5.00 है।",
+      "faithfulness": 1.0
+    },
+    "reg-dc835bf329": {
+      "answer": "Under the active 2026 policy, customers have 12 hours to provide photo proof of fresh produce spoilage for automatic wallet credit.",
+      "claims": [
+        {
+          "claim": "Customers have 12 hours after drop-off to provide photo proof of fresh produce spoilage under the active 2026 policy.",
+          "supported": true
+        },
+        {
+          "claim": "Providing photo proof within that window allows automatic wallet credit.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the active 2026 policy and the reference value of 12 hours.",
+      "faithfulness": 1.0
+    },
+    "reg-ea1ea03bba": {
+      "answer": "SKU MNG-4402 is stored in Auckland bin NZ-AKL-04B at 13 degrees Celsius.",
+      "claims": [
+        {
+          "claim": "SKU MNG-4402 is stored in Auckland bin NZ-AKL-04B.",
+          "supported": true
+        },
+        {
+          "claim": "SKU MNG-4402 is stored at 13 degrees Celsius.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Both the bin and temperature match the passage and reference.",
+      "faithfulness": 1.0
+    },
+    "reg-f3ec3545c2": {
+      "answer": "2026年バックアップルールでは、シドニー（ap-southeast-2）からメルボルン（ap-southeast-4）へのクロスリージョンスナップショットは4時間ごとに複製されます。",
+      "claims": [
+        {
+          "claim": "2026年バックアップルールでは、シドニーからメルボルンへのクロスリージョンスナップショットは4時間ごとに複製される。",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "回答はパッセージ[1]の記述と参照値「4」に一致しています。",
+      "faithfulness": 1.0
+    },
+    "reg-f52cf4fa29": {
+      "answer": "I do not have that information.",
+      "claims": [],
+      "abstained": true,
+      "correct": false,
+      "rationale": "The answer abstains, but the reference states that search data is deleted after 7 days.",
+      "faithfulness": 1.0
+    },
+    "reg-ff9fef9943": {
+      "answer": "KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35.",
+      "claims": [
+        {
+          "claim": "KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer states the Auckland CBD delivery time of 18 minutes, matching the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-096cbc97c0": {
+      "answer": "Drone last-mile trials in Northland operate strictly below 120 meters AGL.",
+      "claims": [
+        {
+          "claim": "Northland drone last-mile trials operate strictly below 120 meters AGL.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage states the trials operate strictly below 120 meters AGL, matching the reference limit.",
+      "faithfulness": 1.0
+    },
+    "reg-1ad4216604": {
+      "answer": "Tauranga port container demurrage free-time ends 72 hours after vessel discharge.",
+      "claims": [
+        {
+          "claim": "Tauranga port container demurrage free-time ends 72 hours after vessel discharge.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and conveys the reference’s 72-hour figure.",
+      "faithfulness": 1.0
+    },
+    "reg-1b74defdf1": {
+      "answer": "Under NZ Privacy Act Principle 9, deletion requests must be fulfilled and logged within 20 working days.",
+      "claims": [
+        {
+          "claim": "NZ Privacy Act Principle 9 deletion requests must be fulfilled and logged within 20 working days.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and the reference: 20 working days.",
+      "faithfulness": 1.0
+    },
+    "reg-1f2e8c18c4": {
+      "answer": "Webhook signatures are sent in the X-Koru-Sig-256 header and tolerate at most 180 seconds of clock skew.",
+      "claims": [
+        {
+          "claim": "Webhook signatures are sent in the X-Koru-Sig-256 header.",
+          "supported": true
+        },
+        {
+          "claim": "The tolerated clock skew is at most 180 seconds.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Both claims match the passage and the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-27f114b75a": {
+      "answer": "No, an out-of-date ID card is rejected for age-restricted alcohol deliveries.",
+      "claims": [
+        {
+          "claim": "An out-of-date ID is rejected for age-restricted alcohol deliveries.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Passage 1 says expired IDs are rejected for age-restricted alcohol deliveries, matching the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-31329a83e8": {
+      "answer": "Postgres primary failover via Patroni completes within 25 seconds using synchronous replication to one standby in AZ-b.",
+      "claims": [
+        {
+          "claim": "Postgres primary failover via Patroni completes within 25 seconds.",
+          "supported": true
+        },
+        {
+          "claim": "It uses synchronous replication to one standby in AZ-b.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer states the referenced 25-second failover time and both details are supported by the passage.",
+      "faithfulness": 1.0
+    },
+    "reg-3475269517": {
+      "answer": "MPI Lot Traceability Code LOT-IF-88 is required on every outer carton of infant formula export batches.",
+      "claims": [
+        {
+          "claim": "MPI Lot Traceability Code LOT-IF-88 is required on every outer carton of infant formula export batches.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage specifies LOT-IF-88 on every outer carton; the answer matches the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-3580eae48b": {
+      "answer": "The Rider Gold payout tier requires 120 completed weekly deliveries and at least 96.5% on-time arrival.",
+      "claims": [
+        {
+          "claim": "Rider Gold requires 120 completed weekly deliveries.",
+          "supported": true
+        },
+        {
+          "claim": "Rider Gold requires at least a 96.5% on-time arrival rate.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer states both Gold thresholds given in the reference and passage.",
+      "faithfulness": 1.0
+    },
+    "reg-41f3d9bcab": {
+      "answer": "Under the active 2026 backup rule, cross-region snapshots replicate from ap-southeast-2 (Sydney) to ap-southeast-4 (Melbourne) every 4 hours.",
+      "claims": [
+        {
+          "claim": "Under the active 2026 backup rule, snapshots replicate from Sydney to Melbourne every 4 hours.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage states that cross-region snapshots replicate from Sydney to Melbourne every 4 hours, matching the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-43193b556c": {
+      "answer": "Under the Active 2026 Auth Spec, service-to-service tokens use Ed25519 JWTs with a mandatory 300-second TTL.",
+      "claims": [
+        {
+          "claim": "The current 2026 service-to-service tokens use Ed25519 JWTs.",
+          "supported": true
+        },
+        {
+          "claim": "The tokens have a mandatory 300-second TTL.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the active 2026 spec and the reference algorithm and TTL.",
+      "faithfulness": 1.0
+    },
+    "reg-440469dd18": {
+      "answer": "Según el pasaje [1], la API de webhooks permite 240 solicitudes por minuto por clave de tenant.",
+      "claims": [
+        {
+          "claim": "La API de webhooks permite 240 solicitudes por minuto por clave de tenant.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "El pasaje [1] indica ese límite por clave de tenant; coincide con la referencia.",
+      "faithfulness": 1.0
+    },
+    "reg-459a840489": {
+      "answer": "The gRPC deadline for retrieval subcalls is 1,500 ms.",
+      "claims": [
+        {
+          "claim": "The gRPC deadline for retrieval subcalls is 1,500 ms.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Passage 1 states that retrieval subcalls default to a 1,500 ms deadline, matching the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-45a9751f8a": {
+      "answer": "Streaming SSE responses emit heartbeat comments every 15 seconds while upstream inference workers queue.",
+      "claims": [
+        {
+          "claim": "Streaming SSE responses emit heartbeat comments every 15 seconds while upstream inference workers queue.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage states that SSE responses emit heartbeat comments every 15 seconds while inference workers queue, matching the answer and reference.",
+      "faithfulness": 1.0
+    },
+    "reg-53476070a8": {
+      "answer": "SOC 2 audit logs are retained in immutable WORM buckets for 400 days.",
+      "claims": [
+        {
+          "claim": "SOC 2 audit logs are retained in immutable WORM buckets for 400 days.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage explicitly states that SOC 2 audit logs are retained in immutable WORM buckets for 400 days.",
+      "faithfulness": 1.0
+    },
+    "reg-54ce0754d1": {
+      "answer": "Idempotency keys on POST /v2/payouts persist for 24 hours.",
+      "claims": [
+        {
+          "claim": "POST /v2/payouts idempotency keys persist for 24 hours.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage states a 24-hour persistence period, matching the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-55a8ba77fc": {
+      "answer": "Christchurch is the NZ city that gives a NZ$1.50 rider credit for returning insulated tote bags.",
+      "claims": [
+        {
+          "claim": "Christchurch gives a NZ$1.50 rider credit for returning insulated tote bags.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Passage 1 explicitly states that Christchurch depot accepts returned insulated tote bags via riders for a NZ$1.50 credit per bag.",
+      "faithfulness": 1.0
+    },
+    "reg-588d3db0ce": {
+      "answer": "NZ Customs air-freight clearance for fresh berries requires the MPI phytosanitary certificate PHY-NZ-21.",
+      "claims": [
+        {
+          "claim": "NZ Customs air-freight clearance for fresh berries requires MPI phytosanitary certificate PHY-NZ-21.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and the reference certificate code.",
+      "faithfulness": 1.0
+    },
+    "reg-5fd5e81ae7": {
+      "answer": "La signature de livraison pour les médicaments réfrigérés par courrier nécessite l'enregistrement d'une température de sonde numérique comprise entre 2°C et 8°C.",
+      "claims": [
+        {
+          "claim": "La livraison de médicaments réfrigérés par courrier nécessite l’enregistrement d’une température de sonde numérique comprise entre 2 °C et 8 °C.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Le passage [1] indique une température de sonde entre 2 °C et 8 °C, conformément à la référence.",
+      "faithfulness": 1.0
+    },
+    "reg-64cf597c5e": {
+      "answer": "The automatic switch from the primary GPU pool in ap-southeast-2 to us-west-2 is triggered if the p99 Time To First Token (TTFT) exceeds 650 ms for 60 seconds.",
+      "claims": [
+        {
+          "claim": "Automatic routing switches from the primary GPU pool in ap-southeast-2 to us-west-2 when p99 TTFT exceeds 650 ms for 60 seconds.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage’s routing trigger and the reference threshold of 650.",
+      "faithfulness": 1.0
+    },
+    "reg-653039ae1a": {
+      "answer": "The webhook partner API allows 240 requests per minute per tenant key with a 5-second burst cap of 30 requests.",
+      "claims": [
+        {
+          "claim": "The webhook partner API allows 240 requests per minute per tenant key.",
+          "supported": true
+        },
+        {
+          "claim": "Its burst cap is 30 requests over 5 seconds.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and conveys both values in the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-667662f407": {
+      "answer": "The provided passages do not contain the answer to which fake Visa number triggers a 3D Secure hang in staging.",
+      "claims": [
+        {
+          "claim": "The passages do not contain the answer to which fake Visa number triggers a 3D Secure hang in staging.",
+          "supported": false
+        }
+      ],
+      "abstained": true,
+      "correct": false,
+      "rationale": "Passage 1 identifies 4111-0000-0000-9911 as simulating an issuer 3DS timeout.",
+      "faithfulness": 0.0
+    },
+    "reg-72cc780da3": {
+      "answer": "The ML Platform on-call gets auto-paged if the 5xx error ratio exceeds 1.5% over 3 minutes.",
+      "claims": [
+        {
+          "claim": "The ML Platform on-call gets auto-paged when the 5xx error ratio exceeds 1.5% over 3 minutes.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage states this paging threshold and identifies the ML Platform on-call.",
+      "faithfulness": 1.0
+    },
+    "reg-78545d895a": {
+      "answer": "Invoice PDF generation fails with error INV-409 when a customer's tax ID lacks the 9-digit NZBN prefix.",
+      "claims": [
+        {
+          "claim": "Invoice PDF generation fails with error INV-409 when a customer's tax ID lacks the 9-digit NZBN prefix.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage states this failure condition, and the answer includes the referenced error code INV-409.",
+      "faithfulness": 1.0
+    },
+    "reg-7a559baa65": {
+      "answer": "Runbook RB-77 states that when Kafka consumer lag on order-events exceeds 50,000 messages, partition concurrency should be doubled to 32.",
+      "claims": [
+        {
+          "claim": "Runbook RB-77 concerns Kafka consumer lag on order-events exceeding 50,000 messages.",
+          "supported": true
+        },
+        {
+          "claim": "When that threshold is exceeded, partition concurrency should be doubled to 32.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer accurately conveys the trigger threshold and required concurrency from passage 1, matching the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-7c2b8dbf17": {
+      "answer": "Kubernetes node pool gpu-l40s-prod scales up from 2 to 16 nodes when GPU KV-cache utilization stays above 78% for 90 seconds.",
+      "claims": [
+        {
+          "claim": "The gpu-l40s-prod node pool scales up from 2 to 16 nodes.",
+          "supported": true
+        },
+        {
+          "claim": "It scales up when GPU KV-cache utilization stays above 78%.",
+          "supported": true
+        },
+        {
+          "claim": "The utilization condition must persist for 90 seconds.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and conveys the reference thresholds of 78% and 90 seconds.",
+      "faithfulness": 1.0
+    },
+    "reg-8340ce87a7": {
+      "answer": "TLS 1.2 is rejected on ingress gateway v3; clients must negotiate TLS 1.3 with ALPN h2.",
+      "claims": [
+        {
+          "claim": "El gateway de ingreso v3 rechaza TLS 1.2.",
+          "supported": true
+        },
+        {
+          "claim": "Los clientes deben negociar TLS 1.3 con ALPN h2.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "La respuesta coincide con el pasaje y señala TLS 1.2, la versión indicada en la referencia.",
+      "faithfulness": 1.0
+    },
+    "reg-933d29c2ad": {
+      "answer": "Le basculement primaire Postgres via Patroni s'effectue en moins de 25 secondes.",
+      "claims": [
+        {
+          "claim": "Le basculement primaire Postgres via Patroni s'effectue en moins de 25 secondes.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Le passage indique que le basculement via Patroni s’achève en 25 secondes au plus.",
+      "faithfulness": 1.0
+    },
+    "reg-93ad2a15b3": {
+      "answer": "No, glass-bottle kombucha crates must never be stacked more than 3 tiers high on electric cargo bikes.",
+      "claims": [
+        {
+          "claim": "Glass-bottle kombucha crates must not be stacked four boxes tall on electric cargo bikes.",
+          "supported": true
+        },
+        {
+          "claim": "Glass-bottle kombucha crates may be stacked no more than three tiers high on electric cargo bikes.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Passage 1 sets the limit at three tiers, so the answer correctly rules out four.",
+      "faithfulness": 1.0
+    },
+    "reg-997394a082": {
+      "answer": "KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, with baskets below NZ$35 paying a NZ$4.99 surcharge.",
+      "claims": [
+        {
+          "claim": "The Auckland CBD express courier SLA is 18 minutes.",
+          "supported": true
+        },
+        {
+          "claim": "The qualifying basket amount is over NZ$35.",
+          "supported": true
+        },
+        {
+          "claim": "Baskets below NZ$35 incur a NZ$4.99 surcharge.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and conveys the reference SLA and basket threshold.",
+      "faithfulness": 1.0
+    },
+    "reg-a3ae50ac01": {
+      "answer": "Redis cluster uses the volatile-lru eviction policy with maxmemory capped at 48 GB per shard.",
+      "claims": [
+        {
+          "claim": "Redis uses the volatile-lru eviction policy.",
+          "supported": true
+        },
+        {
+          "claim": "Redis maxmemory is capped at 48 GB per shard.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the reference and the Redis details stated in passage 1.",
+      "faithfulness": 1.0
+    },
+    "reg-b0256580b8": {
+      "answer": "KoruMart absorbs up to NZ$5.00 of the upward price gap when a grocery picker substitutes an out-of-stock item with a pricier alternative.",
+      "claims": [
+        {
+          "claim": "KoruMart absorbs up to NZ$5.00 of the upward price gap when a picker substitutes a pricier alternative for an out-of-stock item.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and conveys the reference amount: up to NZ$5.00.",
+      "faithfulness": 1.0
+    },
+    "reg-b47f09f9e0": {
+      "answer": "NVIDIA driver 565.57 with CUDA 12.6 runs on the vLLM inference nodes.",
+      "claims": [
+        {
+          "claim": "NVIDIA driver 565.57 with CUDA 12.6 runs on the vLLM inference nodes.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Passage 1 states that vLLM inference nodes use driver 565.57 with CUDA 12.6, matching the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-b4e3ead154": {
+      "answer": "Raw ClickHouse request spans are kept for 30 days before being dropped.",
+      "claims": [
+        {
+          "claim": "Raw ClickHouse request spans are kept for 30 days before being dropped.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Passage 1 states raw request spans are dropped after 30 days.",
+      "faithfulness": 1.0
+    },
+    "reg-bc217d901c": {
+      "answer": "The dark-store inventory sync maintenance occurs every Tuesday 02:15-02:45 UTC, returning HTTP 503 with Retry-After: 1800, but the provided passages do not state that this job breaks slot bookings.",
+      "claims": [
+        {
+          "claim": "Dark-store inventory sync maintenance occurs every Tuesday from 02:15 to 02:45 UTC.",
+          "supported": true
+        },
+        {
+          "claim": "The maintenance returns HTTP 503 with Retry-After: 1800.",
+          "supported": true
+        },
+        {
+          "claim": "The passages do not state that this job breaks slot bookings.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer gives the referenced Tuesday 02:15 timing and accurately reports the maintenance details and the absence of information about broken bookings.",
+      "faithfulness": 1.0
+    },
+    "reg-cc9d583116": {
+      "answer": "The egress proxy firewall blocks RFC1918, loopback 127.0.0.0/8, and cloud metadata 169.254.169.254 at the DNS and socket layers.",
+      "claims": [
+        {
+          "claim": "The egress proxy firewall blocks RFC1918 addresses, loopback 127.0.0.0/8, and cloud metadata address 169.254.169.254.",
+          "supported": true
+        },
+        {
+          "claim": "These blocks operate at both the DNS and socket layers.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and includes the reference metadata IP.",
+      "faithfulness": 1.0
+    },
+    "reg-d131c5c35c": {
+      "answer": "KoruMart gift vouchers remain valid for 36 months from activation.",
+      "claims": [
+        {
+          "claim": "KoruMart gift vouchers remain valid for 36 months from activation.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the stated voucher validity period and the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-ddee8ae601": {
+      "answer": "The Enterprise plan overage billing charges US$0.12 per 1,000 extra vector lookups beyond the 10M monthly quota.",
+      "claims": [
+        {
+          "claim": "The Enterprise plan charges US$0.12 per 1,000 extra vector lookups.",
+          "supported": true
+        },
+        {
+          "claim": "The fee applies beyond the 10M monthly quota.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the passage and the reference fee.",
+      "faithfulness": 1.0
+    },
+    "reg-e2b0b4d2e9": {
+      "answer": "Clinical triage voice bots must play the non-diagnostic disclaimer within the first 4 seconds of call connection.",
+      "claims": [
+        {
+          "claim": "Clinical triage voice bots must play a non-diagnostic disclaimer within the first 4 seconds of call connection.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches passage 1 and the reference’s 4-second requirement.",
+      "faithfulness": 1.0
+    },
+    "reg-e2e3f779a3": {
+      "answer": "Incident disclosure to the Office of the Privacy Commissioner is mandatory within 72 hours for notifiable breaches.",
+      "claims": [
+        {
+          "claim": "Notifiable breaches must be reported to the Office of the Privacy Commissioner within 72 hours.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer states the 72-hour reporting deadline, matching the reference and passage 1.",
+      "faithfulness": 1.0
+    },
+    "reg-e599793c1d": {
+      "answer": "Según los pasajes, las baterías de iones de litio (UN3481) están limitadas a un máximo de 2 celdas por paquete a través de mensajería nacional en Nueva Zelanda.",
+      "claims": [
+        {
+          "claim": "Las baterías de iones de litio UN3481 están limitadas a un máximo de 2 celdas por paquete mediante mensajería nacional en Nueva Zelanda.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "El pasaje 1 establece el límite de 2 celdas por paquete para envíos mediante mensajería nacional de Nueva Zelanda.",
+      "faithfulness": 1.0
+    },
+    "reg-e906d9cdf7": {
+      "answer": "TLS 1.3 is required on ingress gateway v3, while TLS 1.2 is rejected.",
+      "claims": [
+        {
+          "claim": "TLS 1.3 is required on ingress gateway v3.",
+          "supported": true
+        },
+        {
+          "claim": "TLS 1.2 is rejected on ingress gateway v3.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "Both claims are directly supported by passage 1 and match the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-f87eb82993": {
+      "answer": "No, under the 2026 telehealth rule, video consult recordings are disabled by default unless the patient gives explicit verbal opt-in.",
+      "claims": [
+        {
+          "claim": "Under the 2026 telehealth rule, video consult recordings are disabled by default.",
+          "supported": true
+        },
+        {
+          "claim": "Recordings are enabled only if the patient gives explicit verbal opt-in.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer matches the active 2026 rule and the reference.",
+      "faithfulness": 1.0
+    },
+    "reg-f938051756": {
+      "answer": "Any sensor reading exceeding 8°C triggers an automatic instant refund for cold-chain dairy pouches.",
+      "claims": [
+        {
+          "claim": "Any sensor reading exceeding 8°C triggers an automatic instant refund for cold-chain dairy pouches.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage states that a sensor reading exceeding 8°C triggers an automatic instant refund.",
+      "faithfulness": 1.0
+    },
+    "reg-fb5e578418": {
+      "answer": "Escalation code ESC-917 connects directly to the Auckland cold-chain duty supervisor from 06:00 to 23:00 NZDT.",
+      "claims": [
+        {
+          "claim": "ESC-917 connects directly to the Auckland cold-chain duty supervisor from 06:00 to 23:00 NZDT.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage explicitly states ESC-917’s Auckland cold-chain escalation destination; the answer conveys the reference facts.",
+      "faithfulness": 1.0
+    },
+    "reg-fc1d78968a": {
+      "answer": "Dark-store packers must place peanut-containing items in red-seal allergen sleeves separate from bakery goods.",
+      "claims": [
+        {
+          "claim": "Dark-store packers must place peanut-containing items in red-seal allergen sleeves separate from bakery goods.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The passage explicitly states this separation rule, including the red-seal sleeves.",
+      "faithfulness": 1.0
+    },
+    "reg-feb7ee3e7e": {
+      "answer": "The KoruPass annual subscription costs NZ$79 per year and eliminates express delivery charges on orders above NZ$20.",
+      "claims": [
+        {
+          "claim": "The KoruPass annual subscription costs NZ$79 per year.",
+          "supported": true
+        },
+        {
+          "claim": "It eliminates express delivery charges on orders above NZ$20.",
+          "supported": true
+        }
+      ],
+      "abstained": false,
+      "correct": true,
+      "rationale": "The answer conveys both reference facts and is directly supported by passage 1.",
+      "faithfulness": 1.0
+    }
+  },
+  "usage": [
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 356,
+      "input_tokens": 315,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 41,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 739,
+      "input_tokens": 375,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 262
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 378,
+      "input_tokens": 342,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 36,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 484,
+      "input_tokens": 368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 116,
+      "output_tokens_details": {
+        "reasoning_tokens": 32
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 286,
+      "input_tokens": 262,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 616,
+      "input_tokens": 349,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 261,
+      "input_tokens": 237,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 72,
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 72,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 261,
+      "input_tokens": 241,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 59,
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 59,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 327,
+      "input_tokens": 258,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 69,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 715,
+      "input_tokens": 337,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 378,
+      "output_tokens_details": {
+        "reasoning_tokens": 287
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 277,
+      "input_tokens": 261,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 16,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 418,
+      "input_tokens": 310,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 108,
+      "output_tokens_details": {
+        "reasoning_tokens": 33
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 267,
+      "input_tokens": 238,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 29,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 479,
+      "input_tokens": 342,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 137,
+      "output_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 299,
+      "input_tokens": 291,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 8,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 625,
+      "input_tokens": 318,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 251
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 306,
+      "input_tokens": 275,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 31,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 435,
+      "input_tokens": 342,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 93,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 327,
+      "input_tokens": 299,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 28,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 485,
+      "input_tokens": 366,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 119,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 322,
+      "input_tokens": 274,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 48,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 481,
+      "input_tokens": 385,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 96,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 257,
+      "input_tokens": 249,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 8,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 409,
+      "input_tokens": 303,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 106,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 333,
+      "input_tokens": 310,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 23,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 467,
+      "input_tokens": 349,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 118,
+      "output_tokens_details": {
+        "reasoning_tokens": 47
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 258,
+      "input_tokens": 238,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 543,
+      "input_tokens": 302,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 264,
+      "input_tokens": 244,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 410,
+      "input_tokens": 304,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 106,
+      "output_tokens_details": {
+        "reasoning_tokens": 38
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 255,
+      "input_tokens": 232,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 23,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 405,
+      "input_tokens": 305,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 100,
+      "output_tokens_details": {
+        "reasoning_tokens": 32
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 283,
+      "input_tokens": 252,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 31,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 438,
+      "input_tokens": 328,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 110,
+      "output_tokens_details": {
+        "reasoning_tokens": 34
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 256,
+      "input_tokens": 238,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 18,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 420,
+      "input_tokens": 306,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 114,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 272,
+      "input_tokens": 247,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 25,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 452,
+      "input_tokens": 314,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 138,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 264,
+      "input_tokens": 240,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 420,
+      "input_tokens": 311,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 109,
+      "output_tokens_details": {
+        "reasoning_tokens": 33
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 311,
+      "input_tokens": 284,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 432,
+      "input_tokens": 353,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 79,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 312,
+      "input_tokens": 269,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 43,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 458,
+      "input_tokens": 353,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 105,
+      "output_tokens_details": {
+        "reasoning_tokens": 29
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 306,
+      "input_tokens": 271,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 35,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 417,
+      "input_tokens": 336,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 81,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 285,
+      "input_tokens": 258,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 435,
+      "input_tokens": 322,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 113,
+      "output_tokens_details": {
+        "reasoning_tokens": 43
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 274,
+      "input_tokens": 256,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 18,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 390,
+      "input_tokens": 319,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 71,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 261,
+      "input_tokens": 243,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 18,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 436,
+      "input_tokens": 305,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 131,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 255,
+      "input_tokens": 235,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 373,
+      "input_tokens": 301,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 72,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 284,
+      "input_tokens": 263,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 21,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 391,
+      "input_tokens": 327,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 64,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 285,
+      "input_tokens": 261,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 401,
+      "input_tokens": 324,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 77,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 276,
+      "input_tokens": 250,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 26,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 429,
+      "input_tokens": 324,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 105,
+      "output_tokens_details": {
+        "reasoning_tokens": 37
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 283,
+      "input_tokens": 249,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 34,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 483,
+      "input_tokens": 340,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 143,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 330,
+      "input_tokens": 282,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 48,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 491,
+      "input_tokens": 365,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 126,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 283,
+      "input_tokens": 254,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 29,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 448,
+      "input_tokens": 323,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 125,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 285,
+      "input_tokens": 261,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 506,
+      "input_tokens": 320,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 278,
+      "input_tokens": 250,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 28,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 452,
+      "input_tokens": 323,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 129,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 278,
+      "input_tokens": 251,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 436,
+      "input_tokens": 321,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 115,
+      "output_tokens_details": {
+        "reasoning_tokens": 38
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 288,
+      "input_tokens": 252,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 36,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 422,
+      "input_tokens": 330,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 92,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 303,
+      "input_tokens": 264,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 39,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 499,
+      "input_tokens": 339,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 160,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 295,
+      "input_tokens": 267,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 28,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 494,
+      "input_tokens": 335,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 257,
+      "input_tokens": 234,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 23,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 528,
+      "input_tokens": 304,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 272,
+      "input_tokens": 248,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 24,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 523,
+      "input_tokens": 319,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 317,
+      "input_tokens": 276,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 41,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 538,
+      "input_tokens": 351,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 254,
+      "input_tokens": 232,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 22,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 429,
+      "input_tokens": 308,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 121,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 291,
+      "input_tokens": 257,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 34,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 424,
+      "input_tokens": 341,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 83,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 296,
+      "input_tokens": 269,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 452,
+      "input_tokens": 340,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 112,
+      "output_tokens_details": {
+        "reasoning_tokens": 27
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 271,
+      "input_tokens": 254,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 17,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 377,
+      "input_tokens": 314,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 63,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 328,
+      "input_tokens": 273,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 55,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 611,
+      "input_tokens": 358,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 314,
+      "input_tokens": 260,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 54,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 488,
+      "input_tokens": 347,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 141,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 260,
+      "input_tokens": 244,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 16,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 389,
+      "input_tokens": 304,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 85,
+      "output_tokens_details": {
+        "reasoning_tokens": 24
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 302,
+      "input_tokens": 268,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 34,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 471,
+      "input_tokens": 340,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 131,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 260,
+      "input_tokens": 237,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 23,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 439,
+      "input_tokens": 311,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 128,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 267,
+      "input_tokens": 244,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 23,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 409,
+      "input_tokens": 312,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 97,
+      "output_tokens_details": {
+        "reasoning_tokens": 26
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 306,
+      "input_tokens": 257,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 49,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 514,
+      "input_tokens": 344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 170,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 294,
+      "input_tokens": 271,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 23,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 460,
+      "input_tokens": 339,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 121,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 283,
+      "input_tokens": 253,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 30,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 406,
+      "input_tokens": 323,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 83,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 280,
+      "input_tokens": 260,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 431,
+      "input_tokens": 324,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 107,
+      "output_tokens_details": {
+        "reasoning_tokens": 36
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 302,
+      "input_tokens": 266,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 36,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 467,
+      "input_tokens": 335,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 132,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 268,
+      "input_tokens": 246,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 22,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 430,
+      "input_tokens": 317,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 113,
+      "output_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "moss/fastlane-1",
+      "total_tokens": 285,
+      "input_tokens": 258,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "total_tokens": 409,
+      "input_tokens": 330,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 79,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "retrieve_ms": "0.0"
+    }
+  ]
+}

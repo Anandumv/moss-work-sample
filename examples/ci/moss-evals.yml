@@ -1,0 +1,33 @@
+# Example GitHub Actions job (not active in this repo: copy to .github/workflows/ in a project that uses Moss).
+# Runs the regression dataset built from production failures against the candidate retrieval config,
+# compares with the stored baseline run, and fails the PR on a threshold miss or a significant paired drop.
+name: moss-evals
+on:
+  pull_request:
+    paths: ["retrieval/**", "prompts/**", "evals/**"]
+jobs:
+  retrieval-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      MOSS_PROJECT_ID: ${{ secrets.MOSS_PROJECT_ID }}
+      MOSS_PROJECT_KEY: ${{ secrets.MOSS_PROJECT_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.10"}
+      - run: pip install -e .
+      - name: Retrieve (candidate config)
+        run: moss-evals retrieve --dataset evals/regression.jsonl --index ${{ vars.MOSS_INDEX }} --alpha 1.0 --top-k 10 --translate --out run.json
+      - name: Judge answers (fastlane-1 generates, gpt-6-luna judges)
+        run: moss-evals judge --dataset evals/regression.jsonl --run run.json --out judged.json
+      - name: Gate
+        run: >
+          moss-evals report --dataset evals/regression.jsonl --run run.json --judged judged.json
+          --baseline evals/baseline_run.json --thresholds evals/thresholds.json
+          --md report.md --junit junit.xml --fail-on-regression
+      - if: always()
+        run: cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: moss-evals-report, path: "report.md\njunit.xml\nrun.json\njudged.json"}

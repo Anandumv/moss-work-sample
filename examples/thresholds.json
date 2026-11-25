@@ -1,0 +1,6 @@
+{
+  "hit@5":   {"min": 0.80, "max_drop": 0.02},
+  "ndcg@5":  {"min": 0.75, "max_drop": 0.02},
+  "mrr@5":   {"min": 0.70, "max_drop": 0.02},
+  "faithfulness": {"min": 0.90}
+}

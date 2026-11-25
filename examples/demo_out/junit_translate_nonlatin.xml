@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="moss_evals" tests="4" failures="0">
+  <testcase classname="moss_evals.gates" name="hit@5"></testcase>
+  <testcase classname="moss_evals.gates" name="ndcg@5"></testcase>
+  <testcase classname="moss_evals.gates" name="mrr@5"></testcase>
+  <testcase classname="moss_evals.gates" name="faithfulness"></testcase>
+</testsuite>
