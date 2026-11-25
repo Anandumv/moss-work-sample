@@ -1,0 +1,307 @@
+{
+  "cli_checks": {
+    "version": {
+      "cmd": [
+        "moss",
+        "version"
+      ],
+      "returncode": 0,
+      "elapsed_ms": 187.96,
+      "stdout": "moss-cli  0.4.1\nmoss SDK  1.26.0",
+      "stderr": ""
+    },
+    "index_list": {
+      "cmd": [
+        "moss",
+        "--json",
+        "index",
+        "list"
+      ],
+      "returncode": 0,
+      "elapsed_ms": 3927.33,
+      "stdout": [
+        {
+          "id": "67efe613-66d5-4677-be77-edeb358be1e1",
+          "name": "eval-grounding-v1",
+          "version": "service-v1.0.0",
+          "status": "Ready",
+          "doc_count": 12,
+          "created_at": "2026-11-25T02:23:26.187Z",
+          "updated_at": "2026-11-25T02:23:26.187Z",
+          "model": {
+            "id": "moss-minilm",
+            "version": "service-v1.0.0"
+          }
+        },
+        {
+          "id": "e8ac29be-09ab-44f8-9c17-af7855db5e0f",
+          "name": "voice-agent-context",
+          "version": "service-v1.0.0",
+          "status": "Ready",
+          "doc_count": 50,
+          "created_at": "2026-11-25T02:19:39.925Z",
+          "updated_at": "2026-11-25T02:19:39.925Z",
+          "model": {
+            "id": "moss-minilm",
+            "version": "service-v1.0.0"
+          }
+        }
+      ],
+      "stderr": ""
+    },
+    "index_get_vac": {
+      "cmd": [
+        "moss",
+        "--json",
+        "index",
+        "get",
+        "voice-agent-context"
+      ],
+      "returncode": 0,
+      "elapsed_ms": 3904.23,
+      "stdout": {
+        "id": "e8ac29be-09ab-44f8-9c17-af7855db5e0f",
+        "name": "voice-agent-context",
+        "version": "service-v1.0.0",
+        "status": "Ready",
+        "doc_count": 50,
+        "created_at": "2026-11-25T02:19:39.925Z",
+        "updated_at": "2026-11-25T02:19:39.925Z",
+        "model": {
+          "id": "moss-minilm",
+          "version": "service-v1.0.0"
+        }
+      },
+      "stderr": ""
+    },
+    "query_vac": {
+      "cmd": [
+        "moss",
+        "--json",
+        "query",
+        "voice-agent-context",
+        "refund damaged item",
+        "--top-k",
+        "3"
+      ],
+      "returncode": 0,
+      "elapsed_ms": 6773.57,
+      "stdout": {
+        "query": "refund damaged item",
+        "index_name": "voice-agent-context",
+        "time_taken_ms": 1,
+        "docs": [
+          {
+            "id": "voiceai-1",
+            "text": "I'd like to request a refund for the order I received yesterday, it arrived damaged.",
+            "score": 0.8988252878189087,
+            "metadata": {
+              "intent": "refund",
+              "topic": "damaged_item_refund"
+            }
+          },
+          {
+            "id": "voiceai-10",
+            "text": "I was double charged for the same item and need a refund for the duplicate.",
+            "score": 0.7989939451217651,
+            "metadata": {
+              "topic": "duplicate_charge_refund",
+              "intent": "refund"
+            }
+          },
+          {
+            "id": "voiceai-2",
+            "text": "Can you process a refund back to my original payment method?",
+            "score": 0.7206227779388428,
+            "metadata": {
+              "topic": "refund_method",
+              "intent": "refund"
+            }
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    "query_filtered": {
+      "cmd": [
+        "moss",
+        "--json",
+        "query",
+        "eval-grounding-v1",
+        "express delivery",
+        "--filter",
+        "{\"field\":\"region\",\"condition\":{\"$eq\":\"auckland\"}}"
+      ],
+      "returncode": 0,
+      "elapsed_ms": 6981.83,
+      "stdout": {
+        "query": "express delivery",
+        "index_name": "eval-grounding-v1",
+        "time_taken_ms": 0,
+        "docs": [
+          {
+            "id": "pol-01",
+            "text": "KoruMart Express delivers groceries in 18 minutes across Auckland CBD, Newmarket, and Ponsonby for orders over NZ$35. Orders under NZ$35 incur a NZ$4.99 express fee.",
+            "score": 0.4756169021129608,
+            "metadata": {
+              "category": "delivery",
+              "region": "auckland"
+            }
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    "whoami_no_token": {
+      "cmd": [
+        "moss",
+        "whoami"
+      ],
+      "returncode": 2,
+      "elapsed_ms": 207.47,
+      "stdout": null,
+      "stderr": "Usage: moss whoami [OPTIONS]\nTry 'moss whoami --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ Invalid value: Not logged in. Run 'moss login', or set MOSS_TOKEN / pass     │\n│ --token.                                                                "
+    }
+  },
+  "crud_and_filters": {
+    "job_id": "2f5e17c3-3225-4bd1-bb02-1bec89d9a3fd",
+    "job_initial_status": "<builtins.JobStatus object at 0x7fdad4b34ba0>",
+    "job_done_status": "<builtins.JobStatus object at 0x7fdad4b34ba0>",
+    "index_info": {
+      "name": "temp-crud-idx",
+      "doc_count": 4,
+      "model_id": "moss-minilm"
+    },
+    "upsert_false_c1_text": [
+      "Auckland hub cold-chain SKU 101"
+    ],
+    "upsert_false_added_c5": true,
+    "upsert_true_c1_text": [
+      "Auckland hub cold-chain SKU 101 updated"
+    ],
+    "cloud_get_docs_filter_error": "InvalidArgumentError: get_docs does not support filter. Pass only doc_ids, or use a session's get_docs, which applies them.",
+    "filter_eq_ids": [
+      "c2"
+    ],
+    "filter_ne_ids": [
+      "c3",
+      "c4",
+      "c2",
+      "c5"
+    ],
+    "filter_range_ids": [
+      "c3",
+      "c1"
+    ],
+    "filter_near_auckland_ids": [
+      "c1"
+    ],
+    "filter_missing_field_count": 0,
+    "min_score_0_5_scores": [
+      [
+        "c1",
+        0.9175
+      ],
+      [
+        "c3",
+        0.5223
+      ]
+    ],
+    "top_k_0_count": 0,
+    "min_score_alpha0_error": "InvalidArgumentError: The query has an invalid argument.",
+    "top_k_neg_error": "OverflowError: can't convert negative int to unsigned",
+    "docs_after_delete_docs_ids": [
+      "c1",
+      "c2",
+      "c3"
+    ],
+    "delete_index_result": true
+  },
+  "custom_multi_session": {
+    "custom_top_id": "v1",
+    "custom_missing_vec_err": "InvalidArgumentError: This index cannot embed text queries. Pass a query embedding, or use alpha 0 for keyword-only search.",
+    "multi_loaded": [
+      "voice-agent-context",
+      "eval-grounding-v1"
+    ],
+    "multi_failed": {
+      "nonexistent-idx-check": "NOT_FOUND"
+    },
+    "multi_hits": [
+      [
+        "eval-grounding-v1",
+        "pol-02",
+        0.5412
+      ],
+      [
+        "voice-agent-context",
+        "voiceai-1",
+        0.4862
+      ],
+      [
+        "voice-agent-context",
+        "voiceai-2",
+        0.4532
+      ],
+      [
+        "voice-agent-context",
+        "voiceai-10",
+        0.3724
+      ],
+      [
+        "voice-agent-context",
+        "voiceai-3",
+        0.3076
+      ],
+      [
+        "voice-agent-context",
+        "voiceai-8",
+        0.285
+      ]
+    ],
+    "session_lock_err_while_open": null,
+    "session_grouped_ids": [
+      "ret",
+      "sla"
+    ],
+    "session_restored_count": 3
+  },
+  "scale_2k": {
+    "doc_count": 2000,
+    "ingest_build_ms": 12340.65,
+    "cold_load_ms": 3397.51,
+    "local_query_100x_ms": {
+      "count": 100,
+      "min": 3.59,
+      "p50": 4.1,
+      "p95": 4.75,
+      "max": 7.17,
+      "mean": 4.18
+    },
+    "local_filtered_100x_ms": {
+      "count": 100,
+      "min": 3.69,
+      "p50": 4.14,
+      "p95": 4.81,
+      "max": 6.47,
+      "mean": 4.21
+    },
+    "gateway_cold_retrieve_ms": 2390.4,
+    "gateway_warm_retrieve_9x_ms": {
+      "count": 9,
+      "min": 9.1,
+      "p50": 9.2,
+      "p95": 9.3,
+      "max": 9.3,
+      "mean": 9.22
+    },
+    "gateway_warm_ttft_9x_ms": {
+      "count": 9,
+      "min": 473.37,
+      "p50": 491.59,
+      "p95": 912.28,
+      "max": 914.29,
+      "mean": 627.04
+    }
+  }
+}
