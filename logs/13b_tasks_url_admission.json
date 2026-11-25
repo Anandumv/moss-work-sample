@@ -1,0 +1,135 @@
+{
+  "probed_at_local": "2026-11-25 16:20 NZDT",
+  "probes": {
+    "loopback_127": {
+      "url": "http://127.0.0.1:8080/",
+      "status": 202,
+      "body": "{\"id\":\"task_6c1dcc43a0b3473cb43e616a5a307603\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://127.0.0.1:8080/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\":0",
+      "task_id": "task_6c1dcc43a0b3473cb43e616a5a307603",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "localhost": {
+      "url": "http://localhost:3000/",
+      "status": 202,
+      "body": "{\"id\":\"task_6f3be44b93c14f1fb3030506442a0d1f\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://localhost:3000/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\":0",
+      "task_id": "task_6f3be44b93c14f1fb3030506442a0d1f",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "metadata_169_254": {
+      "url": "http://169.254.169.254/latest/meta-data/",
+      "status": 202,
+      "body": "{\"id\":\"task_e10c7c61c71d43b69784260312f8f297\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://169.254.169.254/latest/meta-data/\"},\"output_schema\":null,\"limits\"",
+      "task_id": "task_e10c7c61c71d43b69784260312f8f297",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "rfc1918_10": {
+      "url": "http://10.0.0.1/",
+      "status": 202,
+      "body": "{\"id\":\"task_31ca5df2897d4db8a9a1c04dba279ac5\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://10.0.0.1/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\":0.01,\"m",
+      "task_id": "task_31ca5df2897d4db8a9a1c04dba279ac5",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "rfc1918_192_168": {
+      "url": "http://192.168.1.1/",
+      "status": 202,
+      "body": "{\"id\":\"task_98d8abe8c3e540b2a7cea58ecd4932a4\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://192.168.1.1/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\":0.01",
+      "task_id": "task_98d8abe8c3e540b2a7cea58ecd4932a4",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "ipv6_loopback": {
+      "url": "http://[::1]:8080/",
+      "status": 202,
+      "body": "{\"id\":\"task_b361d5ea320d4c1c9d7a4d57b57499e6\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://[::1]:8080/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\":0.01,",
+      "task_id": "task_b361d5ea320d4c1c9d7a4d57b57499e6",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "decimal_ip_loopback": {
+      "url": "http://2130706433/",
+      "status": 202,
+      "body": "{\"id\":\"task_1e31c7f9931c42bfa4df3277c256079e\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://2130706433/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\":0.01,",
+      "task_id": "task_1e31c7f9931c42bfa4df3277c256079e",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "hex_ip_loopback": {
+      "url": "http://0x7f000001/",
+      "status": 202,
+      "body": "{\"id\":\"task_4e4637114c2f4c778c04e68fb115a6d8\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://0x7f000001/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\":0.01,",
+      "task_id": "task_4e4637114c2f4c778c04e68fb115a6d8",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "nip_io_loopback_dns": {
+      "url": "http://127.0.0.1.nip.io/",
+      "status": 202,
+      "body": "{\"id\":\"task_bbb67e48c8d34bb79e2d2c774a57d4e9\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://127.0.0.1.nip.io/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\"",
+      "task_id": "task_bbb67e48c8d34bb79e2d2c774a57d4e9",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "metadata_gcp_host": {
+      "url": "http://metadata.google.internal/computeMetadata/v1/",
+      "status": 202,
+      "body": "{\"id\":\"task_9807db5d8b5c4da498cc43c88cb1b29e\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"http://metadata.google.internal/computeMetadata/v1/\"},\"output_schema\":nu",
+      "task_id": "task_9807db5d8b5c4da498cc43c88cb1b29e",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    },
+    "data_url": {
+      "url": "data:text/html,<h1>hi</h1>",
+      "status": 400,
+      "body": "{\"error\":{\"message\":\"environment.start_url must be an http or https URL, or a host such as example.com\",\"type\":\"invalid_request_error\",\"code\":\"invalid_request_error\",\"request_id\":\"aa66d88c755e4af9b4ec2564a9d34d00\"}}"
+    },
+    "file_url": {
+      "url": "file:///etc/passwd",
+      "status": 400,
+      "body": "{\"error\":{\"message\":\"environment.start_url must be an http or https URL, or a host such as example.com\",\"type\":\"invalid_request_error\",\"code\":\"invalid_request_error\",\"request_id\":\"2d0c4a66dfb24af183651b9c25d7b37e\"}}"
+    },
+    "javascript_url": {
+      "url": "javascript:alert(1)",
+      "status": 400,
+      "body": "{\"error\":{\"message\":\"environment.start_url must be an http or https URL, or a host such as example.com\",\"type\":\"invalid_request_error\",\"code\":\"invalid_request_error\",\"request_id\":\"dedc1ff8f4e942a68379ec2bf83ac270\"}}"
+    },
+    "ftp_url": {
+      "url": "ftp://example.com/",
+      "status": 400,
+      "body": "{\"error\":{\"message\":\"environment.start_url must be an http or https URL, or a host such as example.com\",\"type\":\"invalid_request_error\",\"code\":\"invalid_request_error\",\"request_id\":\"5c3b9d4226eb4a71829682a85297472a\"}}"
+    },
+    "control_public": {
+      "url": "https://example.com/",
+      "status": 202,
+      "body": "{\"id\":\"task_6188f34f40994e5f942c9bdbd633e83e\",\"object\":\"task\",\"status\":\"queued\",\"title\":null,\"goal\":\"Read the page title.\",\"environment\":{\"type\":\"browser\",\"start_url\":\"https://example.com/\"},\"output_schema\":null,\"limits\":{\"max_cost_usd\":0.0",
+      "task_id": "task_6188f34f40994e5f942c9bdbd633e83e",
+      "cancel_http": 200,
+      "final_status": "cancelled",
+      "total_usd": 0.000333,
+      "error": null
+    }
+  }
+}
