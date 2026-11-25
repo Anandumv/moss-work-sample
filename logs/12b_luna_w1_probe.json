@@ -1,0 +1,85 @@
+{
+  "rows": [
+    {
+      "variant": "W1_auto",
+      "case": "d01",
+      "status": 200,
+      "turn1_output_types": [
+        "message"
+      ],
+      "turn1_function_calls": [],
+      "final": "KoruMart Auckland CBD express courier has an 18-minute SLA for baskets over NZ$35; baskets below NZ$35 incur a NZ$4.99 surcharge. Order 4471 is out for delivery, with an estimated 12 minutes remaining.",
+      "correct": true,
+      "mentions_status": true,
+      "error": null
+    },
+    {
+      "variant": "W1_auto",
+      "case": "d03",
+      "status": 200,
+      "turn1_output_types": [
+        "function_call"
+      ],
+      "turn1_function_calls": [
+        "{\"order_id\":\"4471\"}"
+      ],
+      "final": "",
+      "correct": false,
+      "mentions_status": false,
+      "error": null
+    },
+    {
+      "variant": "W1_auto",
+      "case": "a01",
+      "status": 200,
+      "turn1_output_types": [
+        "function_call"
+      ],
+      "turn1_function_calls": [
+        "{\"order_id\":\"4471\"}"
+      ],
+      "final": "",
+      "correct": false,
+      "mentions_status": false,
+      "error": null
+    },
+    {
+      "variant": "W1_tool_choice_none",
+      "case": "d01",
+      "status": 200,
+      "turn1_output_types": [],
+      "turn1_function_calls": [],
+      "final": "",
+      "correct": false,
+      "mentions_status": false,
+      "error": null
+    },
+    {
+      "variant": "W1_tool_choice_none",
+      "case": "d03",
+      "status": 200,
+      "turn1_output_types": [
+        "message"
+      ],
+      "turn1_function_calls": [],
+      "final": "KoruPass costs NZ$79 per year and waives express delivery charges on orders over NZ$20. Order 4471 was last reported as out for delivery, with an estimated 12 minutes remaining.",
+      "correct": true,
+      "mentions_status": true,
+      "error": null
+    },
+    {
+      "variant": "W1_tool_choice_none",
+      "case": "a01",
+      "status": 200,
+      "turn1_output_types": [
+        "message"
+      ],
+      "turn1_function_calls": [],
+      "final": "SKU MNG-4402 is stored in Auckland bin NZ-AKL-04B at 13°C. Order 4471 is out for delivery, with an ETA of 12 minutes.",
+      "correct": true,
+      "mentions_status": true,
+      "error": null
+    }
+  ],
+  "est_cost_usd": 0.00697
+}

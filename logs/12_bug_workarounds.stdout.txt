@@ -1,0 +1,170 @@
+[A] moss/fastlane-1    baseline        correct=0/10 status_mentioned=10/10
+[A] moss/fastlane-1    W1_requery      correct=10/10 status_mentioned=10/10
+[A] moss/fastlane-1    W2_moss_search  correct=10/10 status_mentioned=10/10
+[A] moss/fastlane-1    W3_client_rag   correct=10/10 status_mentioned=10/10
+[A] openai/gpt-6-luna  baseline        correct=0/10 status_mentioned=10/10
+[A] openai/gpt-6-luna  W1_requery      correct=0/10 status_mentioned=0/10
+[A] openai/gpt-6-luna  W2_moss_search  correct=10/10 status_mentioned=10/10
+[A] openai/gpt-6-luna  W3_client_rag   correct=10/10 status_mentioned=10/10
+[B] qwen/qwen3.8-flash   default      visible=3/5 correct=3/5 http=[200] p50=5962.2ms r_tok=343.6
+[B] qwen/qwen3.8-flash   effort_low   visible=2/5 correct=2/5 http=[200] p50=5183.3ms r_tok=348.0
+[B] qwen/qwen3.8-flash   effort_none  visible=5/5 correct=5/5 http=[200] p50=1335.3ms r_tok=0.0
+[B] z-ai/glm-5.3-flash   default      visible=5/5 correct=5/5 http=[200] p50=2120.8ms r_tok=111.6
+[B] z-ai/glm-5.3-flash   effort_low   visible=5/5 correct=5/5 http=[200] p50=1665.2ms r_tok=0.2
+[B] z-ai/glm-5.3-flash   effort_none  visible=0/5 correct=0/5 http=[400] p50=0.0ms r_tok=0.0
+Saved: /workspace/moss-work-sample/logs/12_bug_workarounds.json
+{
+ "moss/fastlane-1|baseline": {
+  "correct": "0/10",
+  "status_mentioned": "10/10",
+  "turn1_retrieve_ms_values": [
+   "0.0"
+  ],
+  "turn1_in_tok_mean": 518.6,
+  "two_turn_ms": {
+   "count": 10,
+   "min": 1545.4,
+   "p50": 2025.75,
+   "p95": 3035.01,
+   "max": 3703.8,
+   "mean": 2087.17
+  },
+  "cost_usd": 0.014829
+ },
+ "moss/fastlane-1|W1_requery": {
+  "correct": "10/10",
+  "status_mentioned": "10/10",
+  "turn1_retrieve_ms_values": [
+   "15.0",
+   "16.0",
+   "16.3",
+   "16.6",
+   "17.0",
+   "17.7",
+   "18.0",
+   "18.1",
+   "18.4",
+   "21.7"
+  ],
+  "turn1_in_tok_mean": 839.6,
+  "two_turn_ms": {
+   "count": 10,
+   "min": 1560.3,
+   "p50": 1602.45,
+   "p95": 1677.87,
+   "max": 1718.1,
+   "mean": 1609.08
+  },
+  "cost_usd": 0.015374
+ },
+ "moss/fastlane-1|W2_moss_search": {
+  "correct": "10/10",
+  "status_mentioned": "10/10",
+  "turn1_retrieve_ms_values": [
+   "0.0"
+  ],
+  "turn1_in_tok_mean": 1528.9,
+  "two_turn_ms": {
+   "count": 10,
+   "min": 1990.0,
+   "p50": 2104.35,
+   "p95": 2198.37,
+   "max": 2219.7,
+   "mean": 2093.72
+  },
+  "cost_usd": 0.008022
+ },
+ "moss/fastlane-1|W3_client_rag": {
+  "correct": "10/10",
+  "status_mentioned": "10/10",
+  "turn1_retrieve_ms_values": [
+   "0.0"
+  ],
+  "turn1_in_tok_mean": 687.6,
+  "two_turn_ms": {
+   "count": 10,
+   "min": 1496.8,
+   "p50": 1536.1,
+   "p95": 1701.12,
+   "max": 1776.0,
+   "mean": 1557.57
+  },
+  "cost_usd": 0.004742
+ },
+ "openai/gpt-6-luna|baseline": {
+  "correct": "0/10",
+  "status_mentioned": "10/10",
+  "turn1_retrieve_ms_values": [
+   "0.0"
+  ],
+  "turn1_in_tok_mean": 189.3,
+  "two_turn_ms": {
+   "count": 10,
+   "min": 2781.9,
+   "p50": 3244.45,
+   "p95": 4162.64,
+   "max": 4380.4,
+   "mean": 3334.9
+  },
+  "cost_usd": 0.011292
+ },
+ "openai/gpt-6-luna|W1_requery": {
+  "correct": "0/10",
+  "status_mentioned": "0/10",
+  "turn1_retrieve_ms_values": [
+   "14.8",
+   "15.7",
+   "16.1",
+   "16.6",
+   "17.5",
+   "17.7",
+   "18.1",
+   "18.6"
+  ],
+  "turn1_in_tok_mean": 481.5,
+  "two_turn_ms": {
+   "count": 10,
+   "min": 2654.0,
+   "p50": 3352.55,
+   "p95": 3953.61,
+   "max": 4038.3,
+   "mean": 3333.08
+  },
+  "cost_usd": 0.011339
+ },
+ "openai/gpt-6-luna|W2_moss_search": {
+  "correct": "10/10",
+  "status_mentioned": "10/10",
+  "turn1_retrieve_ms_values": [
+   "0.0"
+  ],
+  "turn1_in_tok_mean": 763.6,
+  "two_turn_ms": {
+   "count": 10,
+   "min": 3840.9,
+   "p50": 4229.0,
+   "p95": 5157.81,
+   "max": 5661.5,
+   "mean": 4351.97
+  },
+  "cost_usd": 0.00171
+ },
+ "openai/gpt-6-luna|W3_client_rag": {
+  "correct": "10/10",
+  "status_mentioned": "10/10",
+  "turn1_retrieve_ms_values": [
+   "0.0"
+  ],
+  "turn1_in_tok_mean": 336.1,
+  "two_turn_ms": {
+   "count": 10,
+   "min": 2599.8,
+   "p50": 2853.7,
+   "p95": 3717.62,
+   "max": 4136.8,
+   "mean": 2999.22
+  },
+  "cost_usd": 0.00097
+ }
+}
+est cost 0.0874
