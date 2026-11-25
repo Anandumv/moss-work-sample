@@ -1,0 +1,1507 @@
+{
+  "model_matrix": {
+    "moss/fastlane-1": {
+      "model": "moss/fastlane-1",
+      "ttft_ms": {
+        "count": 3,
+        "min": 917.4,
+        "p50": 919.72,
+        "p95": 1381.38,
+        "max": 1432.67,
+        "mean": 1089.93
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1190.1,
+        "p50": 1317.99,
+        "p95": 1948.3,
+        "max": 2018.33,
+        "mean": 1508.81
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.3,
+        "p50": 9.7,
+        "p95": 10.06,
+        "max": 10.1,
+        "mean": 9.7
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.002199,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 1432.67,
+          "total_ms": 2018.33,
+          "retrieve_ms": 10.1,
+          "usage": {
+            "total_tokens": 600,
+            "input_tokens": 525,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 75,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "The provided facts do not mention Wellington or specify a maximum refund amount for spoiled produce. The facts state that perishable produce claims must be subm"
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 917.4,
+          "total_ms": 1190.1,
+          "retrieve_ms": 9.7,
+          "usage": {
+            "total_tokens": 568,
+            "input_tokens": 525,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 43,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do not know. The available information states that perishable produce claims must be submitted within 12 hours of delivery with a single photo, but it does no"
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 919.72,
+          "total_ms": 1317.99,
+          "retrieve_ms": 9.3,
+          "usage": {
+            "total_tokens": 582,
+            "input_tokens": 525,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 57,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do not know the exact maximum refund amount for spoiled produce in Wellington. The available information only states that perishable produce claims must be su"
+        }
+      ]
+    },
+    "openai/gpt-6-luna": {
+      "model": "openai/gpt-6-luna",
+      "ttft_ms": {
+        "count": 3,
+        "min": 1820.9,
+        "p50": 1873.81,
+        "p95": 2168.77,
+        "max": 2201.54,
+        "mean": 1965.42
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 2141.51,
+        "p50": 2253.45,
+        "p95": 2575.8,
+        "max": 2611.62,
+        "mean": 2335.53
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.4,
+        "p50": 9.4,
+        "p95": 9.67,
+        "max": 9.7,
+        "mean": 9.5
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.001719,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 1873.81,
+          "total_ms": 2141.51,
+          "retrieve_ms": 9.7,
+          "usage": {
+            "total_tokens": 368,
+            "input_tokens": 290,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 78,
+            "output_tokens_details": {
+              "reasoning_tokens": 35
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don’t know the maximum refund or whether KoruMart serves Wellington. The available information only says spoiled-produce claims must be submitted within 12 ho"
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 2201.54,
+          "total_ms": 2611.62,
+          "retrieve_ms": 9.4,
+          "usage": {
+            "total_tokens": 382,
+            "input_tokens": 290,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 92,
+            "output_tokens_details": {
+              "reasoning_tokens": 64
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don’t know the maximum refund for spoiled produce in Wellington; no refund cap or Wellington policy is specified."
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 1820.9,
+          "total_ms": 2253.45,
+          "retrieve_ms": 9.4,
+          "usage": {
+            "total_tokens": 384,
+            "input_tokens": 290,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 94,
+            "output_tokens_details": {
+              "reasoning_tokens": 50
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "The maximum refund amount—and whether spoiled-produce claims are handled in Wellington—aren’t specified. Claims for perishable produce must be submitted within "
+        }
+      ]
+    },
+    "openai/gpt-6.1-terra": {
+      "model": "openai/gpt-6.1-terra",
+      "ttft_ms": {
+        "count": 3,
+        "min": 2217.73,
+        "p50": 2243.59,
+        "p95": 2964.16,
+        "max": 3044.22,
+        "mean": 2501.85
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 2508.65,
+        "p50": 2566.19,
+        "p95": 3343.84,
+        "max": 3430.25,
+        "mean": 2835.03
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.3,
+        "p50": 9.4,
+        "p95": 9.58,
+        "max": 9.6,
+        "mean": 9.43
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.002218,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 2243.59,
+          "total_ms": 2566.19,
+          "retrieve_ms": 9.4,
+          "usage": {
+            "total_tokens": 369,
+            "input_tokens": 290,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 79,
+            "output_tokens_details": {
+              "reasoning_tokens": 44
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don’t know the maximum refund for spoiled produce in Wellington. Produce claims must be submitted within 12 hours of delivery with a single photo."
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 2217.73,
+          "total_ms": 2508.65,
+          "retrieve_ms": 9.6,
+          "usage": {
+            "total_tokens": 394,
+            "input_tokens": 290,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 104,
+            "output_tokens_details": {
+              "reasoning_tokens": 69
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don’t know the maximum refund for spoiled produce in Wellington. Produce claims must be submitted within 12 hours of delivery with a single photo."
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 3044.22,
+          "total_ms": 3430.25,
+          "retrieve_ms": 9.3,
+          "usage": {
+            "total_tokens": 393,
+            "input_tokens": 290,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 103,
+            "output_tokens_details": {
+              "reasoning_tokens": 68
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don’t know the maximum refund for spoiled produce in Wellington. Produce claims must be submitted within 12 hours of delivery with a single photo."
+        }
+      ]
+    },
+    "anthropic/claude-haiku-5.5": {
+      "model": "anthropic/claude-haiku-5.5",
+      "ttft_ms": {
+        "count": 3,
+        "min": 834.7,
+        "p50": 884.96,
+        "p95": 1265.13,
+        "max": 1307.37,
+        "mean": 1009.01
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1102.58,
+        "p50": 1305.6,
+        "p95": 1672.54,
+        "max": 1713.31,
+        "mean": 1373.83
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.3,
+        "p50": 9.4,
+        "p95": 9.4,
+        "max": 9.4,
+        "mean": 9.37
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.001761,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 1307.37,
+          "total_ms": 1713.31,
+          "retrieve_ms": 9.3,
+          "usage": {
+            "total_tokens": 536,
+            "input_tokens": 440,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 96,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know. The information I have covers claim timing for perishable produce (within 12 hours of delivery with a single photo), but it doesn't state any refu"
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 884.96,
+          "total_ms": 1305.6,
+          "retrieve_ms": 9.4,
+          "usage": {
+            "total_tokens": 532,
+            "input_tokens": 440,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 92,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know. The information I have doesn't mention refunds for spoiled produce in Wellington, and it only covers Auckland CBD, Newmarket, and Ponsonby. It als"
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 834.7,
+          "total_ms": 1102.58,
+          "retrieve_ms": 9.4,
+          "usage": {
+            "total_tokens": 509,
+            "input_tokens": 440,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 69,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know. The information I have doesn't mention Wellington or a maximum refund amount for spoiled produce. It only says perishable produce claims must be s"
+        }
+      ]
+    },
+    "anthropic/claude-sonnet-5.5": {
+      "model": "anthropic/claude-sonnet-5.5",
+      "ttft_ms": {
+        "count": 3,
+        "min": 892.65,
+        "p50": 892.75,
+        "p95": 942.48,
+        "max": 948.0,
+        "mean": 911.13
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1470.56,
+        "p50": 1479.76,
+        "p95": 1513.91,
+        "max": 1517.7,
+        "mean": 1489.34
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.4,
+        "p50": 9.6,
+        "p95": 9.69,
+        "max": 9.7,
+        "mean": 9.57
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.002366,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 892.75,
+          "total_ms": 1470.56,
+          "retrieve_ms": 9.4,
+          "usage": {
+            "total_tokens": 537,
+            "input_tokens": 440,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 97,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know the maximum refund amount for spoiled produce. What I do know is that perishable produce claims must be submitted within 12 hours of delivery with "
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 948.0,
+          "total_ms": 1517.7,
+          "retrieve_ms": 9.6,
+          "usage": {
+            "total_tokens": 545,
+            "input_tokens": 440,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 105,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know the maximum refund amount for spoiled produce. What I can say is that perishable produce claims must be submitted within 12 hours of delivery with "
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 892.65,
+          "total_ms": 1479.76,
+          "retrieve_ms": 9.7,
+          "usage": {
+            "total_tokens": 544,
+            "input_tokens": 440,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 104,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know the maximum refund amount for spoiled produce, and I have nothing on Wellington. What I can say is that perishable produce claims must be submitted"
+        }
+      ]
+    },
+    "google/gemini-3.5-flash-lite": {
+      "model": "google/gemini-3.5-flash-lite",
+      "ttft_ms": {
+        "count": 3,
+        "min": 1257.61,
+        "p50": 1577.04,
+        "p95": 1593.02,
+        "max": 1594.79,
+        "mean": 1476.48
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1259.96,
+        "p50": 1577.54,
+        "p95": 1595.47,
+        "max": 1597.46,
+        "mean": 1478.32
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.3,
+        "p50": 9.5,
+        "p95": 10.13,
+        "max": 10.2,
+        "mean": 9.67
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.001806,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 1257.61,
+          "total_ms": 1259.96,
+          "retrieve_ms": 9.3,
+          "usage": {
+            "total_tokens": 303,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 5,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do not know."
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 1577.04,
+          "total_ms": 1577.54,
+          "retrieve_ms": 9.5,
+          "usage": {
+            "total_tokens": 303,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 5,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do not know."
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 1594.79,
+          "total_ms": 1597.46,
+          "retrieve_ms": 10.2,
+          "usage": {
+            "total_tokens": 303,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 5,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do not know."
+        }
+      ]
+    },
+    "google/gemini-3.8-flash (default)": {
+      "model": "google/gemini-3.8-flash",
+      "ttft_ms": {
+        "count": 3,
+        "min": 2868.73,
+        "p50": 3409.93,
+        "p95": 4235.1,
+        "max": 4326.79,
+        "mean": 3535.15
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 2869.95,
+        "p50": 3412.05,
+        "p95": 4236.3,
+        "max": 4327.88,
+        "mean": 3536.63
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.4,
+        "p50": 9.5,
+        "p95": 10.22,
+        "max": 10.3,
+        "mean": 9.73
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.002331,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": 3409.93,
+          "total_ms": 3412.05,
+          "retrieve_ms": 9.4,
+          "usage": {
+            "total_tokens": 414,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 114
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do"
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": 2868.73,
+          "total_ms": 2869.95,
+          "retrieve_ms": 9.5,
+          "usage": {
+            "total_tokens": 414,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 115
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I"
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": 4326.79,
+          "total_ms": 4327.88,
+          "retrieve_ms": 10.3,
+          "usage": {
+            "total_tokens": 414,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 115
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I"
+        }
+      ]
+    },
+    "google/gemini-3.8-flash (effort=none)": {
+      "model": "google/gemini-3.8-flash",
+      "ttft_ms": {
+        "count": 3,
+        "min": 2600.1,
+        "p50": 3046.96,
+        "p95": 4748.3,
+        "max": 4937.34,
+        "mean": 3528.13
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 2602.77,
+        "p50": 3048.02,
+        "p95": 4751.14,
+        "max": 4940.37,
+        "mean": 3530.39
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.5,
+        "p50": 9.6,
+        "p95": 9.6,
+        "max": 9.6,
+        "mean": 9.57
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.001943,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 3046.96,
+          "total_ms": 3048.02,
+          "retrieve_ms": 9.6,
+          "usage": {
+            "total_tokens": 303,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 5,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do not know."
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "completed",
+          "ttft_ms": 2600.1,
+          "total_ms": 2602.77,
+          "retrieve_ms": 9.5,
+          "usage": {
+            "total_tokens": 303,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 5,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do not know."
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": 4937.34,
+          "total_ms": 4940.37,
+          "retrieve_ms": 9.6,
+          "usage": {
+            "total_tokens": 414,
+            "input_tokens": 298,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 113
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I do not"
+        }
+      ]
+    },
+    "deepseek/deepseek-v4.1-flash": {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "ttft_ms": {
+        "count": 1,
+        "min": 1642.37,
+        "p50": 1642.37,
+        "p95": 1642.37,
+        "max": 1642.37,
+        "mean": 1642.37
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1243.51,
+        "p50": 1934.09,
+        "p95": 2375.62,
+        "max": 2424.68,
+        "mean": 1867.43
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.3,
+        "p50": 9.5,
+        "p95": 9.86,
+        "max": 9.9,
+        "mean": 9.57
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.001767,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 2424.68,
+          "retrieve_ms": 9.3,
+          "usage": {
+            "total_tokens": 431,
+            "input_tokens": 311,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": 1642.37,
+          "total_ms": 1934.09,
+          "retrieve_ms": 9.5,
+          "usage": {
+            "total_tokens": 431,
+            "input_tokens": 311,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 50
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know. The facts I have don't state a maximum refund amount for spoiled produce, and they don't cover Wellington — the delivery areas listed are Auckland"
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 1243.51,
+          "retrieve_ms": 9.9,
+          "usage": {
+            "total_tokens": 431,
+            "input_tokens": 311,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        }
+      ]
+    },
+    "qwen/qwen3.8-flash": {
+      "model": "qwen/qwen3.8-flash",
+      "ttft_ms": null,
+      "total_ms": {
+        "count": 3,
+        "min": 3182.88,
+        "p50": 3671.36,
+        "p95": 4321.71,
+        "max": 4393.97,
+        "mean": 3749.4
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.3,
+        "p50": 9.6,
+        "p95": 9.87,
+        "max": 9.9,
+        "mean": 9.6
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.002394,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 3671.36,
+          "retrieve_ms": 9.3,
+          "usage": {
+            "total_tokens": 474,
+            "input_tokens": 354,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 3182.88,
+          "retrieve_ms": 9.6,
+          "usage": {
+            "total_tokens": 474,
+            "input_tokens": 354,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 4393.97,
+          "retrieve_ms": 9.9,
+          "usage": {
+            "total_tokens": 474,
+            "input_tokens": 354,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        }
+      ]
+    },
+    "z-ai/glm-5.3-flash": {
+      "model": "z-ai/glm-5.3-flash",
+      "ttft_ms": null,
+      "total_ms": {
+        "count": 3,
+        "min": 1538.25,
+        "p50": 1558.44,
+        "p95": 2191.15,
+        "max": 2261.45,
+        "mean": 1786.05
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.5,
+        "p50": 9.6,
+        "p95": 9.78,
+        "max": 9.8,
+        "mean": 9.63
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.002353,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 1558.44,
+          "retrieve_ms": 9.5,
+          "usage": {
+            "total_tokens": 417,
+            "input_tokens": 297,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 2261.45,
+          "retrieve_ms": 9.6,
+          "usage": {
+            "total_tokens": 438,
+            "input_tokens": 318,
+            "input_tokens_details": {
+              "cached_tokens": 21
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 1538.25,
+          "retrieve_ms": 9.8,
+          "usage": {
+            "total_tokens": 417,
+            "input_tokens": 297,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        }
+      ]
+    },
+    "moonshotai/kimi-k3": {
+      "model": "moonshotai/kimi-k3",
+      "ttft_ms": {
+        "count": 1,
+        "min": 1699.54,
+        "p50": 1699.54,
+        "p95": 1699.54,
+        "max": 1699.54,
+        "mean": 1699.54
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1344.61,
+        "p50": 1412.08,
+        "p95": 1680.56,
+        "max": 1710.39,
+        "mean": 1489.03
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.3,
+        "p50": 9.6,
+        "p95": 9.69,
+        "max": 9.7,
+        "mean": 9.53
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.002408,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 1412.08,
+          "retrieve_ms": 9.3,
+          "usage": {
+            "total_tokens": 502,
+            "input_tokens": 382,
+            "input_tokens_details": {
+              "cached_tokens": 64
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": 1699.54,
+          "total_ms": 1710.39,
+          "retrieve_ms": 9.6,
+          "usage": {
+            "total_tokens": 502,
+            "input_tokens": 382,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 90
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know. The available information doesn't mention a maximum refund amount for spoiled produce, and Wellington isn't listed"
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 1344.61,
+          "retrieve_ms": 9.7,
+          "usage": {
+            "total_tokens": 505,
+            "input_tokens": 382,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 123,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        }
+      ]
+    },
+    "minimax/minimax-m3.1-flash": {
+      "model": "minimax/minimax-m3.1-flash",
+      "ttft_ms": {
+        "count": 1,
+        "min": 1567.34,
+        "p50": 1567.34,
+        "p95": 1567.34,
+        "max": 1567.34,
+        "mean": 1567.34
+      },
+      "total_ms": {
+        "count": 3,
+        "min": 1674.94,
+        "p50": 1754.19,
+        "p95": 2195.42,
+        "max": 2244.45,
+        "mean": 1891.19
+      },
+      "retrieve_ms": {
+        "count": 3,
+        "min": 9.5,
+        "p50": 9.5,
+        "p95": 9.5,
+        "max": 9.5,
+        "mean": 9.5
+      },
+      "accuracy": "0/3",
+      "est_cost_usd": 0.002422,
+      "runs": [
+        {
+          "run": 0,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": 1567.34,
+          "total_ms": 1674.94,
+          "retrieve_ms": 9.5,
+          "usage": {
+            "total_tokens": 594,
+            "input_tokens": 474,
+            "input_tokens_details": {
+              "cached_tokens": 128
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 110
+            }
+          },
+          "fact_ok": false,
+          "text_preview": "I don't know the maximum refund for spoiled produce in"
+        },
+        {
+          "run": 1,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 2244.45,
+          "retrieve_ms": 9.5,
+          "usage": {
+            "total_tokens": 581,
+            "input_tokens": 461,
+            "input_tokens_details": {
+              "cached_tokens": 128
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 120
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        },
+        {
+          "run": 2,
+          "status": 200,
+          "response_status": "incomplete",
+          "ttft_ms": null,
+          "total_ms": 1754.19,
+          "retrieve_ms": 9.5,
+          "usage": {
+            "total_tokens": 581,
+            "input_tokens": 461,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 120,
+            "output_tokens_details": {
+              "reasoning_tokens": 119
+            }
+          },
+          "fact_ok": false,
+          "text_preview": ""
+        }
+      ]
+    },
+    "total_matrix_cost_usd": 0.027687
+  },
+  "param_matrix": {
+    "anthropic_haiku_temperature": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"temperature is not supported for model anthropic/claude-haiku-5.5. Remove it from the request.\",\"type\":\"invalid_request_error\",\"code\":\"unsupported_parameter\",\"request_id\":\"555aaadfe19f40f6bdce7eb2be401638\"}}",
+      "error": {
+        "message": "temperature is not supported for model anthropic/claude-haiku-5.5. Remove it from the request.",
+        "type": "invalid_request_error",
+        "code": "unsupported_parameter",
+        "request_id": "555aaadfe19f40f6bdce7eb2be401638"
+      }
+    },
+    "anthropic_haiku_top_p": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"top_p is not supported for model anthropic/claude-haiku-5.5. Remove it from the request.\",\"type\":\"invalid_request_error\",\"code\":\"unsupported_parameter\",\"request_id\":\"65b4ee63279845f79b768533976accb6\"}}",
+      "error": {
+        "message": "top_p is not supported for model anthropic/claude-haiku-5.5. Remove it from the request.",
+        "type": "invalid_request_error",
+        "code": "unsupported_parameter",
+        "request_id": "65b4ee63279845f79b768533976accb6"
+      }
+    },
+    "anthropic_sonnet_tool_required": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"tool_choice is not supported for model anthropic/claude-sonnet-5.5. Remove it from the request.\",\"type\":\"invalid_request_error\",\"code\":\"unsupported_parameter\",\"request_id\":\"bc323dc36da54e9389a8739da1b2bb7e\"}}",
+      "error": {
+        "message": "tool_choice is not supported for model anthropic/claude-sonnet-5.5. Remove it from the request.",
+        "type": "invalid_request_error",
+        "code": "unsupported_parameter",
+        "request_id": "bc323dc36da54e9389a8739da1b2bb7e"
+      }
+    },
+    "anthropic_haiku_json_object": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"response_format is not supported for model anthropic/claude-haiku-5.5. Remove it from the request.\",\"type\":\"invalid_request_error\",\"code\":\"unsupported_parameter\",\"request_id\":\"4fefdb20620e498bb047be2dc8da1323\"}}",
+      "error": {
+        "message": "response_format is not supported for model anthropic/claude-haiku-5.5. Remove it from the request.",
+        "type": "invalid_request_error",
+        "code": "unsupported_parameter",
+        "request_id": "4fefdb20620e498bb047be2dc8da1323"
+      }
+    },
+    "openai_luna_temperature": {
+      "status": 200,
+      "body_preview": "{\"id\":\"resp_a109b3d1970c41bc837e374b50c97ea0\",\"object\":\"response\",\"created_at\":1795575130,\"status\":\"completed\",\"error\":null,\"incomplete_details\":null,\"model\":\"openai/gpt-6-luna\",\"instructions\":null,\"max_output_tokens\":16,\"metadata\":{},\"parallel_tool_calls\":true,\"previous_response_id\":null,\"reasoning",
+      "error": null
+    },
+    "openai_luna_reasoning_low": {
+      "status": 200,
+      "body_preview": "{\"id\":\"resp_27a866ff98954ff4ae53fd60adb7cbc9\",\"object\":\"response\",\"created_at\":1795575132,\"status\":\"completed\",\"error\":null,\"incomplete_details\":null,\"model\":\"openai/gpt-6-luna\",\"instructions\":null,\"max_output_tokens\":64,\"metadata\":{},\"parallel_tool_calls\":true,\"previous_response_id\":null,\"reasoning",
+      "error": null
+    },
+    "openai_luna_seed": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"seed is not supported\",\"type\":\"invalid_request_error\",\"code\":\"unsupported_parameter\",\"request_id\":\"e9328af103f540c3a97e1098b4f9f8ef\"}}",
+      "error": {
+        "message": "seed is not supported",
+        "type": "invalid_request_error",
+        "code": "unsupported_parameter",
+        "request_id": "e9328af103f540c3a97e1098b4f9f8ef"
+      }
+    },
+    "gemini38_effort_invalid": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"The model rejected the prompt: HTTP 400: Invalid reasoning_effort: ultra. Valid values are: high, low, medium, minimal, none, xhigh\",\"type\":\"model_error\",\"code\":\"model_error\",\"request_id\":\"d92e8de515c14b9a897181a990988b4e\"}}",
+      "error": {
+        "message": "The model rejected the prompt: HTTP 400: Invalid reasoning_effort: ultra. Valid values are: high, low, medium, minimal, none, xhigh",
+        "type": "model_error",
+        "code": "model_error",
+        "request_id": "d92e8de515c14b9a897181a990988b4e"
+      }
+    },
+    "fastlane_temperature": {
+      "status": 200,
+      "body_preview": "{\"id\":\"resp_23e5eac406c048218f9866b003fa8f64\",\"object\":\"response\",\"created_at\":1795575134,\"status\":\"completed\",\"error\":null,\"incomplete_details\":null,\"model\":\"moss/fastlane-1\",\"instructions\":null,\"max_output_tokens\":16,\"metadata\":{},\"parallel_tool_calls\":true,\"previous_response_id\":null,\"reasoning\":",
+      "error": null
+    },
+    "fastlane_reasoning_low": {
+      "status": 200,
+      "body_preview": "{\"id\":\"resp_2b1fb771bc014cf18d013fbed5a6f0c1\",\"object\":\"response\",\"created_at\":1795575135,\"status\":\"completed\",\"error\":null,\"incomplete_details\":null,\"model\":\"moss/fastlane-1\",\"instructions\":null,\"max_output_tokens\":32,\"metadata\":{},\"parallel_tool_calls\":true,\"previous_response_id\":null,\"reasoning\":",
+      "error": null
+    },
+    "fastlane_input_image": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"At most 0 image(s) may be provided in one prompt. (parameter=image)\",\"type\":\"invalid_request_error\",\"code\":\"invalid_request_error\",\"request_id\":\"3de4973dff2a4258a17b67b6a7b2412e\"}}",
+      "error": {
+        "message": "At most 0 image(s) may be provided in one prompt. (parameter=image)",
+        "type": "invalid_request_error",
+        "code": "invalid_request_error",
+        "request_id": "3de4973dff2a4258a17b67b6a7b2412e"
+      }
+    },
+    "gemini38_input_image": {
+      "status": 200,
+      "body_preview": "{\"id\":\"resp_59bbdca4a51244a3ba912195a95bf7ca\",\"object\":\"response\",\"created_at\":1795575138,\"status\":\"incomplete\",\"error\":null,\"incomplete_details\":{\"reason\":\"max_output_tokens\"},\"model\":\"google/gemini-3.8-flash\",\"instructions\":null,\"max_output_tokens\":48,\"metadata\":{},\"parallel_tool_calls\":true,\"prev",
+      "error": null
+    }
+  },
+  "long_context": {
+    "10k_tokens": {
+      "status": 200,
+      "ttft_ms": 1084.66,
+      "total_ms": 1148.21,
+      "usage": {
+        "total_tokens": 9386,
+        "input_tokens": 9374,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "needle_recalled": true,
+      "text": "NEEDLE-ALPHA-7391",
+      "est_cost_usd": 0.002365
+    },
+    "50k_tokens": {
+      "status": 200,
+      "ttft_ms": 4488.03,
+      "total_ms": 4553.15,
+      "usage": {
+        "total_tokens": 46344,
+        "input_tokens": 46333,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "needle_recalled": true,
+      "text": "NEEDLE-BETA-4820",
+      "est_cost_usd": 0.011602
+    },
+    "100k_tokens": {
+      "status": 200,
+      "ttft_ms": 8455.07,
+      "total_ms": 8511.08,
+      "usage": {
+        "total_tokens": 92546,
+        "input_tokens": 92534,
+        "input_tokens_details": {
+          "cached_tokens": 4000
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "needle_recalled": true,
+      "text": "NEEDLE-GAMMA-9104",
+      "est_cost_usd": 0.023155
+    },
+    "total_cost_usd": 0.037122
+  },
+  "streaming_and_tool_edges": {
+    "stream_incomplete": {
+      "status": 200,
+      "response_status": "incomplete",
+      "incomplete_details": {
+        "reason": "max_output_tokens"
+      },
+      "ttft_ms": 434.09,
+      "total_ms": 483.38,
+      "retrieve_ms": 0.0,
+      "text": "Retrieval-Augmented Generation (RAG)",
+      "usage": {
+        "total_tokens": 112,
+        "input_tokens": 102,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "event_counts": {
+        "response.output_text.delta": 4,
+        "response.content_part.done": 1,
+        "response.content_part.added": 1,
+        "response.output_item.done": 1,
+        "response.in_progress": 1,
+        "response.created": 1,
+        "response.output_text.done": 1,
+        "response.incomplete": 1,
+        "response.output_item.added": 1
+      },
+      "request_id": null,
+      "response_id": "resp_49fddcbfed264c6cb8e52897dfdc8a29"
+    },
+    "json_schema_truncated": {
+      "status": 200,
+      "response_status": "incomplete",
+      "incomplete_details": {
+        "reason": "max_output_tokens"
+      },
+      "ttft_ms": 433.24,
+      "total_ms": 542.83,
+      "retrieve_ms": 0.0,
+      "text": "{\n  \"city1\": \"Auckland\",\n  \"",
+      "usage": {
+        "total_tokens": 117,
+        "input_tokens": 103,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "event_counts": {
+        "response.output_text.delta": 7,
+        "response.content_part.done": 1,
+        "response.content_part.added": 1,
+        "response.output_item.done": 1,
+        "response.in_progress": 1,
+        "response.created": 1,
+        "response.output_text.done": 1,
+        "response.incomplete": 1,
+        "response.output_item.added": 1
+      },
+      "request_id": null,
+      "response_id": "resp_67f0564595c541f0840ca1b2cdf16e8d"
+    },
+    "chat_stream_include_usage_false": {
+      "chunk_count": 6,
+      "any_chunk_has_usage": false,
+      "last_chunk": {
+        "id": "chatcmpl-7e06bfd141914bec9535e97c14482f1f",
+        "object": "chat.completion.chunk",
+        "created": 1795575155,
+        "model": "moss/fastlane-1",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {},
+            "finish_reason": "stop",
+            "stop_reason": null
+          }
+        ]
+      }
+    },
+    "tool_choice_none": {
+      "status": 200,
+      "output_types": [
+        "message"
+      ]
+    },
+    "tool_choice_required_seq": {
+      "status": 200,
+      "output_types": [
+        "function_call"
+      ]
+    },
+    "moss_search_nonexistent_index": {
+      "status": 403,
+      "body_preview": "{\"error\":{\"message\":\"moss_search names an index outside this project\",\"type\":\"permission_error\",\"code\":\"permission_error\",\"request_id\":\"33c887b9ef1241aa91c4e2165ec4ffb8\"}}"
+    },
+    "mcp_localhost": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"server_url must use https\",\"type\":\"mcp_error\",\"code\":\"mcp_server_error\",\"request_id\":\"37f1b5d3456543589038b49b07a08f0d\"}}"
+    },
+    "mcp_metadata": {
+      "status": 400,
+      "body_preview": "{\"error\":{\"message\":\"server_url must use https\",\"type\":\"mcp_error\",\"code\":\"mcp_server_error\",\"request_id\":\"ee147a3e06884e7e93889344d6d36f0d\"}}"
+    },
+    "error_envelopes": {
+      "get_models_bad_auth": {
+        "status": 200,
+        "body_preview": "{\"object\":\"list\",\"data\":[{\"id\":\"moss/fastlane-1\",\"object\":\"model\",\"created\":0,\"owned_by\":\"moss\"},{\"id\":\"openai/gpt-6-luna\",\"object\":\"model\",\"created\":0,\"owned_by\":\"moss\"},{\"id\":\"openai/gpt-6.1-terra\",\"object\":\"model\",\"created\":0,\"owned_by\":\"moss\"},{\"id\":\"openai/gpt-6.1-sol\",\"object\":\"model\",\"created"
+      },
+      "get_models_no_auth": {
+        "status": 200,
+        "body_preview": "{\"object\":\"list\",\"data\":[{\"id\":\"moss/fastlane-1\",\"object\":\"model\",\"created\":0,\"owned_by\":\"moss\"},{\"id\":\"openai/gpt-6-luna\",\"object\":\"model\",\"created\":0,\"owned_by\":\"moss\"},{\"id\":\"openai/gpt-6.1-terra\",\"object\":\"model\",\"created\":0,\"owned_by\":\"moss\"},{\"id\":\"openai/gpt-6.1-sol\",\"object\":\"model\",\"created"
+      },
+      "get_response_unknown_id": {
+        "status": 404,
+        "body_preview": ""
+      },
+      "post_responses_invalid_model": {
+        "status": 400,
+        "body_preview": "{\"error\":{\"message\":\"Unknown model vendor/not-a-model. Send model moss/fastlane-1, or a vendor model name with your own key in X-Moss-Provider-Key.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\",\"request_id\":\"4e77a3c99c1d476b9dfb634ae865dab4\"}}"
+      },
+      "post_chat_empty_messages": {
+        "status": 400,
+        "body_preview": "{\"error\":{\"message\":\"messages is required\",\"type\":\"invalid_request_error\",\"code\":\"invalid_request_error\",\"request_id\":\"0ad49ad657f742ee9080f3aa9e842750\"}}"
+      }
+    }
+  },
+  "total_suite7_est_cost_usd": 0.064809
+}

@@ -1,0 +1,737 @@
+{
+  "moss/fastlane-1": {
+    "model": "moss/fastlane-1",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 496.65,
+      "p50": 508.17,
+      "p95": 1488.23,
+      "max": 1597.13,
+      "mean": 867.32
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 735.06,
+      "p50": 755.19,
+      "p95": 1646.4,
+      "max": 1745.42,
+      "mean": 1078.56
+    },
+    "avg_reasoning_tokens": 0.0,
+    "est_cost_usd": 0.002074,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 1597.13,
+        "total_ms": 1745.42,
+        "retrieve_ms": 11.0,
+        "reasoning_tokens": 0,
+        "output_tokens": 24,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 508.17,
+        "total_ms": 755.19,
+        "retrieve_ms": 11.1,
+        "reasoning_tokens": 0,
+        "output_tokens": 39,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, and the minimum basket to avoid the surcharge is NZ$35."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 496.65,
+        "total_ms": 735.06,
+        "retrieve_ms": 11.1,
+        "reasoning_tokens": 0,
+        "output_tokens": 41,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, with baskets below that amount incurring a NZ$4.99 surcharge."
+      }
+    ]
+  },
+  "openai/gpt-6-luna": {
+    "model": "openai/gpt-6-luna",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 1110.62,
+      "p50": 1339.09,
+      "p95": 1817.92,
+      "max": 1871.12,
+      "mean": 1440.28
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 1305.93,
+      "p50": 1500.07,
+      "p95": 1979.45,
+      "max": 2032.72,
+      "mean": 1612.91
+    },
+    "avg_reasoning_tokens": 27.7,
+    "est_cost_usd": 0.001661,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 1339.09,
+        "total_ms": 1500.07,
+        "retrieve_ms": 11.1,
+        "reasoning_tokens": 0,
+        "output_tokens": 21,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 1871.12,
+        "total_ms": 2032.72,
+        "retrieve_ms": 10.5,
+        "reasoning_tokens": 83,
+        "output_tokens": 106,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 1110.62,
+        "total_ms": 1305.93,
+        "retrieve_ms": 10.6,
+        "reasoning_tokens": 0,
+        "output_tokens": 25,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes, with a minimum basket of over NZ$35."
+      }
+    ]
+  },
+  "openai/gpt-6.1-terra": {
+    "model": "openai/gpt-6.1-terra",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 2201.29,
+      "p50": 2306.59,
+      "p95": 2531.35,
+      "max": 2556.32,
+      "mean": 2354.73
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 2392.05,
+      "p50": 2729.39,
+      "p95": 2843.74,
+      "max": 2856.44,
+      "mean": 2659.29
+    },
+    "avg_reasoning_tokens": 65.7,
+    "est_cost_usd": 0.002222,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 2556.32,
+        "total_ms": 2856.44,
+        "retrieve_ms": 10.8,
+        "reasoning_tokens": 106,
+        "output_tokens": 139,
+        "fact_ok": true,
+        "text_preview": "The SLA is 18 minutes for baskets over NZ$35; baskets below NZ$35 incur a NZ$4.99 surcharge."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 2306.59,
+        "total_ms": 2729.39,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 60,
+        "output_tokens": 102,
+        "fact_ok": true,
+        "text_preview": "The SLA is 18 minutes for baskets over NZ$35; I don’t know the minimum basket, but baskets below NZ$35 incur a NZ$4.99 surcharge."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 2201.29,
+        "total_ms": 2392.05,
+        "retrieve_ms": 11.1,
+        "reasoning_tokens": 31,
+        "output_tokens": 50,
+        "fact_ok": true,
+        "text_preview": "The SLA is 18 minutes for baskets over NZ$35."
+      }
+    ]
+  },
+  "anthropic/claude-haiku-5.5": {
+    "model": "anthropic/claude-haiku-5.5",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 861.13,
+      "p50": 861.34,
+      "p95": 898.72,
+      "max": 902.87,
+      "mean": 875.11
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 1027.73,
+      "p50": 1046.79,
+      "p95": 1094.28,
+      "max": 1099.56,
+      "mean": 1058.03
+    },
+    "avg_reasoning_tokens": 0.0,
+    "est_cost_usd": 0.001727,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 902.87,
+        "total_ms": 1099.56,
+        "retrieve_ms": 10.5,
+        "reasoning_tokens": 0,
+        "output_tokens": 63,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, and baskets under that amount pay a NZ$4.99 surcharge."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 861.34,
+        "total_ms": 1046.79,
+        "retrieve_ms": 10.6,
+        "reasoning_tokens": 0,
+        "output_tokens": 66,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, and baskets below NZ$35 incur a NZ$4.99 surcharge."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 861.13,
+        "total_ms": 1027.73,
+        "retrieve_ms": 10.8,
+        "reasoning_tokens": 0,
+        "output_tokens": 66,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, and baskets below NZ$35 pay a NZ$4.99 surcharge."
+      }
+    ]
+  },
+  "anthropic/claude-sonnet-5.5": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 931.12,
+      "p50": 993.36,
+      "p95": 1027.05,
+      "max": 1030.79,
+      "mean": 985.09
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 1174.22,
+      "p50": 1271.82,
+      "p95": 1274.84,
+      "max": 1275.17,
+      "mean": 1240.4
+    },
+    "avg_reasoning_tokens": 0.0,
+    "est_cost_usd": 0.002145,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 1030.79,
+        "total_ms": 1275.17,
+        "retrieve_ms": 25.7,
+        "reasoning_tokens": 0,
+        "output_tokens": 61,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, and baskets below NZ$35 pay a NZ$4.99 surcharge."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 993.36,
+        "total_ms": 1271.82,
+        "retrieve_ms": 10.6,
+        "reasoning_tokens": 0,
+        "output_tokens": 61,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, and baskets below NZ$35 pay a NZ$4.99 surcharge."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 931.12,
+        "total_ms": 1174.22,
+        "retrieve_ms": 11.5,
+        "reasoning_tokens": 0,
+        "output_tokens": 61,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, while baskets below NZ$35 pay a NZ$4.99 surcharge."
+      }
+    ]
+  },
+  "google/gemini-3.5-flash-lite": {
+    "model": "google/gemini-3.5-flash-lite",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 1472.96,
+      "p50": 1775.93,
+      "p95": 1803.06,
+      "max": 1806.07,
+      "mean": 1684.99
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 1476.79,
+      "p50": 1779.11,
+      "p95": 1807.03,
+      "max": 1810.13,
+      "mean": 1688.68
+    },
+    "avg_reasoning_tokens": 0.0,
+    "est_cost_usd": 0.001932,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 1775.93,
+        "total_ms": 1779.11,
+        "retrieve_ms": 11.1,
+        "reasoning_tokens": 0,
+        "output_tokens": 22,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 1806.07,
+        "total_ms": 1810.13,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 0,
+        "output_tokens": 22,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 1472.96,
+        "total_ms": 1476.79,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 0,
+        "output_tokens": 22,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      }
+    ]
+  },
+  "google/gemini-3.8-flash (default)": {
+    "model": "google/gemini-3.8-flash",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 3687.75,
+      "p50": 4182.95,
+      "p95": 4599.51,
+      "max": 4645.79,
+      "mean": 4172.16
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 3734.34,
+      "p50": 4186.15,
+      "p95": 4602.81,
+      "max": 4649.11,
+      "mean": 4189.87
+    },
+    "avg_reasoning_tokens": 221.3,
+    "est_cost_usd": 0.003,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 4182.95,
+        "total_ms": 4186.15,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 267,
+        "output_tokens": 289,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 4645.79,
+        "total_ms": 4649.11,
+        "retrieve_ms": 11.0,
+        "reasoning_tokens": 232,
+        "output_tokens": 254,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 3687.75,
+        "total_ms": 3734.34,
+        "retrieve_ms": 11.3,
+        "reasoning_tokens": 165,
+        "output_tokens": 187,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      }
+    ]
+  },
+  "google/gemini-3.8-flash (effort=none)": {
+    "model": "google/gemini-3.8-flash",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 2489.03,
+      "p50": 3201.63,
+      "p95": 3276.56,
+      "max": 3284.88,
+      "mean": 2991.85
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 2492.39,
+      "p50": 3202.07,
+      "p95": 3279.34,
+      "max": 3287.92,
+      "mean": 2994.13
+    },
+    "avg_reasoning_tokens": 0.0,
+    "est_cost_usd": 0.001839,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 3284.88,
+        "total_ms": 3287.92,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 0,
+        "output_tokens": 22,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 3201.63,
+        "total_ms": 3202.07,
+        "retrieve_ms": 11.1,
+        "reasoning_tokens": 0,
+        "output_tokens": 22,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 2489.03,
+        "total_ms": 2492.39,
+        "retrieve_ms": 10.8,
+        "reasoning_tokens": 0,
+        "output_tokens": 22,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      }
+    ]
+  },
+  "deepseek/deepseek-v4.1-flash": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 1762.14,
+      "p50": 1852.26,
+      "p95": 1954.33,
+      "max": 1965.67,
+      "mean": 1860.02
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 1818.03,
+      "p50": 1901.99,
+      "p95": 2140.41,
+      "max": 2166.9,
+      "mean": 1962.31
+    },
+    "avg_reasoning_tokens": 149.0,
+    "est_cost_usd": 0.001875,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 1852.26,
+        "total_ms": 1901.99,
+        "retrieve_ms": 10.6,
+        "reasoning_tokens": 144,
+        "output_tokens": 183,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, with baskets below NZ$35 paying a NZ$4.99 surcharge."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 1965.67,
+        "total_ms": 2166.9,
+        "retrieve_ms": 10.8,
+        "reasoning_tokens": 141,
+        "output_tokens": 179,
+        "fact_ok": true,
+        "text_preview": "KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, while baskets below NZ$35 pay a NZ$4.99 surcharge."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 1762.14,
+        "total_ms": 1818.03,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 162,
+        "output_tokens": 198,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, with baskets below NZ$35 paying a NZ$4.99 surcharge."
+      }
+    ]
+  },
+  "qwen/qwen3.8-flash": {
+    "model": "qwen/qwen3.8-flash",
+    "accuracy": "0/3",
+    "ttft_ms": null,
+    "total_ms": {
+      "count": 3,
+      "min": 4870.72,
+      "p50": 7045.72,
+      "p95": 7447.32,
+      "max": 7491.94,
+      "mean": 6469.46
+    },
+    "avg_reasoning_tokens": 450.0,
+    "est_cost_usd": 0.004125,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "incomplete",
+        "ttft_ms": null,
+        "total_ms": 7045.72,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 450,
+        "output_tokens": 450,
+        "fact_ok": false,
+        "text_preview": ""
+      },
+      {
+        "run": 1,
+        "response_status": "incomplete",
+        "ttft_ms": null,
+        "total_ms": 7491.94,
+        "retrieve_ms": 10.6,
+        "reasoning_tokens": 450,
+        "output_tokens": 450,
+        "fact_ok": false,
+        "text_preview": ""
+      },
+      {
+        "run": 2,
+        "response_status": "incomplete",
+        "ttft_ms": null,
+        "total_ms": 4870.72,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 450,
+        "output_tokens": 450,
+        "fact_ok": false,
+        "text_preview": ""
+      }
+    ]
+  },
+  "z-ai/glm-5.3-flash": {
+    "model": "z-ai/glm-5.3-flash",
+    "accuracy": "2/3",
+    "ttft_ms": {
+      "count": 2,
+      "min": 2000.31,
+      "p50": 2067.57,
+      "p95": 2128.09,
+      "max": 2134.82,
+      "mean": 2067.57
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 2285.2,
+      "p50": 2338.95,
+      "p95": 6871.44,
+      "max": 7375.05,
+      "mean": 3999.73
+    },
+    "avg_reasoning_tokens": 237.0,
+    "est_cost_usd": 0.003106,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 2000.31,
+        "total_ms": 2338.95,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 90,
+        "output_tokens": 129,
+        "fact_ok": true,
+        "text_preview": "KoruMart's Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, while baskets below NZ$35 incur a NZ$4.99 surcharge."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 2134.82,
+        "total_ms": 2285.2,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 172,
+        "output_tokens": 213,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, while baskets below NZ$35 can still get delivery but pay a NZ$4.99 surcharge."
+      },
+      {
+        "run": 2,
+        "response_status": "incomplete",
+        "ttft_ms": null,
+        "total_ms": 7375.05,
+        "retrieve_ms": 11.0,
+        "reasoning_tokens": 449,
+        "output_tokens": 450,
+        "fact_ok": false,
+        "text_preview": ""
+      }
+    ]
+  },
+  "moonshotai/kimi-k3": {
+    "model": "moonshotai/kimi-k3",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 1226.58,
+      "p50": 1734.06,
+      "p95": 3093.14,
+      "max": 3244.15,
+      "mean": 2068.26
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 1340.12,
+      "p50": 1768.62,
+      "p95": 3600.35,
+      "max": 3803.88,
+      "mean": 2304.21
+    },
+    "avg_reasoning_tokens": 95.7,
+    "est_cost_usd": 0.002467,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 3244.15,
+        "total_ms": 3803.88,
+        "retrieve_ms": 11.9,
+        "reasoning_tokens": 109,
+        "output_tokens": 154,
+        "fact_ok": true,
+        "text_preview": "KoruMart's Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, with a NZ$4.99 surcharge for baskets below that amount."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 1734.06,
+        "total_ms": 1768.62,
+        "retrieve_ms": 11.1,
+        "reasoning_tokens": 95,
+        "output_tokens": 125,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 1226.58,
+        "total_ms": 1340.12,
+        "retrieve_ms": 10.9,
+        "reasoning_tokens": 83,
+        "output_tokens": 119,
+        "fact_ok": true,
+        "text_preview": "The Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35 (with a NZ$4.99 surcharge below that)."
+      }
+    ]
+  },
+  "minimax/minimax-m3.1-flash": {
+    "model": "minimax/minimax-m3.1-flash",
+    "accuracy": "3/3",
+    "ttft_ms": {
+      "count": 3,
+      "min": 986.18,
+      "p50": 1881.58,
+      "p95": 2664.24,
+      "max": 2751.2,
+      "mean": 1872.99
+    },
+    "total_ms": {
+      "count": 3,
+      "min": 1016.86,
+      "p50": 1918.47,
+      "p95": 2707.9,
+      "max": 2795.62,
+      "mean": 1910.32
+    },
+    "avg_reasoning_tokens": 127.7,
+    "est_cost_usd": 0.00261,
+    "runs": [
+      {
+        "run": 0,
+        "response_status": "completed",
+        "ttft_ms": 986.18,
+        "total_ms": 1016.86,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 59,
+        "output_tokens": 95,
+        "fact_ok": true,
+        "text_preview": "The KoruMart Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, with a NZ$4.99 surcharge on baskets below NZ$35."
+      },
+      {
+        "run": 1,
+        "response_status": "completed",
+        "ttft_ms": 2751.2,
+        "total_ms": 2795.62,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 124,
+        "output_tokens": 145,
+        "fact_ok": true,
+        "text_preview": "KoruMart’s Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35."
+      },
+      {
+        "run": 2,
+        "response_status": "completed",
+        "ttft_ms": 1881.58,
+        "total_ms": 1918.47,
+        "retrieve_ms": 10.7,
+        "reasoning_tokens": 200,
+        "output_tokens": 236,
+        "fact_ok": true,
+        "text_preview": "KoruMart’s Auckland CBD express courier SLA is 18 minutes for baskets over NZ$35, with a NZ$4.99 surcharge below NZ$35."
+      }
+    ]
+  },
+  "total_cost_usd": 0.030783
+}
